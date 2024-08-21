@@ -1,0 +1,39 @@
+.width-xs {
+  width: 5px;
+}
+
+.width-sm {
+  width: 10px;
+}
+
+.width-md {
+  width: 20px;
+}
+
+.width-lg {
+  width: 50px;
+}
+
+.width-xl {
+  width: 100px;
+}
+
+.height-xs {
+  height: 5px;
+}
+
+.height-sm {
+  height: 10px;
+}
+
+.height-md {
+  height: 20px;
+}
+
+.height-lg {
+  height: 50px;
+}
+
+.height-xl {
+  height: 100px;
+}

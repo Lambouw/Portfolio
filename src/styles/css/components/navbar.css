@@ -1,0 +1,11 @@
+.navbar--wrapper {
+    display: flex;
+}
+
+.navbar--wrapper--navitem {
+
+}
+
+.navbar--wrapper--navitem:active {
+    color: white;
+}
