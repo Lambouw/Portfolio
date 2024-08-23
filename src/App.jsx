@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import { Link } from "react-scroll";
+
 // Import Logos / Images
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
@@ -19,6 +21,12 @@ function App() {
   return (
     <div>
       <Router>
+        <Link to="1" spy={true} smooth={true} duration={250}>1</Link>
+        <Link to="2" spy={true} smooth={true} duration={250}>2</Link>
+        <Link to="3" spy={true} smooth={true} duration={250}>3</Link>
+        <Link to="4" spy={true} smooth={true} duration={250}>4</Link>
+        <Link to="5" spy={true} smooth={true} duration={250}>5</Link>
+        <Link to="6" spy={true} smooth={true} duration={250}>6</Link>
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
