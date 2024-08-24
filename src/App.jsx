@@ -3,36 +3,28 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Link } from "react-scroll";
 
 // Import Logos / Images
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+
+// Import Pages
+import Home from "./pages/Home";
+import Imprint from "./pages/Imprint";
+import Data from "./pages/Data";
 
 // Import Components
 import NavBar from "./components/NavBar";
-import Home from "./navcomponents/Home";
-import About from "./navcomponents/About";
-import Projects from "./navcomponents/Projects";
-import Contact from "./navcomponents/Contact";
 
 // Import Styles
-import "./styles/css/main/app.css";
-import "./styles/css/basic/spaceconstants.css";
+import "./styles/css/app.css";
+import "./styles/css/spaceconstants.css";
 
 function App() {
   return (
     <div>
       <Router>
-        <Link to="1" spy={true} smooth={true} duration={250}>1</Link>
-        <Link to="2" spy={true} smooth={true} duration={250}>2</Link>
-        <Link to="3" spy={true} smooth={true} duration={250}>3</Link>
-        <Link to="4" spy={true} smooth={true} duration={250}>4</Link>
-        <Link to="5" spy={true} smooth={true} duration={250}>5</Link>
-        <Link to="6" spy={true} smooth={true} duration={250}>6</Link>
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/imprint" element={<Imprint />} />
+          <Route path="/data" element={<Data />} />
           {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />

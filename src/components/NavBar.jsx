@@ -1,22 +1,23 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 
 // Import Styles
-import "../styles/css/components/navbar.css";
+import "../styles/css/navbar.css";
 
 function NavBar() {
   return (
     <div className="navbar--wrapper">
-      <NavLink className="navbar--wrapper--navitem" to="/about">
+      <Link to="about" spy={true} smooth={true} duration={250}>
         About
-      </NavLink>
-      <div className="width-md"></div>
-      <NavLink className="navbar--wrapper--navitem" to="/projects">
+      </Link>
+      <Link to="projects" spy={true} smooth={true} duration={250}>
         Projects
-      </NavLink>
-      <div className="width-md"></div>
-      <NavLink className="navbar--wrapper--navitem" to="/contact">
+      </Link>
+      <Link to="career" spy={true} smooth={true} duration={250}>
+        Career
+      </Link>
+      <Link to="contact" spy={true} smooth={true} duration={250}>
         Contact
-      </NavLink>
+      </Link>
     </div>
   );
 }
