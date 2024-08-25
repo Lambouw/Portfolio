@@ -11,6 +11,7 @@ import Data from "./pages/Data";
 import Footer from "./sections/Footer";
 
 // Import Styles
+import "./styles/css/reset.css";
 import "./styles/css/app.css";
 import "./styles/css/spaceconstants.css";
 
