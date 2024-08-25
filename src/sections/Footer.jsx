@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 
 // Import Styles
 import '../styles/css/spaceconstants.css';
+import '../styles/css/footer.css';
 
 function Footer() {
   return <div className="footer--wrapper">

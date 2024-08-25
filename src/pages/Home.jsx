@@ -1,6 +1,3 @@
-// Import Sections
-import Footer from "../sections/Footer";
-
 function Home() {
   return (
     <div className="Home--wrapper">
@@ -34,7 +31,6 @@ function Home() {
       >
         Contact
       </div>
-      <Footer />
     </div>
   );
 }
