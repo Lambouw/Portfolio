@@ -1,7 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { Link } from "react-scroll";
-
 // Import Logos / Images
 
 // Import Pages
@@ -10,7 +8,6 @@ import Imprint from "./pages/Imprint";
 import Data from "./pages/Data";
 
 // Import Components
-import NavBar from "./components/NavBar";
 import Footer from "./sections/Footer";
 
 // Import Styles
@@ -21,7 +18,6 @@ function App() {
   return (
     <div>
       <Router>
-        <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/imprint" element={<Imprint />} />

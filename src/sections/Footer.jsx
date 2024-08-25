@@ -5,9 +5,9 @@ import '../styles/css/spaceconstants.css';
 import '../styles/css/footer.css';
 
 function Footer() {
-  return <div className="footer--wrapper">
+  return <div className="footer">
     <NavLink to='/imprint'>Imprint</NavLink>
-    <div className='horizontal-spacer-md'></div>
+    <div className='width-md'></div>
     <NavLink to='/data'>Data</NavLink>
   </div>;
 }

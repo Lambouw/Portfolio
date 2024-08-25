@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"reset.css"}
+{"version":3,"sources":["../scss/basics/reset.scss","reset.css"],"names":[],"mappings":"AACA;;;EAGE,sBAAA;ACAF;;ADIA;EACE,SAAA;ACDF;;ADOA;EACE,gBAAA;EACA,mCAAA;ACJF;;ADQA;;;;;EAKE,cAAA;EACA,eAAA;ACLF;;ADQA;;;;EAIE,aAAA;ACLF;;ADQA;;;;;;;EAOE,yBAAA;ACLF;;ADQA;;EAEE,kBAAA;ACLF","file":"reset.css"}

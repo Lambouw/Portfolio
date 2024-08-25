@@ -1,6 +1,10 @@
+// Import Components
+import NavBar from '../components/NavBar';
+
 function Home() {
   return (
     <div className="Home--wrapper">
+      <NavBar />
       <div
         id="hero"
         style={{ height: "400px", width: "100%", backgroundColor: "red" }}
