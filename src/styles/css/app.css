@@ -8,6 +8,11 @@
   color: rgb(79, 215, 0);
 }
 
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 a {
   color: rgb(79, 215, 0);
   text-decoration: none;

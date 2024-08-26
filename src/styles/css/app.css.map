@@ -1,1 +1,1 @@
-{"version":3,"sources":["../scss/basics/app.scss","../scss/basics/colors.scss","app.css"],"names":[],"mappings":"AAEA;EACE,oBAAA;EACA,kCAAA;EACA,mCAAA;EACA,kCAAA;EAEA,sBAAA;EACA,oCAAA;EACA,sBCVY;ACQd;;AFKA;EACE,sBCdY;EDeZ,qBAAA;AEFF","file":"app.css"}
+{"version":3,"sources":["../scss/basics/app.scss","../scss/basics/colors.scss","app.css"],"names":[],"mappings":"AAEA;EACE,oBAAA;EACA,kCAAA;EACA,mCAAA;EACA,kCAAA;EAEA,sBAAA;EACA,oCAAA;EACA,sBCVY;ACQd;;AFKA;EACE,iBAAA;EACA,cAAA;AEFF;;AFKA;EACE,sBCnBY;EDoBZ,qBAAA;AEFF","file":"app.css"}

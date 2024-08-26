@@ -1,9 +1,12 @@
 // Import Components
 import NavBar from '../components/NavBar';
 
+// Import Components
+import Footer from "../sections/Footer";
+
 function Home() {
   return (
-    <div className="Home--wrapper">
+    <div className="Home">
       <NavBar />
       <div
         id="hero"
@@ -35,6 +38,7 @@ function Home() {
       >
         Contact
       </div>
+      <Footer />
     </div>
   );
 }

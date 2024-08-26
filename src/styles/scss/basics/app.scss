@@ -11,6 +11,11 @@
   color: $color-green;
 }
 
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 a {
   color: $color-green;
   text-decoration: none;
