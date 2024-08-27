@@ -3,18 +3,14 @@ import NavBar from "../components/NavBar";
 
 // Import Sections
 import Header from "../sections/Header";
+import Hero from "../sections/Hero";
 import Footer from "../sections/Footer";
 
 function Home() {
   return (
     <div className="Home">
       <Header />
-      <div
-        id="hero"
-        style={{ height: "400px", width: "100%", backgroundColor: "red" }}
-      >
-        Hero
-      </div>
+      <Hero />
       <div
         id="about"
         style={{ height: "400px", width: "100%", backgroundColor: "green" }}
