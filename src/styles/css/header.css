@@ -1,0 +1,8 @@
+.header {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.header--name {
+  font-weight: 600;
+}/*# sourceMappingURL=header.css.map */

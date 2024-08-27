@@ -1,13 +1,14 @@
 // Import Components
-import NavBar from '../components/NavBar';
+import NavBar from "../components/NavBar";
 
-// Import Components
+// Import Sections
+import Header from "../sections/Header";
 import Footer from "../sections/Footer";
 
 function Home() {
   return (
     <div className="Home">
-      <NavBar />
+      <Header />
       <div
         id="hero"
         style={{ height: "400px", width: "100%", backgroundColor: "red" }}
