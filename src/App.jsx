@@ -10,6 +10,7 @@ import Data from "./pages/Data";
 // Import Styles
 import "./styles/css/reset.css";
 import "./styles/css/app.css";
+import "./styles/css/link.css";
 import "./styles/css/spaceconstants.css";
 
 function App() {

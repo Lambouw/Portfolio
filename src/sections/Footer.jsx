@@ -5,9 +5,9 @@ import '../styles/css/footer.css';
 
 function Footer() {
   return <div className="footer">
-    <NavLink to='/imprint'>Imprint</NavLink>
-    <div className='width-md'></div>
-    <NavLink to='/data'>Data</NavLink>
+    <NavLink className="link" to='/imprint'>Imprint</NavLink>
+    <div className='width-lg'></div>
+    <NavLink className="link" to='/data'>Data</NavLink>
   </div>;
 }
 
