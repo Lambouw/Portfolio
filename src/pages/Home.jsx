@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar";
 // Import Sections
 import Header from "../sections/Header";
 import Hero from "../sections/Hero";
+import About from "../sections/About";
 import Footer from "../sections/Footer";
 
 function Home() {
@@ -11,12 +12,7 @@ function Home() {
     <div className="Home">
       <Header />
       <Hero />
-      <div
-        id="about"
-        style={{ height: "400px", width: "100%", backgroundColor: "green" }}
-      >
-        About
-      </div>
+      <About />
       <div
         id="projects"
         style={{ height: "400px", width: "100%", backgroundColor: "orange" }}
