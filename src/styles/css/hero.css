@@ -1,5 +1,6 @@
 .hero {
-  margin: 200px 0;
+  height: 90vh;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
