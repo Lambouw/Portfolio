@@ -1,1 +1,21 @@
+.scroll-icon {
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    margin: 0 auto;
+    color: black;
+    height: 50px;
 
+    animation: blink 1.5s infinite; /* Apply the blink animation */
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1; /* Fully visible */
+    }
+    50% {
+        opacity: 0; /* Invisible */
+    }
+}
