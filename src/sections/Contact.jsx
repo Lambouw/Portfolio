@@ -4,8 +4,11 @@ import "../styles/css/contact.css";
 // Import Images
 import React from "../assets/react.svg";
 import React2 from "../assets/react2.svg";
+import { useState } from "react";
 
 function Contact() {
+  const [sendEnabled, setSendEnabled] = useState(false);
+
   return (
     <div id="contact" className="contact">
       <h1 className="contact--heading">Contact</h1>
@@ -32,13 +35,28 @@ function Contact() {
               className="contact--container--left--formular--message input"
               placeholder="Enter your message"
             />
+            <div className="contact--container--left--formular--button">
+              <button
+                className="contact--container--left--formular--button--btn"
+                onClick={() => {
+                  console.log("Implement send function");
+                }}
+                disabled={!sendEnabled}
+              >
+                Send
+              </button>
+            </div>
           </div>
         </div>
         <div className="contact--container--right">
           <h2 className="contact--container--right--email-heading">Email</h2>
-          <div className="contact--container--right--email">
+          <a
+            href="mailto:jm.lindemann@web.de"
+            className="contact--container--right--email"
+          >
             jm.lindemann@web.de
-          </div>
+          </a>
+          <div className="height-md"></div>
           <h2 className="contact--container--right--socials-heading">
             Socials
           </h2>

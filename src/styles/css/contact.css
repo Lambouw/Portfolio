@@ -9,10 +9,10 @@
   font-weight: 300;
 }
 .input::-moz-placeholder {
-  color: rgb(180, 180, 180);
+  color: rgb(201, 201, 201);
 }
 .input::placeholder {
-  color: rgb(180, 180, 180);
+  color: rgb(201, 201, 201);
 }
 .input:focus {
   outline: none;
@@ -39,11 +39,45 @@
   height: 300px;
   padding-top: 6px;
 }
+.contact--container--left--formular--button {
+  display: flex;
+  justify-content: flex-end; /* Aligns the button to the right */
+}
+.contact--container--left--formular--button--btn {
+  background-color: rgb(121, 121, 121);
+  border: 1px solid rgb(121, 121, 121);
+  border-radius: 10px;
+  padding-left: 6px;
+  width: 100px;
+  height: 30px;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+}
+.contact--container--left--formular--button--btn:hover {
+  background-color: rgb(201, 201, 201);
+  color: rgb(30, 30, 30);
+  border: 1px solid rgb(30, 30, 30);
+  cursor: pointer;
+}
+.contact--container--left--formular--button--btn:focus {
+  outline: none;
+}
+.contact--container--left--formular--button--btn:disabled {
+  background-color: rgb(201, 201, 201);
+  border: 1px solid rgb(201, 201, 201);
+  color: rgb(121, 121, 121);
+}
+.contact--container--left--formular--button--btn:disabled:hover {
+  cursor: not-allowed;
+}
 .contact--container--right {
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: end;
+}
+.contact--container--right--email:hover {
+  color: rgb(100, 100, 100);
 }
 .contact--container--right--socials {
   display: flex;

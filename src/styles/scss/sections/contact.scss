@@ -50,6 +50,44 @@
           height: 300px;
           padding-top: 6px;
         }
+
+        &--button {
+          display: flex;
+          justify-content: flex-end; /* Aligns the button to the right */
+
+          &--btn {
+            background-color: $color-input-background;
+            border: 1px solid $color-input-background;
+            border-radius: 10px;
+            padding-left: 6px;
+
+            width: 100px;
+            height: 30px;
+            color: $color-font-light;
+            font-weight: 300;
+
+            &:hover {
+              background-color: $color-font-placeholder;
+              color: $color-font-dark;
+              border: 1px solid $color-font-dark;
+              cursor: pointer;
+            }
+
+            &:focus {
+              outline: none;
+            }
+
+            &:disabled {
+              background-color: $color-font-placeholder;
+              border: 1px solid $color-font-placeholder;
+              color: $color-input-background;
+
+              &:hover {
+                cursor: not-allowed;
+              }
+            }
+          }
+        }
       }
     }
 
@@ -57,11 +95,15 @@
       width: 50%;
       display: flex;
       flex-direction: column;
-align-items: end;
+      align-items: end;
+
       &--email-heading {
       }
 
       &--email {
+        &:hover {
+          color: $color-link-hover;
+        }
       }
 
       &--socials-heading {
