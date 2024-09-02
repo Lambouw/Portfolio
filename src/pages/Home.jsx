@@ -7,6 +7,9 @@ import NavBar from "../components/NavBar";
 import Header from "../sections/Header";
 import Hero from "../sections/Hero";
 import About from "../sections/About";
+import Projects from "../sections/Projects";
+import Career from "../sections/Career";
+import Contact from "../sections/Contact";
 import Footer from "../sections/Footer";
 
 // Import Styles
@@ -38,24 +41,9 @@ function Home() {
       <Header />
       <Hero />
       <About />
-      <div
-        id="projects"
-        style={{ height: "400px", width: "100%", backgroundColor: "orange" }}
-      >
-        Projects
-      </div>
-      <div
-        id="career"
-        style={{ height: "400px", width: "100%", backgroundColor: "yellow" }}
-      >
-        Career
-      </div>
-      <div
-        id="contact"
-        style={{ height: "400px", width: "100%", backgroundColor: "blue" }}
-      >
-        Contact
-      </div>
+      <Projects />
+      <Career />
+      <Contact />
       <Footer />
       {isVisible && <img className="scroll-icon" src={Scroll} alt="Scroll Icon"></img>}
     </div>

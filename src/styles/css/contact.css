@@ -1,1 +1,50 @@
-/*# sourceMappingURL=contact.css.map */
+.input {
+  background-color: rgb(121, 121, 121);
+  border: 1px solid rgb(121, 121, 121);
+  border-radius: 10px;
+  padding-left: 6px;
+  width: 100%;
+  height: 36px;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+}
+.input::-moz-placeholder {
+  color: rgb(180, 180, 180);
+}
+.input::placeholder {
+  color: rgb(180, 180, 180);
+}
+.input:focus {
+  outline: none;
+}
+
+.contact {
+  padding-bottom: 50px;
+}
+.contact--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact--container--left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.contact--container--left--formular {
+  min-width: 400px;
+}
+.contact--container--left--formular--message {
+  height: 300px;
+  padding-top: 6px;
+}
+.contact--container--right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.contact--container--right--socials {
+  display: flex;
+}/*# sourceMappingURL=contact.css.map */
