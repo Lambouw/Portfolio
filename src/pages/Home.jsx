@@ -16,7 +16,7 @@ import Footer from "../sections/Footer";
 import "../styles/css/home.css";
 
 // Import Images
-import Scroll from "../assets/scroll.png";
+import Scroll from "../assets/images/scroll.png";
 
 function Home() {
   const [isVisible, setIsVisible] = useState(true);

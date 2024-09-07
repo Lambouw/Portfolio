@@ -1,7 +1,7 @@
 // Import Styles
 import "../styles/css/hero.css";
 
-import Malte from "../assets/original.jpeg";
+import Malte from "../assets/images/original.jpeg";
 
 function Hero() {
   return (

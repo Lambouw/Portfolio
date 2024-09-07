@@ -2,8 +2,8 @@
 import "../styles/css/about.css";
 
 // Import Images
-import React from "../assets/react.svg";
-import React2 from "../assets/react2.svg";
+import React from "../assets/images/react.svg";
+import React2 from "../assets/images/react2.svg";
 
 function About() {
   // Generate items array
