@@ -2,7 +2,7 @@
 
 .about {
   padding-bottom: 50px;
-  
+
   &--heading {
   }
 
@@ -38,7 +38,9 @@
       width: 80px; /* Ensure width is equal to height */
       height: 80px; /* Ensure height is equal to width */
 
+      background-color: rgb(242, 242, 242);
       border: 1px solid $color-border;
+
       border-radius: 20px;
       margin-right: 30px; /* Ensure margin for spacing between items */
 

@@ -1,0 +1,57 @@
+@import "../basics/colors";
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+
+  padding: 20px;
+
+  width: 350px;
+  height: 310px;
+
+  background-color: rgb(242, 242, 242);
+  border: 1px solid $color-border;
+  border-radius: 20px;
+
+  &--upper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    &--image {
+      height: 150px;
+      width: 350px;
+      object-fit: cover;
+
+      border-radius: 20px;
+      border: 1px solid $color-border;
+    }
+
+    &--name {
+    }
+  }
+
+  &--description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    line-height: 1.5em; /* Adjust line height if necessary */
+    max-height: calc(1.5em * 3); /* Limit height to 3 lines */
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(220, 220, 220);
+    border: 1px solid $color-border-hover;
+  }
+}
+
+.not-last {
+  margin-right: 25px;
+}

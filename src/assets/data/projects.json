@@ -1,8 +1,20 @@
 [
   {
-    "name": "Project 1"
+    "name": "Artist Portfolio Website",
+    "description": "This project is a portfolio website designed for Ingrid Lindemann, a semi-professional artist and sculptor. The primary goal of the website is to provide a visually engaging platform that showcases the artist’s body of work, including sculptures, paintings, and mixed media. The site is designed to reflect the artist’s unique style while ensuring easy navigation for potential clients, galleries, and art enthusiasts.",
+    "image": "ilhomepage5",
+    "stack": ["React", "HTML", "CSS", "JavaScript"]
   },
   {
-    "name": "Project 2"
+    "name": "Portfolio v1",
+    "description": "My first Porfolio Website.",
+    "image": "portfoliov1",
+    "stack": ["React", "HTML", "CSS", "JavaScript"]
+  },
+  {
+    "name": "Manager Mission Generator",
+    "description": "This app randomly generates a mission for the manager career mode in FIFA 22. This app randomly generates a mission for the manager career mode in FIFA 22. This app randomly generates a mission for the manager career mode in FIFA 22.",
+    "image": "fmmg",
+    "stack": ["HTML", "CSS", "JavaScript"]
   }
 ]

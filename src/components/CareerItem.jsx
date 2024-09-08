@@ -2,7 +2,7 @@
 import "../styles/css/careeritem.css";
 
 function CareerItem({ careerItem }) {
-  return <div className="project-card">{careerItem.company}</div>;
+  return <div className="career-item">{careerItem.company}</div>;
 }
 
 export default CareerItem;

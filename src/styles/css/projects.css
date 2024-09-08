@@ -1,3 +1,8 @@
 .projects {
   padding-bottom: 50px;
+}
+.projects--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }/*# sourceMappingURL=projects.css.map */
