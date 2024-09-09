@@ -1,5 +1,5 @@
 .input {
-  background-color: rgba(255, 207, 136, 0.6);
+  background-color: rgba(116, 188, 255, 0.6);
   border: none;
   border-radius: 10px;
   padding-left: 6px;
@@ -44,7 +44,7 @@
   justify-content: flex-end; /* Aligns the button to the right */
 }
 .contact--container--left--formular--button--btn {
-  background-color: #ffcf88;
+  background-color: #74bcff;
   border: none;
   border-radius: 10px;
   padding-left: 6px;
@@ -54,7 +54,7 @@
   font-weight: 300;
 }
 .contact--container--left--formular--button--btn:hover {
-  background-color: rgba(255, 207, 136, 0.6);
+  background-color: rgba(116, 188, 255, 0.6);
   color: #1e1e1e;
   cursor: pointer;
 }
@@ -62,9 +62,9 @@
   outline: none;
 }
 .contact--container--left--formular--button--btn:disabled {
-  background-color: rgba(255, 207, 136, 0.2);
+  background-color: rgba(116, 188, 255, 0.2);
   border: none;
-  color: rgb(255, 207, 136);
+  color: rgb(116, 188, 255);
 }
 .contact--container--left--formular--button--btn:disabled:hover {
   cursor: not-allowed;

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // Import Styles
 import "../styles/css/contact.css";
@@ -8,7 +8,29 @@ import React from "../assets/images/react.svg";
 import React2 from "../assets/images/react2.svg";
 
 function Contact() {
-  const [sendEnabled, setSendEnabled] = useState(true);
+  const [sendEnabled, setSendEnabled] = useState(false);
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  useEffect(() => {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (
+      name !== null &&
+      name.length > 0 &&
+      email !== null &&
+      email.length > 0 &&
+      email.match(emailPattern) &&
+      message !== null &&
+      message.length > 0
+    ) {
+      setSendEnabled(true);
+    } else {
+      setSendEnabled(false);
+    }
+  }, [name, email, message]);
 
   return (
     <div id="contact" className="contact">
@@ -25,16 +47,29 @@ function Contact() {
             <input
               className="contact--container--left--formular--name input"
               placeholder="Enter your name"
+              value={name}
+              onChange={(e) => {
+                setName(e.target.value);
+              }}
             />
             <div className="height-sm"></div>
             <input
               className="contact--container--left--formular--email input"
               placeholder="Enter your email"
+              type="email"
+              value={email}
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
             />
             <div className="height-sm"></div>
             <textarea
               className="contact--container--left--formular--message input"
               placeholder="Enter your message"
+              value={message}
+              onChange={(e) => {
+                setMessage(e.target.value);
+              }}
             />
             <div className="contact--container--left--formular--button">
               <button
