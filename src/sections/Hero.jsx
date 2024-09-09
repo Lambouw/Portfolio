@@ -1,7 +1,7 @@
 // Import Styles
 import "../styles/css/hero.css";
 
-import Malte from "../assets/images/original.jpeg";
+import Malte from "../assets/images/malte.webp";
 
 function Hero() {
   return (
@@ -49,6 +49,7 @@ function Hero() {
           src={Malte}
           alt="Image of Malte Lindemann"
         />
+        <div class="hero--right--circle"></div>
       </div>
     </div>
   );

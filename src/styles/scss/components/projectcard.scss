@@ -11,8 +11,8 @@
   width: 350px;
   height: 310px;
 
-  background-color: rgb(242, 242, 242);
-  border: 1px solid $color-border;
+  background-color: rgba($highlight-color, 0.1);
+  border: 1px solid rgba($highlight-color, 0.6);
   border-radius: 20px;
 
   &--upper {
@@ -27,7 +27,7 @@
       object-fit: cover;
 
       border-radius: 20px;
-      border: 1px solid $color-border;
+      border: 1px solid rgba($highlight-color, 0.6);
     }
 
     &--name {
@@ -47,8 +47,8 @@
 
   &:hover {
     cursor: pointer;
-    background-color: rgb(220, 220, 220);
-    border: 1px solid $color-border-hover;
+    background-color: rgba($highlight-color, 0.2);
+    border: 1px solid rgba($highlight-color, 1);
   }
 }
 

@@ -8,7 +8,7 @@ import React from "../assets/images/react.svg";
 import React2 from "../assets/images/react2.svg";
 
 function Contact() {
-  const [sendEnabled, setSendEnabled] = useState(false);
+  const [sendEnabled, setSendEnabled] = useState(true);
 
   return (
     <div id="contact" className="contact">
