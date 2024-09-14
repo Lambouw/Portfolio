@@ -1,11 +1,13 @@
-import React, { useState } from "react";
 import { Link } from "react-scroll";
+
+// Import Contexts
+import { useTheme } from '../contexts/ThemeContext';
 
 // Import Styles
 import "../styles/css/navbar.css";
 
 function NavBar() {
-  const [theme, setTheme] = useState("light");
+  const { theme, toggleTheme } = useTheme("light");
 
   const handleToggleTheme = () => {
     const toggler = document.querySelector(".theme-toggler");
@@ -14,11 +16,7 @@ function NavBar() {
     setTimeout(() => {
       toggler.classList.remove("clicked"); // Remove the 'clicked' class after the animation ends (0.5s)
 
-      if (theme === "light") {
-        setTheme("dark");
-      } else {
-        setTheme("light");
-      }
+      toggleTheme();
     }, 100); // This should match the duration of your animation (0.5s)
   };
 
