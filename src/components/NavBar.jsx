@@ -9,7 +9,7 @@ function NavBar() {
       <Link className="link" to="about" spy={true} smooth={true} duration={250}>
         About
       </Link>
-      <div className="width-md"></div>
+      <div className="width-m"></div>
       <Link
         className="link"
         to="projects"
@@ -19,7 +19,7 @@ function NavBar() {
       >
         Projects
       </Link>
-      <div className="width-md"></div>
+      <div className="width-m"></div>
       <Link
         className="link"
         to="career"
@@ -29,7 +29,7 @@ function NavBar() {
       >
         Career
       </Link>
-      <div className="width-md"></div>
+      <div className="width-m"></div>
       <Link
         className="link"
         to="contact"
@@ -39,7 +39,7 @@ function NavBar() {
       >
         Contact
       </Link>
-      <div className="width-md"></div>
+      <div className="width-m"></div>
       <div className="theme-toggler">Theme</div>
     </div>
   );

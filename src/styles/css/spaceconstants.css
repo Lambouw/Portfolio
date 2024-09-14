@@ -2,15 +2,19 @@
   width: 5px;
 }
 
-.width-sm {
+.width-s {
   width: 10px;
 }
 
-.width-md {
+.width-sm {
+  width: 15px;
+}
+
+.width-m {
   width: 20px;
 }
 
-.width-lg {
+.width-l {
   width: 50px;
 }
 
@@ -22,15 +26,19 @@
   height: 5px;
 }
 
-.height-sm {
+.height-s {
   height: 10px;
 }
 
-.height-md {
+.height-sm {
+  width: 15px;
+}
+
+.height-m {
   height: 20px;
 }
 
-.height-lg {
+.height-l {
   height: 50px;
 }
 

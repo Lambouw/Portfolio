@@ -17,9 +17,26 @@
 }
 .hero--left--socials {
   display: flex;
-  flex-direction: row;
-  justify-content: start;
   align-items: center;
+}
+.hero--left--socials--icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+}
+.hero--left--socials svg {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+.hero--left--socials svg:hover {
+  fill: rgb(100, 100, 100);
+  transform: scale(1.2);
+  transition: all 0.3s ease;
 }
 .hero--right {
   position: relative;

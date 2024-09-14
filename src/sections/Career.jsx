@@ -11,7 +11,7 @@ function Career() {
   return (
     <div className="career">
       <h1 className="career--heading">Career</h1>
-      <div className="height-sm"></div>
+      <div className="height-s"></div>
       <div className="career--container">
         {career.map((careerItem) => (
           <CareerItem careerItem={careerItem} />

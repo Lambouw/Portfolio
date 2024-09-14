@@ -29,10 +29,10 @@ function ProjectCard({ className, project }) {
           alt={project.name}
           src={imageMap[project.image]}
         />
-        <div className="height-sm"></div>
+        <div className="height-s"></div>
         <h3 className="project-card--upper--name">{project.name}</h3>
       </div>
-      <div className="height-sm"></div>
+      <div className="height-s"></div>
       <div className="project-card--description">{project.description}</div>
     </div>
   );

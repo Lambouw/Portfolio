@@ -20,7 +20,7 @@ function About() {
   return (
     <div id="about" className="about">
       <h1 className="about--heading">About</h1>
-      <div className="height-sm"></div>
+      <div className="height-s"></div>
       <div className="about--text">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fugit
@@ -28,21 +28,21 @@ function About() {
           voluptatibus a ducimus? Saepe nisi quod autem officiis repellendus
           quos!
         </p>
-        <div className="height-sm"></div>
+        <div className="height-s"></div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fugit
           accusantium in vel ullam! Aperiam, animi qui? Repellendus dolore vitae
           voluptatibus a ducimus? Saepe nisi quod autem officiis repellendus
           quos!
         </p>
-        <div className="height-sm"></div>
+        <div className="height-s"></div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fugit
           accusantium in vel ullam! Aperiam, animi qui? Repellendus dolore vitae
           voluptatibus a ducimus? Saepe nisi quod autem officiis repellendus
           quos!
         </p>
-        <div className="height-sm"></div>
+        <div className="height-s"></div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fugit
           accusantium in vel ullam! Aperiam, animi qui? Repellendus dolore vitae
@@ -50,9 +50,9 @@ function About() {
           quos!
         </p>
       </div>
-      <div className="height-sm"></div>
+      <div className="height-s"></div>
       <h2 className="about--tech-heading">Tech Stack</h2>
-      <div className="height-sm"></div>
+      <div className="height-s"></div>
       <div className="about--tech-items">
         <div className="about--tech-items--wrapper">
           {/* Duplicate items for seamless scrolling */}

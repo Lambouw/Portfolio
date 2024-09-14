@@ -12,7 +12,7 @@ function Data() {
       <NavLink to="/">Home</NavLink>
       <div className="data--container">
         <h1 className="data--container--heading">Data</h1>
-        <div className="height-md"></div>
+        <div className="height-m"></div>
         <div className="data--container--text">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -27,7 +27,7 @@ function Data() {
             natus a, aspernatur ducimus! Delectus consequatur possimus magni
             totam?
           </p>
-          <div className="height-md"></div>
+          <div className="height-m"></div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
             repellat quo nisi nostrum quasi aliquid, laboriosam provident porro
@@ -41,7 +41,7 @@ function Data() {
             natus a, aspernatur ducimus! Delectus consequatur possimus magni
             totam?
           </p>
-          <div className="height-md"></div>
+          <div className="height-m"></div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
             repellat quo nisi nostrum quasi aliquid, laboriosam provident porro

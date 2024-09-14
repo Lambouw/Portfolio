@@ -11,7 +11,7 @@ function Projects() {
   return (
     <div className="projects">
       <h1 className="projects--heading">Projects</h1>
-      <div className="height-sm"></div>
+      <div className="height-s"></div>
       <div className="projects--container">
         {projects.map((project, index) => (
           <ProjectCard className={index === projects.length - 1 ? '' : 'not-last'} project={project} />

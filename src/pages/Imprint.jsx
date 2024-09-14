@@ -12,7 +12,7 @@ function Imprint() {
       <NavLink to="/">Home</NavLink>
       <div className="imprint--container">
         <h1 className="imprint--container--heading">Imprint</h1>
-        <div className="height-md"></div>
+        <div className="height-m"></div>
         <div className="imprint--container--text">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
@@ -27,7 +27,7 @@ function Imprint() {
             natus a, aspernatur ducimus! Delectus consequatur possimus magni
             totam?
           </p>
-          <div className="height-md"></div>
+          <div className="height-m"></div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
             repellat quo nisi nostrum quasi aliquid, laboriosam provident porro
@@ -41,7 +41,7 @@ function Imprint() {
             natus a, aspernatur ducimus! Delectus consequatur possimus magni
             totam?
           </p>
-          <div className="height-md"></div>
+          <div className="height-m"></div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
             repellat quo nisi nostrum quasi aliquid, laboriosam provident porro

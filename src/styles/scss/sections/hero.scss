@@ -1,4 +1,4 @@
-@import '../basics/colors';
+@import "../basics/colors";
 
 .hero {
   height: 90vh;
@@ -24,11 +24,29 @@
 
     &--socials {
       display: flex;
-      flex-direction: row;
-      justify-content: start;
       align-items: center;
 
       &--icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+      }
+
+      svg {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+      
+        transform: scale(1.1);
+        transition: all 0.3s ease;
+
+        &:hover {
+          fill: $color-link-hover;
+          transform: scale(1.2);
+          transition: all 0.3s ease;
+        }
       }
     }
   }
