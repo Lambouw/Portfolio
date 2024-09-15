@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 
+import { useTheme } from "../contexts/ThemeContext";
+
 // Import Components
 import NavBar from "../components/NavBar";
 
@@ -17,12 +19,16 @@ import "../styles/css/home.css";
 
 // Import Images
 import Scroll from "../assets/images/scroll.png";
+import ScrollDark from "../assets/images/scroll-dark.png";
 
 function Home() {
   const [isVisible, setIsVisible] = useState(true);
 
+  const { theme } = useTheme();
+
   const handleScroll = () => {
-    if (window.scrollY > 50) { // Wenn der Benutzer mehr als 50px nach unten scrollt
+    if (window.scrollY > 50) {
+      // Wenn der Benutzer mehr als 50px nach unten scrollt
       setIsVisible(false);
     } else {
       setIsVisible(true);
@@ -45,7 +51,12 @@ function Home() {
       <Career />
       <Contact />
       <Footer />
-      {isVisible && <img className="scroll-icon" src={Scroll} alt="Scroll Icon"></img>}
+      {isVisible &&
+        (theme === "light" ? (
+          <img className="scroll-icon" src={Scroll} alt="Scroll Icon"></img>
+        ) : (
+          <img className="scroll-icon" src={ScrollDark} alt="Scroll Icon"></img>
+        ))}
     </div>
   );
 }

@@ -1,18 +1,64 @@
+:root {
+  --color-no-background: rgba(0, 0, 0, 0);
+  --color-background: rgb(255, 255, 255);
+  --color-font: rgb(30, 30, 30);
+  --color-font-hover: rgb(100, 100, 100);
+  --color-icon: rgb(30, 30, 30);
+  --color-icon-hover: rgb(100, 100, 100);
+  --color-link: rgb(0, 0, 0);
+  --color-link-hover: rgb(100, 100, 100);
+  --color-card: rgb(240, 240, 240);
+  --color-card-hover: rgb(230, 230, 230);
+  --color-input-background: rgb(240, 240, 240);
+  --color-input-font: rgb(30, 30, 30);
+  --color-input-font-placeholder: rgb(100, 100, 100);
+  --color-button-background: rgb(240, 240, 240);
+  --color-button-background-hover: rgb(230, 230, 230);
+  --color-button-font: rgb(30, 30, 30);
+  --color-button-background-disabled: rgb(255, 255, 255);
+  --color-button-font-disabled: rgb(200, 200, 200);
+  --color-button-border-disabled: rgb(230, 230, 230);
+  --color-highlight: rgb(116, 188, 255);
+}
+
+[data-theme=dark] {
+  --color-no-background: rgba(0, 0, 0, 0);
+  --color-background: rgb(0, 0, 0);
+  --color-font: rgb(255, 255, 255);
+  --color-font-hover: rgb(200, 200, 200);
+  --color-icon: rgb(255, 255, 255);
+  --color-icon-hover: rgb(200, 200, 200);
+  --color-link: rgb(255, 255, 255);
+  --color-link-hover: rgb(200, 200, 200);
+  --color-card: rgb(30, 30, 30);
+  --color-card-hover: rgb(40, 40, 40);
+  --color-input-background: rgb(30, 30, 30);
+  --color-input-font: rgb(255, 255, 255);
+  --color-input-font-placeholder: rgb(200, 200, 200);
+  --color-button-background: rgb(30, 30, 30);
+  --color-button-background-hover: rgb(40, 40, 40);
+  --color-button-font: rgb(255, 255, 255);
+  --color-button-background-disabled: rgb(10, 10, 10);
+  --color-button-font-disabled: rgb(100, 100, 100);
+  --color-button-border-disabled: rgb(100, 100, 100);
+  --color-highlight: rgb(116, 188, 255);
+}
+
 .input {
-  background-color: rgba(116, 188, 255, 0.6);
+  background-color: var(--color-input-background);
   border: none;
   border-radius: 10px;
   padding-left: 6px;
   width: 100%;
   height: 36px;
-  color: rgb(30, 30, 30);
+  color: var(--color-input-font);
   font-weight: 300;
 }
 .input::-moz-placeholder {
-  color: rgba(30, 30, 30, 0.2);
+  color: var(--color-input-font-placeholder);
 }
 .input::placeholder {
-  color: rgba(30, 30, 30, 0.2);
+  color: var(--color-input-font-placeholder);
 }
 .input:focus {
   outline: none;
@@ -44,27 +90,26 @@
   justify-content: flex-end; /* Aligns the button to the right */
 }
 .contact--container--left--formular--button--btn {
-  background-color: #74bcff;
+  background-color: var(--color-button-background);
   border: none;
   border-radius: 10px;
   padding-left: 6px;
   width: 100px;
   height: 30px;
-  color: #1e1e1e;
+  color: var(--color-button-font);
   font-weight: 300;
 }
 .contact--container--left--formular--button--btn:hover {
-  background-color: rgba(116, 188, 255, 0.6);
-  color: #1e1e1e;
+  background-color: var(--color-button-background-hover);
   cursor: pointer;
 }
 .contact--container--left--formular--button--btn:focus {
   outline: none;
 }
 .contact--container--left--formular--button--btn:disabled {
-  background-color: rgba(116, 188, 255, 0.2);
-  border: none;
-  color: rgb(116, 188, 255);
+  background-color: var(--color-button-background-disabled);
+  border: 1px solid var(--color-button-border-disabled);
+  color: var(--color-button-font-disabled);
 }
 .contact--container--left--formular--button--btn:disabled:hover {
   cursor: not-allowed;
@@ -76,7 +121,7 @@
   align-items: end;
 }
 .contact--container--right--email:hover {
-  color: rgb(100, 100, 100);
+  color: var(--color-link-hover);
 }
 .contact--container--right--socials {
   display: flex;
@@ -97,7 +142,7 @@
   transition: all 0.3s ease;
 }
 .contact--container--right--socials svg:hover {
-  fill: rgb(100, 100, 100);
+  fill: var(--color-icon-hover);
   transform: scale(1.2);
   transition: all 0.3s ease;
 }/*# sourceMappingURL=contact.css.map */

@@ -8,11 +8,11 @@
 
   padding: 20px;
 
-  width: 350px;
+  width: 310px;
   height: 310px;
 
-  background-color: rgba($highlight-color, 0.1);
-  border: 1px solid rgba($highlight-color, 0.6);
+  background-color: var(--color-card);
+  border: 1px solid var(--color-card);
   border-radius: 20px;
 
   &--upper {
@@ -27,7 +27,7 @@
       object-fit: cover;
 
       border-radius: 20px;
-      border: 1px solid rgba($highlight-color, 0.6);
+      border: 1px solid var(--color-card);
     }
 
     &--name {
@@ -47,11 +47,11 @@
 
   &:hover {
     cursor: pointer;
-    background-color: rgba($highlight-color, 0.2);
-    border: 1px solid rgba($highlight-color, 1);
-  }
-}
+    background-color: var(--color-card-hover);
+    border: 1px solid var(--color-card-hover);
 
-.not-last {
-  margin-right: 25px;
+    .project-card--upper--image {
+      border: 1px solid var(--color-card-hover);
+    }
+  }
 }

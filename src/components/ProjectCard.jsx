@@ -7,11 +7,15 @@ import "../styles/css/projectcard.css";
 import ilhomepage5 from "../assets/images/ilhomepage5.png";
 import portfoliov1 from "../assets/images/portfoliov1.png";
 import fmmg from "../assets/images/fmmg.png";
+import hmi from "../assets/images/hmi.png";
+import twinstore from "../assets/images/twinstore.png";
 
 const imageMap = {
   ilhomepage5: ilhomepage5,
   portfoliov1: portfoliov1,
   fmmg: fmmg,
+  hmi: hmi,
+  twinstore: twinstore,
 };
 
 function ProjectCard({ className, project }) {

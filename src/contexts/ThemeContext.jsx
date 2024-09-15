@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext } from "react";
+import React, { createContext, useState, useEffect, useContext } from "react";
 
 // Create a context with a default value of "light"
 const ThemeContext = createContext();
@@ -11,6 +11,11 @@ export const ThemeProvider = ({ children }) => {
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
+
+  // Apply the theme to the body or root element whenever it changes
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme); // Apply theme to HTML element
+  }, [theme]);
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>

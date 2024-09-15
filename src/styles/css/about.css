@@ -1,3 +1,49 @@
+:root {
+  --color-no-background: rgba(0, 0, 0, 0);
+  --color-background: rgb(255, 255, 255);
+  --color-font: rgb(30, 30, 30);
+  --color-font-hover: rgb(100, 100, 100);
+  --color-icon: rgb(30, 30, 30);
+  --color-icon-hover: rgb(100, 100, 100);
+  --color-link: rgb(0, 0, 0);
+  --color-link-hover: rgb(100, 100, 100);
+  --color-card: rgb(240, 240, 240);
+  --color-card-hover: rgb(230, 230, 230);
+  --color-input-background: rgb(240, 240, 240);
+  --color-input-font: rgb(30, 30, 30);
+  --color-input-font-placeholder: rgb(100, 100, 100);
+  --color-button-background: rgb(240, 240, 240);
+  --color-button-background-hover: rgb(230, 230, 230);
+  --color-button-font: rgb(30, 30, 30);
+  --color-button-background-disabled: rgb(255, 255, 255);
+  --color-button-font-disabled: rgb(200, 200, 200);
+  --color-button-border-disabled: rgb(230, 230, 230);
+  --color-highlight: rgb(116, 188, 255);
+}
+
+[data-theme=dark] {
+  --color-no-background: rgba(0, 0, 0, 0);
+  --color-background: rgb(0, 0, 0);
+  --color-font: rgb(255, 255, 255);
+  --color-font-hover: rgb(200, 200, 200);
+  --color-icon: rgb(255, 255, 255);
+  --color-icon-hover: rgb(200, 200, 200);
+  --color-link: rgb(255, 255, 255);
+  --color-link-hover: rgb(200, 200, 200);
+  --color-card: rgb(30, 30, 30);
+  --color-card-hover: rgb(40, 40, 40);
+  --color-input-background: rgb(30, 30, 30);
+  --color-input-font: rgb(255, 255, 255);
+  --color-input-font-placeholder: rgb(200, 200, 200);
+  --color-button-background: rgb(30, 30, 30);
+  --color-button-background-hover: rgb(40, 40, 40);
+  --color-button-font: rgb(255, 255, 255);
+  --color-button-background-disabled: rgb(10, 10, 10);
+  --color-button-font-disabled: rgb(100, 100, 100);
+  --color-button-border-disabled: rgb(100, 100, 100);
+  --color-highlight: rgb(116, 188, 255);
+}
+
 .about {
   padding-bottom: 50px;
 }
@@ -22,8 +68,8 @@
   flex-shrink: 0;
   width: 80px; /* Ensure width is equal to height */
   height: 80px; /* Ensure height is equal to width */
-  background-color: rgba(116, 188, 255, 0.1);
-  border: 1px solid rgba(116, 188, 255, 0.6);
+  background-color: var(--color-card);
+  border: 1px solid var(--color-card);
   border-radius: 20px;
   margin-right: 30px; /* Ensure margin for spacing between items */
 }

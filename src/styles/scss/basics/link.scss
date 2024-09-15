@@ -1,6 +1,6 @@
 @import '_colors';
 
 .link:hover {
-    color: $color-link-hover;
+    color: var(--color-link-hover);
     cursor: pointer;
 }

@@ -14,7 +14,10 @@ function Projects() {
       <div className="height-s"></div>
       <div className="projects--container">
         {projects.map((project, index) => (
-          <ProjectCard className={index === projects.length - 1 ? '' : 'not-last'} project={project} />
+          <ProjectCard
+            className={index === projects.length - 1 ? "" : "not-last"}
+            project={project}
+          />
         ))}
       </div>
     </div>

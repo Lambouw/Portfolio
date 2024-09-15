@@ -1,3 +1,5 @@
+@import "../basics/colors";
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -8,7 +10,7 @@
   padding: none;
 
   border: none;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: var(--color-no-background);
 
   cursor: pointer;
 

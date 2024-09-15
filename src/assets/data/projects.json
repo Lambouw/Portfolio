@@ -1,9 +1,21 @@
 [
   {
+    "name": "Adaptive HMI",
+    "description": "An adaptive HMI (human machine interface) for cnc-machines for different machine configurations. In my masters thesis i had the exercise to develop and implement a solution for a hmi for different machine configurations. For the Frontend i used React with TypeScript and SCSS. For the Backend i used Node.js. The Communication between the backend and the machine is via OPC UA and the communication between the frontend and the backend is via websockets with the framework Socket.io.",
+    "image": "hmi",
+    "stack": ["React", "HTML", "CSS", "TypeScript", "Node.js"]
+  },
+  {
     "name": "Artist Portfolio Website",
     "description": "This project is a portfolio website designed for Ingrid Lindemann, a semi-professional artist and sculptor. The primary goal of the website is to provide a visually engaging platform that showcases the artist’s body of work, including sculptures, paintings, and mixed media. The site is designed to reflect the artist’s unique style while ensuring easy navigation for potential clients, galleries, and art enthusiasts.",
     "image": "ilhomepage5",
     "stack": ["React", "HTML", "CSS", "JavaScript"]
+  },
+  {
+    "name": "TwinStore",
+    "description": "During my time at ISG Industrielle Steuerungstechnik i was part of a team rebuilding the exchange platform for simulation models TwinStore. We were rebuilding the whole platform and my focus was mainly on the frontend part of the platform. In the frontend we used Flutter.",
+    "image": "twinstore",
+    "stack": ["Flutter"]
   },
   {
     "name": "Portfolio v1",
