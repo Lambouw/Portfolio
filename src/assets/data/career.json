@@ -1,11 +1,32 @@
 [
   {
-    "company": "ISG Industrielle Steuerungstechnik GmbH"
+    "title": "Full Stack Developer",
+    "company": "ISG Industrielle Steuerungstechnik GmbH",
+    "image": "isg",
+    "date": "March 23 - Present",
+    "work": [
+      "Developed an adaptive human-machine interface using React and Node.js",
+      "Developed a platform for distribution and exchange of simulation models and digital twins (TwinStore) using Flutter.",
+      "Developed a converter for file formats using Python."
+    ]
   },
   {
-    "company": "Jörg Paule Informationssysteme GmbH"
+    "title": "Full Stack Developer",
+    "company": "Jörg Paule Informationssysteme GmbH",
+    "image": "jpaule",
+    "date": "October 22 - February 23",
+    "work": [
+      "Developed a library to extend Autodesks 3D-viewer with more functionalities using JavaScript."
+    ]
   },
   {
-    "company": "IFF Institut für Industrielle Fertigung und Fabrikbetrieb"
+    "title": "Wissenschaftliche Hilfskraft",
+    "company": "IFF Institut für Industrielle Fertigung und Fabrikbetrieb",
+    "image": "iff",
+    "date": "March 23 - Present",
+    "work": [
+      "Supportive work for the teaching in university.",
+      "Working on a image recognition project in Unity."
+    ]
   }
 ]
