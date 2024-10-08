@@ -9,6 +9,7 @@ import NavBar from "../components/NavBar";
 import Header from "../sections/Header";
 import Hero from "../sections/Hero";
 import About from "../sections/About";
+import Tech from "../sections/Tech";
 import Projects from "../sections/Projects";
 import Career from "../sections/Career";
 import Contact from "../sections/Contact";
@@ -47,6 +48,7 @@ function Home() {
       <Header />
       <Hero />
       <About />
+      <Tech />
       <Projects />
       <Career />
       <Contact />

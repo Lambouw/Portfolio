@@ -1,0 +1,62 @@
+@import "../basics/colors";
+
+@keyframes transform {
+  0% {
+    transform: translateY(80px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.tech {
+  padding-bottom: 50px;
+
+  &--items {
+    display: flex;
+    flex-wrap: wrap; /* Macht das Wrappen möglich */
+    justify-content: center; /* Zentriert die Cards mit Lücken dazwischen */
+    gap: 30px;
+    width: 100%; /* Full width of the container */
+
+    &--card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+
+      width: 110px; /* Ensure width is equal to height */
+      height: 110px; /* Ensure height is equal to width */
+
+      background-color: var(--color-card);
+      border: 1px solid var(--color-card);
+
+      border-radius: 10px;
+
+      opacity: 0;
+      transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+      box-shadow: 0 4px 8px var(--color-shadow);
+
+      &.slide-in {
+        opacity: 1;
+        animation: transform 0.5s ease-in;
+      }
+
+      &:hover {
+        transition: transform 0.1s ease-in;
+        transform: scale(1.1);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      &--image {
+        margin-top: 10px;
+        width: 40px; /* Adjust as needed */
+        height: 40px; /* Adjust as needed */
+      }
+    }
+  }
+}

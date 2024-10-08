@@ -7,7 +7,7 @@
   --color-icon-hover: rgb(100, 100, 100);
   --color-link: rgb(0, 0, 0);
   --color-link-hover: rgb(100, 100, 100);
-  --color-card: rgb(240, 240, 240);
+  --color-card: rgb(210, 222, 231);
   --color-card-hover: rgb(230, 230, 230);
   --color-input-background: rgb(240, 240, 240);
   --color-input-font: rgb(30, 30, 30);
@@ -19,6 +19,7 @@
   --color-button-font-disabled: rgb(200, 200, 200);
   --color-button-border-disabled: rgb(230, 230, 230);
   --color-highlight: rgb(116, 188, 255);
+  --color-shadow: rgb(0, 0, 0, 0.1);
 }
 
 [data-theme=dark] {
@@ -30,7 +31,7 @@
   --color-icon-hover: rgb(200, 200, 200);
   --color-link: rgb(255, 255, 255);
   --color-link-hover: rgb(200, 200, 200);
-  --color-card: rgb(30, 30, 30);
+  --color-card: rgb(13, 23, 31);
   --color-card-hover: rgb(40, 40, 40);
   --color-input-background: rgb(30, 30, 30);
   --color-input-font: rgb(255, 255, 255);
@@ -88,4 +89,49 @@
 
 .career-item--description--work li {
   margin-bottom: 5px;
+}
+
+.experience-card {
+  width: 350px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.company-logo {
+  width: 50px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.job-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+
+.company-name {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.job-duration {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.task-list {
+  font-size: 14px;
+  color: #333;
+  list-style-type: disc;
+  padding-left: 20px;
 }/*# sourceMappingURL=careeritem.css.map */

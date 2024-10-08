@@ -1,0 +1,57 @@
+ <TechnologyCard logoSrc={React} techName="React" />
+      <ProjectCard
+        project={React}
+        title="Artist Portfolio Website"
+        description="This project is a portfolio website designed for Ingrid Lindemann, a semi-professional artist and sculptor. The primary goal of the website is to provide a visually engaging platform that showcases the artist’s body of work, including sculptures, paintings, and mixed media. The site is designed to reflect the artist’s unique style while ensuring easy navigation for potential clients, galleries, and art enthusiasts."
+      />
+      <ExperienceCard
+        logoSrc={React}
+        jobTitle="Fullstack Developer"
+        companyName="ISG Industrielle Steuerungstechnik GmbH"
+        duration="03/23 - 11/24"
+        tasks={[
+          "Developed an adaptive human-machine interface using React and Node.js",
+          "Developed a platform for distribution and exchange of simulation models and digital twins (TwinStore) using Flutter.",
+          "Developed a converter for file formats using Python.",
+        ]}
+      />
+
+
+
+function TechnologyCard({ logoSrc, techName }) {
+  return (
+    <div className="tech-card">
+      <img src={logoSrc} alt={`${techName} Logo`} className="tech-logo" />
+      <p className="tech-name">{techName}</p>
+    </div>
+  );
+}
+function ProjectCard({ projectImage, title, description }) {
+  return (
+    <div className="project-card">
+      <img
+        src={projectImage}
+        alt={`${title} Screenshot`}
+        className="project-image"
+      />
+      <h3 className="project-title">{title}</h3>
+      <p className="project-description">{description}</p>
+    </div>
+  );
+}
+
+function ExperienceCard({ logoSrc, jobTitle, companyName, duration, tasks }) {
+  return (
+    <div className="experience-card">
+      <img src={logoSrc} alt={`${companyName} Logo`} className="company-logo" />
+      <h3 className="job-title">{jobTitle}</h3>
+      <p className="company-name">{companyName}</p>
+      <p className="job-duration">{duration}</p>
+      <ul className="task-list">
+        {tasks.map((task, index) => (
+          <li key={index}>{task}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}

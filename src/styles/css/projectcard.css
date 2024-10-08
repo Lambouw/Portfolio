@@ -7,7 +7,7 @@
   --color-icon-hover: rgb(100, 100, 100);
   --color-link: rgb(0, 0, 0);
   --color-link-hover: rgb(100, 100, 100);
-  --color-card: rgb(240, 240, 240);
+  --color-card: rgb(210, 222, 231);
   --color-card-hover: rgb(230, 230, 230);
   --color-input-background: rgb(240, 240, 240);
   --color-input-font: rgb(30, 30, 30);
@@ -19,6 +19,7 @@
   --color-button-font-disabled: rgb(200, 200, 200);
   --color-button-border-disabled: rgb(230, 230, 230);
   --color-highlight: rgb(116, 188, 255);
+  --color-shadow: rgb(0, 0, 0, 0.1);
 }
 
 [data-theme=dark] {
@@ -30,7 +31,7 @@
   --color-icon-hover: rgb(200, 200, 200);
   --color-link: rgb(255, 255, 255);
   --color-link-hover: rgb(200, 200, 200);
-  --color-card: rgb(30, 30, 30);
+  --color-card: rgb(13, 23, 31);
   --color-card-hover: rgb(40, 40, 40);
   --color-input-background: rgb(30, 30, 30);
   --color-input-font: rgb(255, 255, 255);
@@ -87,4 +88,40 @@
 }
 .project-card:hover .project-card--upper--image {
   border: 1px solid var(--color-card-hover);
+}
+
+.project-card {
+  width: 300px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.project-description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }/*# sourceMappingURL=projectcard.css.map */

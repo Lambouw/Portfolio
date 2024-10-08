@@ -1,0 +1,58 @@
+[
+  {
+    "name": "HTML",
+    "image": "html"
+  },
+  {
+    "name": "JavaScript",
+    "image": "javascript"
+  },
+  {
+    "name": "TypeScript",
+    "image": "typescript"
+  },
+  {
+    "name": "CSS",
+    "image": "css"
+  },
+  {
+    "name": "SCSS",
+    "image": "scss"
+  },
+  {
+    "name": "React",
+    "image": "react"
+  },
+  {
+    "name": "Dart",
+    "image": "dart"
+  },
+  {
+    "name": "Flutter",
+    "image": "flutter"
+  },
+  {
+    "name": "Node",
+    "image": "node"
+  },
+  {
+    "name": "Express",
+    "image": "express"
+  },
+  {
+    "name": "Git",
+    "image": "git"
+  },
+  {
+    "name": "Postman",
+    "image": "postman"
+  },
+  {
+    "name": "Insomnia",
+    "image": "insomnia"
+  },
+  {
+    "name": "Python",
+    "image": "python"
+  }
+]

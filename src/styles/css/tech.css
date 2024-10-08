@@ -1,75 +1,98 @@
+@charset "UTF-8";
 :root {
   --color-no-background: rgba(0, 0, 0, 0);
-
   --color-background: rgb(255, 255, 255);
-
   --color-font: rgb(30, 30, 30);
   --color-font-hover: rgb(100, 100, 100);
-
   --color-icon: rgb(30, 30, 30);
   --color-icon-hover: rgb(100, 100, 100);
-
   --color-link: rgb(0, 0, 0);
   --color-link-hover: rgb(100, 100, 100);
-
-  // --color-card: rgb(240, 240, 240);
   --color-card: rgb(210, 222, 231);
-  // --color-card: rgb(255, 255, 255);
   --color-card-hover: rgb(230, 230, 230);
-
   --color-input-background: rgb(240, 240, 240);
   --color-input-font: rgb(30, 30, 30);
   --color-input-font-placeholder: rgb(100, 100, 100);
-
   --color-button-background: rgb(240, 240, 240);
   --color-button-background-hover: rgb(230, 230, 230);
   --color-button-font: rgb(30, 30, 30);
   --color-button-background-disabled: rgb(255, 255, 255);
   --color-button-font-disabled: rgb(200, 200, 200);
   --color-button-border-disabled: rgb(230, 230, 230);
-
-  // --color-highlight: rgb(255, 207, 136);
-  // --color-highlight: rgb(186, 136, 255);
-  // --color-highlight: rgb(190, 255, 136);
   --color-highlight: rgb(116, 188, 255);
-  // --color-highlight: rgb(255, 129, 129);
-
   --color-shadow: rgb(0, 0, 0, 0.1);
 }
 
-[data-theme="dark"] {
+[data-theme=dark] {
   --color-no-background: rgba(0, 0, 0, 0);
-
   --color-background: rgb(0, 0, 0);
-
   --color-font: rgb(255, 255, 255);
   --color-font-hover: rgb(200, 200, 200);
-
   --color-icon: rgb(255, 255, 255);
   --color-icon-hover: rgb(200, 200, 200);
-
   --color-link: rgb(255, 255, 255);
   --color-link-hover: rgb(200, 200, 200);
-
   --color-card: rgb(13, 23, 31);
   --color-card-hover: rgb(40, 40, 40);
-
   --color-input-background: rgb(30, 30, 30);
   --color-input-font: rgb(255, 255, 255);
   --color-input-font-placeholder: rgb(200, 200, 200);
-
   --color-button-background: rgb(30, 30, 30);
   --color-button-background-hover: rgb(40, 40, 40);
   --color-button-font: rgb(255, 255, 255);
   --color-button-background-disabled: rgb(10, 10, 10);
   --color-button-font-disabled: rgb(100, 100, 100);
   --color-button-border-disabled: rgb(100, 100, 100);
-
-  // --color-highlight: rgb(255, 207, 136);
-  // --color-highlight: rgb(186, 136, 255);
-  // --color-highlight: rgb(190, 255, 136);
   --color-highlight: rgb(116, 188, 255);
-  // --color-highlight: rgb(255, 129, 129);
-
-  // --color-shadow: rgb(255, 255, 255, 0.1);
 }
+
+@keyframes transform {
+  0% {
+    transform: translateY(80px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.tech {
+  padding-bottom: 50px;
+}
+.tech--items {
+  display: flex;
+  flex-wrap: wrap; /* Macht das Wrappen möglich */
+  justify-content: center; /* Zentriert die Cards mit Lücken dazwischen */
+  gap: 30px;
+  width: 100%; /* Full width of the container */
+}
+.tech--items--card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 110px; /* Ensure width is equal to height */
+  height: 110px; /* Ensure height is equal to width */
+  background-color: var(--color-card);
+  border: 1px solid var(--color-card);
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+  box-shadow: 0 4px 8px var(--color-shadow);
+}
+.tech--items--card.slide-in {
+  opacity: 1;
+  animation: transform 0.5s ease-in;
+}
+.tech--items--card:hover {
+  transition: transform 0.1s ease-in;
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.tech--items--card--image {
+  margin-top: 10px;
+  width: 40px; /* Adjust as needed */
+  height: 40px; /* Adjust as needed */
+}/*# sourceMappingURL=tech.css.map */

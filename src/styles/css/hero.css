@@ -7,7 +7,7 @@
   --color-icon-hover: rgb(100, 100, 100);
   --color-link: rgb(0, 0, 0);
   --color-link-hover: rgb(100, 100, 100);
-  --color-card: rgb(240, 240, 240);
+  --color-card: rgb(210, 222, 231);
   --color-card-hover: rgb(230, 230, 230);
   --color-input-background: rgb(240, 240, 240);
   --color-input-font: rgb(30, 30, 30);
@@ -19,6 +19,7 @@
   --color-button-font-disabled: rgb(200, 200, 200);
   --color-button-border-disabled: rgb(230, 230, 230);
   --color-highlight: rgb(116, 188, 255);
+  --color-shadow: rgb(0, 0, 0, 0.1);
 }
 
 [data-theme=dark] {
@@ -30,7 +31,7 @@
   --color-icon-hover: rgb(200, 200, 200);
   --color-link: rgb(255, 255, 255);
   --color-link-hover: rgb(200, 200, 200);
-  --color-card: rgb(30, 30, 30);
+  --color-card: rgb(13, 23, 31);
   --color-card-hover: rgb(40, 40, 40);
   --color-input-background: rgb(30, 30, 30);
   --color-input-font: rgb(255, 255, 255);
@@ -59,6 +60,12 @@
 .hero--left--text2 {
   font-size: 50px;
   font-weight: 700;
+  line-height: 1;
+}
+.hero--left--text3 {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 1;
 }
 .hero--left--socials {
