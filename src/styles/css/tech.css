@@ -46,7 +46,7 @@
   --color-highlight: rgb(116, 188, 255);
 }
 
-@keyframes transform {
+@keyframes slidein {
   0% {
     transform: translateY(80px);
   }
@@ -79,16 +79,16 @@
   border: 1px solid var(--color-card);
   border-radius: 10px;
   opacity: 0;
-  transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
   box-shadow: 0 4px 8px var(--color-shadow);
 }
 .tech--items--card.slide-in {
   opacity: 1;
-  animation: transform 0.5s ease-in;
+  animation: slidein 0.5s ease-in;
 }
 .tech--items--card:hover {
-  transition: transform 0.1s ease-in;
-  transform: scale(1.1);
+  transform: scale(1.1); /* Slightly scale on hover */
+  transition: transform 0.2s ease-in;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 .tech--items--card--image {
