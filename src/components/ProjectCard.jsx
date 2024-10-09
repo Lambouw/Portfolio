@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 
 // Import Styles
 import "../styles/css/projectcard.css";
@@ -18,28 +18,21 @@ const imageMap = {
   twinstore: twinstore,
 };
 
-function ProjectCard({ className, project }) {
-  return (
-    <div
-      className={`project-card ${className}`}
-      onClick={() => {
-        openDialog();
-      }}
-    >
-      <div className="project-card--upper">
-        <img
-          className="project-card--upper--image"
-          aria-label={project.name}
-          alt={project.name}
-          src={imageMap[project.image]}
-        />
-        <div className="height-s"></div>
-        <h3 className="project-card--upper--name">{project.name}</h3>
-      </div>
+const ProjectCard = React.forwardRef(({ project }, ref) => (
+  <div className="project-card" ref={ref}>
+    <div className="project-card--upper">
+      <img
+        className="project-card--upper--image"
+        aria-label={project.name}
+        alt={project.name}
+        src={imageMap[project.image]}
+      />
       <div className="height-s"></div>
-      <div className="project-card--description">{project.description}</div>
+      <h3 className="project-card--upper--name">{project.name}</h3>
     </div>
-  );
-}
+    <div className="height-s"></div>
+    <div className="project-card--description">{project.description}</div>
+  </div>
+));
 
 export default ProjectCard;

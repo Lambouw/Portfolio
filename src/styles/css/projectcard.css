@@ -45,6 +45,17 @@
   --color-highlight: rgb(116, 188, 255);
 }
 
+@keyframes slide-in {
+  0% {
+    transform: translateY(80px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .project-card {
   display: flex;
   flex-direction: column;
@@ -55,7 +66,20 @@
   height: 310px;
   background-color: var(--color-card);
   border: 1px solid var(--color-card);
-  border-radius: 20px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  box-shadow: 0 4px 8px var(--color-shadow);
+}
+.project-card.slide-in {
+  opacity: 1;
+  animation: slide-in 0.5s ease-in;
+}
+.project-card:hover {
+  cursor: pointer;
+  transform: scale(1.03); /* Slightly scale on hover */
+  transition: transform 0.2s ease-in;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 .project-card--upper {
   display: flex;
@@ -71,6 +95,9 @@
   border-radius: 20px;
   border: 1px solid var(--color-card);
 }
+.project-card--upper--name {
+  /* Add additional styles if needed */
+}
 .project-card--description {
   overflow: hidden;
   display: -webkit-box;
@@ -80,48 +107,4 @@
   word-wrap: break-word;
   line-height: 1.5em; /* Adjust line height if necessary */
   max-height: 4.5em; /* Limit height to 3 lines */
-}
-.project-card:hover {
-  cursor: pointer;
-  background-color: var(--color-card-hover);
-  border: 1px solid var(--color-card-hover);
-}
-.project-card:hover .project-card--upper--image {
-  border: 1px solid var(--color-card-hover);
-}
-
-.project-card {
-  width: 300px;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.project-image {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-.project-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px;
-}
-
-.project-description {
-  font-size: 14px;
-  color: #666;
-  line-height: 1.5;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }/*# sourceMappingURL=projectcard.css.map */

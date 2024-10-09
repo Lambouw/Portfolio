@@ -1,5 +1,17 @@
 @import "../basics/colors";
 
+@keyframes slide-in {
+  0% {
+    transform: translateY(80px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .project-card {
   display: flex;
   flex-direction: column;
@@ -13,7 +25,23 @@
 
   background-color: var(--color-card);
   border: 1px solid var(--color-card);
-  border-radius: 20px;
+  border-radius: 10px;
+
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  box-shadow: 0 4px 8px var(--color-shadow);
+
+  &.slide-in {
+    opacity: 1;
+    animation: slide-in 0.5s ease-in;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.03); /* Slightly scale on hover */
+    transition: transform 0.2s ease-in;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
 
   &--upper {
     display: flex;
@@ -25,12 +53,12 @@
       height: 150px;
       width: 350px;
       object-fit: cover;
-
       border-radius: 20px;
       border: 1px solid var(--color-card);
     }
 
     &--name {
+      /* Add additional styles if needed */
     }
   }
 
@@ -44,54 +72,4 @@
     line-height: 1.5em; /* Adjust line height if necessary */
     max-height: calc(1.5em * 3); /* Limit height to 3 lines */
   }
-
-  &:hover {
-    cursor: pointer;
-    background-color: var(--color-card-hover);
-    border: 1px solid var(--color-card-hover);
-
-    .project-card--upper--image {
-      border: 1px solid var(--color-card-hover);
-    }
-  }
-}
-
-.project-card {
-  width: 300px;
-  padding: 15px;
-  // background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  // box-shadow: 0 4px 8px rgba(200, 200, 200, 0.1);
-  // box-shadow: 0 4px 6px rgba(255, 255, 255, 0.05), 
-  // 0 1px 3px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.project-image {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-.project-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px;
-}
-
-.project-description {
-  font-size: 14px;
-  color: #666;
-  line-height: 1.5;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }

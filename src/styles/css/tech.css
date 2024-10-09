@@ -46,7 +46,7 @@
   --color-highlight: rgb(116, 188, 255);
 }
 
-@keyframes slidein {
+@keyframes slide-in {
   0% {
     transform: translateY(80px);
   }
@@ -84,10 +84,10 @@
 }
 .tech--items--card.slide-in {
   opacity: 1;
-  animation: slidein 0.5s ease-in;
+  animation: slide-in 0.5s ease-in;
 }
 .tech--items--card:hover {
-  transform: scale(1.1); /* Slightly scale on hover */
+  transform: scale(1.05); /* Slightly scale on hover */
   transition: transform 0.2s ease-in;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 
 // Import Styles
 import "../styles/css/tech.css";
@@ -20,7 +20,6 @@ import express from "../assets/logos/express.svg";
 import git from "../assets/logos/git.svg";
 import postman from "../assets/logos/postman.svg";
 import insomnia from "../assets/logos/insomnia.svg";
-import { useEffect } from "react";
 
 // import react from "../assets/images/react.svg";
 // import react2 from "../assets/images/react2.svg";
