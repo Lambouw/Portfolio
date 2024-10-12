@@ -3,10 +3,6 @@ import { useEffect, useState } from "react";
 // Import Styles
 import "../styles/css/contact.css";
 
-// Import Images
-import React from "../assets/images/react.svg";
-import React2 from "../assets/images/react2.svg";
-
 function Contact() {
   const [sendEnabled, setSendEnabled] = useState(false);
 
