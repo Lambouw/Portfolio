@@ -24,6 +24,10 @@
     "image": "react"
   },
   {
+    "name": "Materialui",
+    "image": "materialui"
+  },
+  {
     "name": "Dart",
     "image": "dart"
   },
@@ -32,12 +36,20 @@
     "image": "flutter"
   },
   {
+    "name": "Python",
+    "image": "python"
+  },
+  {
     "name": "Node",
     "image": "node"
   },
   {
     "name": "Express",
     "image": "express"
+  },
+  {
+    "name": "Postgresql",
+    "image": "postgresql"
   },
   {
     "name": "Git",
@@ -51,8 +63,9 @@
     "name": "Insomnia",
     "image": "insomnia"
   },
+ 
   {
-    "name": "Python",
-    "image": "python"
+    "name": "Figma",
+    "image": "figma"
   }
 ]

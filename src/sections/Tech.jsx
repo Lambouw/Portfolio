@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 // Import Styles
 import "../styles/css/tech.css";
@@ -16,13 +16,16 @@ import react from "../assets/logos/react.svg";
 import dart from "../assets/logos/dart.svg";
 import flutter from "../assets/logos/flutter.svg";
 import node from "../assets/logos/node.svg";
-import express from "../assets/logos/express.svg";
+import express_d from "../assets/logos/express_d.svg";
+import express_l from "../assets/logos/express_l.svg";
 import git from "../assets/logos/git.svg";
 import postman from "../assets/logos/postman.svg";
 import insomnia from "../assets/logos/insomnia.svg";
+import python from "../assets/logos/python.svg";
 
-// import react from "../assets/images/react.svg";
-// import react2 from "../assets/images/react2.svg";
+import postgresql from '../assets/logos/postgresql.svg';
+import figma from '../assets/logos/figma.svg';
+import materialui from '../assets/logos/materialui.svg';
 
 const imageMap = {
   html: html,
@@ -34,13 +37,59 @@ const imageMap = {
   dart: dart,
   flutter: flutter,
   node: node,
-  express: express,
+  express: express_l,
   git: git,
   postman: postman,
   insomnia: insomnia,
+  python: python,
+  postgresql: postgresql,
+  figma: figma,
+  materialui: materialui,
 };
 
 function Tech() {
+  const [theme, setTheme] = useState(
+    document.documentElement.getAttribute("data-theme") || "light"
+  );
+
+  useEffect(() => {
+    // Function to update the theme
+    const handleThemeChange = () => {
+      const currentTheme = document.documentElement.getAttribute("data-theme");
+      setTheme(currentTheme);
+    };
+
+    // Listen for changes to the 'data-theme' attribute
+    const observer = new MutationObserver(() => {
+      handleThemeChange();
+    });
+
+    // Observe changes in attributes on the root element (html or body)
+    observer.observe(document.documentElement, {
+      attributes: true, // Observe attribute changes
+      attributeFilter: ["data-theme"], // Only look for 'data-theme' changes
+    });
+
+    // Initial check
+    handleThemeChange();
+
+    // Cleanup observer on component unmount
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    // You can now respond to theme changes, for example:
+    if (theme === "dark") {
+      console.log("Dark theme is active");
+      imageMap.express = express_d;
+    } else {
+      console.log("Light theme is active");
+      imageMap.express = express_l;
+    }
+  }, [theme]);
+  
   const cardRefs = useRef([]);
 
   useEffect(() => {
