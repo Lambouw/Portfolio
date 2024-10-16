@@ -22,10 +22,9 @@ import git from "../assets/logos/git.svg";
 import postman from "../assets/logos/postman.svg";
 import insomnia from "../assets/logos/insomnia.svg";
 import python from "../assets/logos/python.svg";
-
-import postgresql from '../assets/logos/postgresql.svg';
-import figma from '../assets/logos/figma.svg';
-import materialui from '../assets/logos/materialui.svg';
+import postgresql from "../assets/logos/postgresql.svg";
+import figma from "../assets/logos/figma.svg";
+import materialui from "../assets/logos/materialui.svg";
 
 const imageMap = {
   html: html,
@@ -37,7 +36,7 @@ const imageMap = {
   dart: dart,
   flutter: flutter,
   node: node,
-  express: express_l,
+  express: express_l, // Default to light theme express logo
   git: git,
   postman: postman,
   insomnia: insomnia,
@@ -89,8 +88,9 @@ function Tech() {
       imageMap.express = express_l;
     }
   }, [theme]);
-  
+
   const cardRefs = useRef([]);
+  const animatedItems = useRef(new Set()); // Set to track already animated items
 
   useEffect(() => {
     // Set up the Intersection Observer
@@ -98,11 +98,11 @@ function Tech() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            // Add the wiggle class when the element is in view
-            entry.target.classList.add("slide-in");
-          } else {
-            // Remove the wiggle class when the element is out of view
-            entry.target.classList.remove("slide-in");
+            // Only animate if the item hasn't been animated before
+            if (!animatedItems.current.has(entry.target)) {
+              entry.target.classList.add("slide-in");
+              animatedItems.current.add(entry.target); // Add to animated set
+            }
           }
         });
       },

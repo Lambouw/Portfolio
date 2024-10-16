@@ -11,6 +11,7 @@ import career from "../assets/data/career.json";
 
 function Career() {
   const cardRefs = useRef([]);
+  const animatedItems = useRef(new Set()); // Set to track already animated items
 
   useEffect(() => {
     // Set up the Intersection Observer
@@ -18,11 +19,11 @@ function Career() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            // Add the slide-in class when the element is in view
-            entry.target.classList.add("slide-in");
-          } else {
-            // Remove the slide-in class when the element is out of view
-            entry.target.classList.remove("slide-in");
+            // Only animate if the item hasn't been animated before
+            if (!animatedItems.current.has(entry.target)) {
+              entry.target.classList.add("slide-in");
+              animatedItems.current.add(entry.target); // Add to animated set
+            }
           }
         });
       },
