@@ -9,9 +9,9 @@ function Hero() {
   return (
     <div id="hero" className="hero">
       <div className="hero--left">
-        <div className="hero--left--text1">I am Malte</div>
+        <div className="hero--left--text1">Hi, I'm Malte</div>
         <div className="hero--left--text2">Software Engineer</div>
-        <div className="hero--left--text3">... currently focusing on Frontend Development</div>
+        {/* <div className="hero--left--text3">Focusing on Frontend Development</div> */}
         <div className="height-s"></div>
         <div className="hero--left--socials">
           <div className="width-s"></div>

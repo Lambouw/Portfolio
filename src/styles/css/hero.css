@@ -55,18 +55,23 @@
 }
 .hero--left--text1 {
   font-size: 50px;
+  font-weight: 800;
   line-height: 1;
+  letter-spacing: 1px;
 }
 .hero--left--text2 {
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1;
+  letter-spacing: 1px;
+  color: var(--color-highlight);
 }
 .hero--left--text3 {
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 1;
+  letter-spacing: 1px;
 }
 .hero--left--socials {
   display: flex;
