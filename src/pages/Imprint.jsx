@@ -40,7 +40,7 @@ function Imprint() {
           <p>Loeweweg 3</p>
           <p>71397 Leutenbach</p>
           <p>Deutschland</p>
-          <div className="height-s"></div>
+          <div className="height-xs"></div>
           <p>
             Quelle:&nbsp;
             <a
@@ -63,6 +63,7 @@ function Imprint() {
           überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige
           Tätigkeit hinweisen.
         </p>
+        <div className="height-xs"></div>
         <p className="imprint--container--text">
           Verpflichtungen zur Entfernung oder Sperrung der Nutzung von
           Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.
@@ -82,6 +83,7 @@ function Imprint() {
           Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige
           Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
         </p>
+        <div className="height-xs"></div>
         <p className="imprint--container--text">
           Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch
           ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei
@@ -98,6 +100,7 @@ function Imprint() {
           Zustimmung des Inhabers. Downloads und Kopien dieser Seite sind nur
           für den privaten, nicht kommerziellen Gebrauch gestattet.
         </p>
+        <div className="height-xs"></div>
         <p className="imprint--container--text">
           Soweit die Inhalte auf dieser Seite nicht von dem Betreiber erstellt
           wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden

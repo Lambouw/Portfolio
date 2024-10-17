@@ -4,6 +4,11 @@
   min-height: 100vh;
 }
 .data--container {
-  flex: 1;
-  height: 100%;
+  margin-top: 2rem;
+}
+.data--container--header {
+  font-weight: bold;
+}
+.data--container--text {
+  text-align: justify;
 }/*# sourceMappingURL=data.css.map */
