@@ -1,6 +1,15 @@
-@import '_colors';
+@import "_colors";
 
 .link:hover {
+  color: var(--color-link-hover);
+  cursor: pointer;
+}
+
+.extern {
+  color: var(--color-link-extern);
+
+  &:hover {
     color: var(--color-link-hover);
     cursor: pointer;
+  }
 }

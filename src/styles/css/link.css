@@ -7,6 +7,7 @@
   --color-icon-hover: rgb(100, 100, 100);
   --color-link: rgb(0, 0, 0);
   --color-link-hover: rgb(100, 100, 100);
+  --color-link-extern: rgb(90, 146, 197);
   --color-card: rgb(210, 222, 231);
   --color-card-hover: rgb(230, 230, 230);
   --color-input-background: rgb(240, 240, 240);
@@ -31,6 +32,7 @@
   --color-icon-hover: rgb(200, 200, 200);
   --color-link: rgb(255, 255, 255);
   --color-link-hover: rgb(200, 200, 200);
+  --color-link-extern: rgb(90, 146, 197);
   --color-card: rgb(13, 23, 31);
   --color-card-hover: rgb(40, 40, 40);
   --color-input-background: rgb(30, 30, 30);
@@ -46,6 +48,14 @@
 }
 
 .link:hover {
+  color: var(--color-link-hover);
+  cursor: pointer;
+}
+
+.extern {
+  color: var(--color-link-extern);
+}
+.extern:hover {
   color: var(--color-link-hover);
   cursor: pointer;
 }/*# sourceMappingURL=link.css.map */
