@@ -48,9 +48,6 @@
 .about {
   padding-bottom: 50px;
 }
-.about--text--name {
-  font-weight: bold;
-}
 .about--tech-items {
   display: flex;
   overflow: hidden; /* Hide overflow to ensure items slide out of view */
