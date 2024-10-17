@@ -18,9 +18,9 @@ function Imprint() {
           <h3>Angaben gemäß § 5 TMG:</h3>
           <div className="height-s"></div>
           <p className="imprint--container--contact--header">
-            Name und Anschrift der Künstlerin:
+            Name und Anschrift des Inhabers:
           </p>
-          <p>Ingrid Lindemann</p>
+          <p>Malte Lindemann</p>
           <p>Loeweweg 3</p>
           <p>71397 Leutenbach</p>
           <p>Deutschland</p>
@@ -28,15 +28,15 @@ function Imprint() {
           <p className="imprint--container--contact--header">Kontakt:</p>
           <p>
             E-Mail:&nbsp;
-            <a className="extern" href="mailto:kunst.lindemann@gmail.com">
-              kunst.lindemann@gmail.com
+            <a className="extern" href="mailto:jm.lindemann@web.de">
+              jm.lindemann@web.de
             </a>
           </p>
           <div className="height-s"></div>
           <p className="imprint--container--contact--header">
             Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
           </p>
-          <p>Ingrid Lindemann</p>
+          <p>Malte Lindemann</p>
           <p>Loeweweg 3</p>
           <p>71397 Leutenbach</p>
           <p>Deutschland</p>
@@ -91,15 +91,15 @@ function Imprint() {
         <div className="height-m"></div>
         <h3 className="imprint--container--header">Urheberrecht:</h3>
         <p className="imprint--container--text">
-          Die durch die Seitenbetreiberin erstellten Inhalte und Werke auf
+          Die durch den Seitenbetreiber erstellten Inhalte und Werke auf
           diesen Seiten unterliegen dem deutschen Urheberrecht. Die
           Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung
           außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen
-          Zustimmung der Künstlerin. Downloads und Kopien dieser Seite sind nur
+          Zustimmung des Inhabers. Downloads und Kopien dieser Seite sind nur
           für den privaten, nicht kommerziellen Gebrauch gestattet.
         </p>
         <p className="imprint--container--text">
-          Soweit die Inhalte auf dieser Seite nicht von der Betreiberin erstellt
+          Soweit die Inhalte auf dieser Seite nicht von dem Betreiber erstellt
           wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden
           Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf
           eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen
