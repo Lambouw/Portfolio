@@ -132,10 +132,12 @@ function Tech() {
       <div className="height-s"></div>
       <div className="tech--items">
         {tech.map((item, index) => (
-          <div
+          <a
             key={index}
             ref={(el) => (cardRefs.current[index] = el)}
             className="tech--items--card"
+             href={item.src}
+            target="blank"
           >
             <img
               src={imageMap[item.image]}
@@ -144,7 +146,7 @@ function Tech() {
             />
             <div className="height-s"></div>
             <div className="tech--items--card--name">{item.name}</div>
-          </div>
+          </a>
         ))}
       </div>
     </div>

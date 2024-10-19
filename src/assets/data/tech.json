@@ -1,71 +1,87 @@
 [
   {
     "name": "HTML",
-    "image": "html"
+    "image": "html",
+    "src": "https://www.w3schools.com/html/"
   },
   {
     "name": "JavaScript",
-    "image": "javascript"
+    "image": "javascript",
+    "src": "https://www.w3schools.com/js/"
   },
   {
     "name": "TypeScript",
-    "image": "typescript"
+    "image": "typescript",
+    "src": "https://www.typescriptlang.org/"
   },
   {
     "name": "CSS",
-    "image": "css"
+    "image": "css",
+    "src": "https://www.w3schools.com/css/"
   },
   {
     "name": "SCSS",
-    "image": "scss"
+    "image": "scss",
+    "src": "https://sass-lang.com/"
   },
   {
     "name": "React",
-    "image": "react"
+    "image": "react",
+    "src": "https://react.dev/"
   },
   {
     "name": "Materialui",
-    "image": "materialui"
+    "image": "materialui",
+    "src": "https://mui.com/"
   },
   {
     "name": "Dart",
-    "image": "dart"
+    "image": "dart",
+    "src": "https://dart.dev/"
   },
   {
     "name": "Flutter",
-    "image": "flutter"
+    "image": "flutter",
+    "src": "https://flutter.dev/"
   },
   {
     "name": "Python",
-    "image": "python"
+    "image": "python",
+    "src": "https://www.python.org/"
   },
   {
     "name": "Node",
-    "image": "node"
+    "image": "node",
+    "src": "https://nodejs.org/en"
   },
   {
     "name": "Express",
-    "image": "express"
+    "image": "express",
+    "src": "https://expressjs.com/"
   },
   {
     "name": "Postgresql",
-    "image": "postgresql"
+    "image": "postgresql",
+    "src": "https://www.postgresql.org/"
   },
   {
     "name": "Git",
-    "image": "git"
+    "image": "git",
+    "src": "https://git-scm.com/"
   },
   {
     "name": "Postman",
-    "image": "postman"
+    "image": "postman",
+    "src": "https://www.postman.com/"
   },
   {
     "name": "Insomnia",
-    "image": "insomnia"
+    "image": "insomnia",
+    "src": "https://insomnia.rest/"
   },
- 
   {
     "name": "Figma",
-    "image": "figma"
+    "image": "figma",
+    "src": "https://www.figma.com/"
   }
 ]
