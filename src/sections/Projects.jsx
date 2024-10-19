@@ -48,7 +48,7 @@ function Projects() {
   }, []);
 
   return (
-    <div className="projects">
+    <div id="projects" className="projects">
       <h1 className="projects--heading">Projects</h1>
       <div className="height-s"></div>
       <div className="projects--container">

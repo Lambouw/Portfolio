@@ -48,7 +48,7 @@ function Career() {
   }, []);
 
   return (
-    <div className="career">
+    <div id="career" className="career">
       <h1 className="career--heading">Career</h1>
       <div className="height-s"></div>
       <div className="career--container">
