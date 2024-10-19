@@ -1,7 +1,7 @@
 @import "../basics/colors";
 
 .input {
-  background-color: var(--color-input-background);
+  background-color: var(--color-card);
   border: none;
   border-radius: 10px;
   padding-left: 6px;
@@ -56,7 +56,7 @@
           justify-content: flex-end; /* Aligns the button to the right */
 
           &--btn {
-            background-color: var(--color-button-background);
+            background-color: var(--color-card);
             border: none;
             border-radius: 10px;
             padding-left: 6px;
@@ -77,8 +77,8 @@
 
             &:disabled {
               background-color: var(--color-button-background-disabled);
-              border: 1px solid var(--color-button-border-disabled);
-              color: var(--color-button-font-disabled);
+              border: 1px solid var(--color-card);
+              color: var(--color-card);
 
               &:hover {
                 cursor: not-allowed;
