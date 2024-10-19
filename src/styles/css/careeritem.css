@@ -19,6 +19,7 @@
   --color-button-background-disabled: rgb(255, 255, 255);
   --color-button-font-disabled: rgb(200, 200, 200);
   --color-button-border-disabled: rgb(230, 230, 230);
+  --color-tech-background: rgba(50, 50, 50, 0.2);
   --color-highlight: rgb(116, 188, 255);
   --color-shadow: rgb(0, 0, 0, 0.1);
 }
@@ -44,6 +45,7 @@
   --color-button-background-disabled: rgb(0, 0, 0);
   --color-button-font-disabled: rgb(100, 100, 100);
   --color-button-border-disabled: rgb(100, 100, 100);
+  --color-tech-background: rgba(200, 200, 200, 0.1);
   --color-highlight: rgb(116, 188, 255);
 }
 
@@ -65,7 +67,7 @@
   margin-bottom: 20px;
   padding: 15px;
   background-color: var(--color-card);
-  border-radius: 8px;
+  border-radius: 10px;
   opacity: 0;
   transition: opacity 0.3s ease-in;
   box-shadow: 0 4px 8px var(--color-shadow);

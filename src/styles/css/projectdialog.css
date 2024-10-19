@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --color-no-background: rgba(0, 0, 0, 0);
   --color-background: rgb(255, 255, 255);
@@ -54,45 +55,49 @@
   --image-radius: 20px;
 }
 
-.about {
-  padding-bottom: 50px;
-}
-.about--tech-items {
+.project-dialog {
   display: flex;
-  overflow: hidden; /* Hide overflow to ensure items slide out of view */
-  white-space: nowrap; /* Prevent wrapping of items */
-  position: relative; /* For positioning the animation */
-  width: 100%; /* Full width of the container */
-  height: 80px; /* Set a height to the container to match the items */
-  /* Add a wrapper for the sliding effect */
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
 }
-.about--tech-items--wrapper {
+.project-dialog--upper {
   display: flex;
-  width: 200%; /* Ensure wrapper is twice the width of the container */
-  animation: slide 15s linear infinite;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
 }
-.about--tech-items--item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  width: 80px; /* Ensure width is equal to height */
-  height: 80px; /* Ensure height is equal to width */
-  background-color: var(--color-card);
-  border: 1px solid var(--color-card);
+.project-dialog--upper--image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: var(--image-radius);
-  margin-right: 30px; /* Ensure margin for spacing between items */
+  border: 1px solid var(--color-card);
 }
-.about--tech-items--item--image {
-  width: 46px; /* Adjust as needed */
-  height: 46px; /* Adjust as needed */
+.project-dialog--upper--name {
+  /* Add additional styles if needed */
 }
-
-@keyframes slide {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}/*# sourceMappingURL=about.css.map */
+.project-dialog--description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-height: 1.5em; /* Adjust line height if necessary */
+}
+.project-dialog--stack {
+  display: flex;
+  flex-wrap: wrap; /* Macht das Wrappen möglich */
+  justify-content: start; /* Zentriert die Cards mit Lücken dazwischen */
+  gap: 10px;
+}
+.project-dialog--stack--item {
+  border-radius: 10px;
+  padding: 4px 8px;
+  background-color: var(--color-tech-background);
+  display: flex;
+}
+.project-dialog--stack--item--icon {
+  width: 20px;
+}
+.project-dialog--stack--item--label {
+  font-weight: bold;
+}/*# sourceMappingURL=projectdialog.css.map */

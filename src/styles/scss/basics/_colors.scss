@@ -1,6 +1,5 @@
 :root {
   --color-no-background: rgba(0, 0, 0, 0);
-
   --color-background: rgb(255, 255, 255);
 
   --color-font: rgb(30, 30, 30);
@@ -28,6 +27,8 @@
   --color-button-background-disabled: rgb(255, 255, 255);
   --color-button-font-disabled: rgb(200, 200, 200);
   --color-button-border-disabled: rgb(230, 230, 230);
+
+  --color-tech-background: rgba(50, 50, 50, 0.2);
 
   // --color-highlight: rgb(255, 207, 136);
   // --color-highlight: rgb(186, 136, 255);
@@ -66,6 +67,8 @@
   --color-button-background-disabled: rgb(0, 0, 0);
   --color-button-font-disabled: rgb(100, 100, 100);
   --color-button-border-disabled: rgb(100, 100, 100);
+
+  --color-tech-background: rgba(200, 200, 200, 0.1);
 
   // --color-highlight: rgb(255, 207, 136);
   // --color-highlight: rgb(186, 136, 255);

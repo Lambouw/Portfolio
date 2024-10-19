@@ -20,6 +20,7 @@
   --color-button-background-disabled: rgb(255, 255, 255);
   --color-button-font-disabled: rgb(200, 200, 200);
   --color-button-border-disabled: rgb(230, 230, 230);
+  --color-tech-background: rgba(50, 50, 50, 0.2);
   --color-highlight: rgb(116, 188, 255);
   --color-shadow: rgb(0, 0, 0, 0.1);
 }
@@ -45,7 +46,13 @@
   --color-button-background-disabled: rgb(0, 0, 0);
   --color-button-font-disabled: rgb(100, 100, 100);
   --color-button-border-disabled: rgb(100, 100, 100);
+  --color-tech-background: rgba(200, 200, 200, 0.1);
   --color-highlight: rgb(116, 188, 255);
+}
+
+:root {
+  --border-radius: 10px;
+  --image-radius: 20px;
 }
 
 @keyframes slide-in {
@@ -79,7 +86,7 @@
   height: 110px; /* Ensure height is equal to width */
   background-color: var(--color-card);
   border: 1px solid var(--color-card);
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   opacity: 0;
   transition: opacity 0.3s ease-in;
   box-shadow: 0 4px 8px var(--color-shadow);

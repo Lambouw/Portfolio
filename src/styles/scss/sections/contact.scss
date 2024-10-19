@@ -1,9 +1,10 @@
 @import "../basics/colors";
+@import "../basics/constants";
 
 .input {
   background-color: var(--color-card);
   border: none;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   padding-left: 6px;
 
   width: 100%;
@@ -58,7 +59,7 @@
           &--btn {
             background-color: var(--color-card);
             border: none;
-            border-radius: 10px;
+            border-radius: var(--border-radius);
             padding-left: 6px;
 
             width: 100px;
