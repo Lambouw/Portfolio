@@ -4,7 +4,7 @@ import React from "react";
 import "../styles/css/careeritem.css";
 
 const CareerItem = React.forwardRef(({ careerItem }, ref) => (
-  <div className="career-item" ref={ref}>
+  <a className="career-item" ref={ref} href={careerItem.src} target="blank">
     <div className="career-item--title">{careerItem.title}</div>
     <div className="career-item--company">{careerItem.company}</div>
     <div className="career-item--date">{careerItem.date}</div>
@@ -15,7 +15,7 @@ const CareerItem = React.forwardRef(({ careerItem }, ref) => (
         ))}
       </ul>
     </div>
-  </div>
+  </a>
 ));
 
 export default CareerItem;

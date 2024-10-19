@@ -136,7 +136,7 @@ function Tech() {
             key={index}
             ref={(el) => (cardRefs.current[index] = el)}
             className="tech--items--card"
-             href={item.src}
+            href={item.src}
             target="blank"
           >
             <img

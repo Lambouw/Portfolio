@@ -8,7 +8,8 @@
       "Developed an adaptive human-machine interface using React and Node.js",
       "Developed a platform for distribution and exchange of simulation models and digital twins (TwinStore) using Flutter.",
       "Developed a converter for file formats using Python."
-    ]
+    ],
+    "src": "https://www.isg-stuttgart.de/"
   },
   {
     "title": "Full Stack Developer",
@@ -17,7 +18,8 @@
     "date": "October 22 - February 23",
     "work": [
       "Developed a library to extend Autodesks 3D-viewer with more functionalities using JavaScript."
-    ]
+    ],
+    "src": "https://jp-paule.de/"
   },
   {
     "title": "Wissenschaftliche Hilfskraft",
@@ -27,6 +29,7 @@
     "work": [
       "Supportive work for the teaching in university.",
       "Working on a image recognition project in Unity."
-    ]
+    ],
+    "src": "https://www.iff.uni-stuttgart.de/"
   }
 ]
