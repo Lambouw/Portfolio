@@ -5,6 +5,7 @@
 }
 .data--container {
   margin-top: 2rem;
+  padding-bottom: 50px;
 }
 .data--container--header {
   font-weight: bold;
