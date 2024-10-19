@@ -32,7 +32,7 @@ function SecondNavBar() {
       navigate("/");
       setTimeout(() => {
         scrollToSection(section);
-      }, 500); // Delay for navigation to complete
+      }, 100); // Delay for navigation to complete
     }
   };
 
