@@ -3,6 +3,11 @@
   --color-background: rgb(255, 255, 255);
   --color-font: rgb(30, 30, 30);
   --color-font-hover: rgb(100, 100, 100);
+  --color-border: rgba(30, 30, 30, 0.2);
+  --color-tech: rgba(30, 30, 30, 0.06);
+  --color-dialog-border: rgb(207, 207, 207);
+  --color-dialog: rgb(244, 244, 244);
+  --color-dialog-image-border: rgb(207, 207, 207);
   --color-icon: rgb(30, 30, 30);
   --color-icon-hover: rgb(100, 100, 100);
   --color-link: rgb(0, 0, 0);
@@ -22,6 +27,8 @@
   --color-tech-background: rgba(50, 50, 50, 0.2);
   --color-highlight: rgb(116, 188, 255);
   --color-shadow: rgb(0, 0, 0, 0.1);
+  --color-react: rgb(97, 217, 254);
+  --color-react-bg: rgba(97, 217, 254, 0.1);
 }
 
 [data-theme=dark] {
@@ -29,6 +36,11 @@
   --color-background: rgb(0, 0, 0);
   --color-font: rgb(255, 255, 255);
   --color-font-hover: rgb(200, 200, 200);
+  --color-border: rgba(170, 170, 170, 0.2);
+  --color-tech: rgba(2, 2, 2, 0.5);
+  --color-dialog-border: rgb(44, 44, 44);
+  --color-dialog: rgb(5, 5, 5);
+  --color-dialog-image-border: rgb(44, 44, 44);
   --color-icon: rgb(255, 255, 255);
   --color-icon-hover: rgb(200, 200, 200);
   --color-link: rgb(255, 255, 255);
@@ -45,8 +57,9 @@
   --color-button-background-disabled: rgb(0, 0, 0);
   --color-button-font-disabled: rgb(100, 100, 100);
   --color-button-border-disabled: rgb(100, 100, 100);
-  --color-tech-background: rgba(200, 200, 200, 0.1);
   --color-highlight: rgb(116, 188, 255);
+  --color-react: rgb(97, 217, 254);
+  --color-react-bg: rgba(97, 217, 254, 0.06);
 }
 
 :root {
@@ -68,21 +81,17 @@
 .project-card {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
   padding: 20px;
   width: 310px;
   height: 310px;
-  background-color: var(--color-card);
-  border: 1px solid var(--color-card);
+  background-color: var(--color-tech);
+  border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   opacity: 0;
   transition: opacity 0.3s ease-in;
   box-shadow: 0 4px 8px var(--color-shadow);
-}
-.project-card.slide-in {
-  opacity: 1;
-  animation: slide-in 0.5s ease-in;
 }
 .project-card:hover {
   cursor: pointer;
@@ -93,8 +102,8 @@
 .project-card--upper {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .project-card--upper--image {
   height: 150px;
@@ -102,7 +111,7 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: var(--image-radius);
-  border: 1px solid var(--color-card);
+  border: 1px solid var(--color-dialog-image-border);
 }
 .project-card--upper--name {
   /* Add additional styles if needed */
@@ -116,4 +125,15 @@
   word-wrap: break-word;
   line-height: 1.5em; /* Adjust line height if necessary */
   max-height: 4.5em; /* Limit height to 3 lines */
+}
+
+.slide-in {
+  opacity: 1;
+  animation: slide-in 0.5s ease-in;
+}
+
+@media (prefers-color-scheme: dark) {
+  .project-card--upper--image {
+    filter: brightness(80%) contrast(110%);
+  }
 }/*# sourceMappingURL=projectcard.css.map */

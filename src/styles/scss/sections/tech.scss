@@ -33,8 +33,11 @@
       width: 110px; /* Ensure width is equal to height */
       height: 110px; /* Ensure height is equal to width */
 
-      background-color: var(--color-card);
-      border: 1px solid var(--color-card);
+      // background-color: var(--color-card);
+      // border: 1px solid var(--color-card);
+
+      background-color: var(--color-tech);
+      border: 1px solid var(--color-border);
 
       border-radius: var(--border-radius);
 

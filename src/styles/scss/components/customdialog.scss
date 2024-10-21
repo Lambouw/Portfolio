@@ -15,8 +15,13 @@
 }
 
 .dialog-content {
-  background: var(--color-card);
   padding: 20px;
-  border-radius: var(--border-radius);
   max-width: 700px;
+  border-radius: var(--border-radius);
+
+  // background-color: var(--color-card);
+  // border: 1px solid var(--color-card);
+
+  background-color: var(--color-dialog);
+  border: 1px solid var(--color-dialog-border);
 }
