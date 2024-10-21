@@ -13,6 +13,7 @@ import fmmg from "../assets/images/fmmg.png";
 import hmi from "../assets/images/hmi.png";
 import twinstore from "../assets/images/twinstore.png";
 
+// Image mapping
 const imageMap = {
   ilhomepage5: ilhomepage5,
   portfoliov1: portfoliov1,
@@ -24,23 +25,20 @@ const imageMap = {
 const ProjectCard = React.forwardRef(({ project }, ref) => {
   const [open, setOpen] = useState(false);
 
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
+  // Toggle dialog open state
+  const toggleDialog = () => {
+    setOpen(!open);
   };
 
   return (
     <>
-      <div className="project-card" ref={ref} onClick={handleClickOpen}>
+      <div className="project-card" ref={ref} onClick={toggleDialog}>
         <div className="project-card--upper">
           <img
             className="project-card--upper--image"
             aria-label={project.name}
             alt={project.name}
-            src={imageMap[project.image]}
+            src={imageMap[project.image]} // Get image from imageMap
           />
           <div className="height-s"></div>
           <h3 className="project-card--upper--name">{project.name}</h3>
@@ -52,7 +50,7 @@ const ProjectCard = React.forwardRef(({ project }, ref) => {
       {/* Dialog to show details */}
       <CustomDialog
         open={open}
-        onClose={handleClose}
+        onClose={toggleDialog}
         type="project"
         data={project}
       />
