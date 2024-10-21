@@ -22,7 +22,7 @@ import javascript from "../assets/logos/javascript.svg";
 import typescript from "../assets/logos/typescript.svg";
 import css from "../assets/logos/css.svg";
 import scss from "../assets/logos/scss.svg";
-import react from "../assets/logos/react.svg";
+import react from "../assets/logos/react-mini.svg";
 import dart from "../assets/logos/dart.svg";
 import flutter from "../assets/logos/flutter.svg";
 import node from "../assets/logos/node.svg";
@@ -74,7 +74,7 @@ const ProjectDialog = ({ project }) => {
       <div className="height-s"></div>
       <div className="project-dialog--stack">
         {project.stack.map((item, index) => (
-          <div className="project-dialog--stack--item">
+          <div className={`project-dialog--stack--item ${item.image}`}>
             <img
               src={techImageMap[item.image]}
               className="project-dialog--stack--item--icon"
