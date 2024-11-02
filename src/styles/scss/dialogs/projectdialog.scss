@@ -60,9 +60,89 @@
   }
 }
 
+.html {
+  color: var(--color-html);
+  background-color: var(--color-html-bg);
+}
+
+.javascript {
+  color: var(--color-javascript);
+  background-color: var(--color-javascript-bg);
+}
+
+.typescript {
+  color: var(--color-typescript);
+  background-color: var(--color-typescript-bg);
+}
+
+.css {
+  color: var(--color-css);
+  background-color: var(--color-css-bg);
+}
+
+.scss {
+  color: var(--color-scss);
+  background-color: var(--color-scss-bg);
+}
+
 .react {
   color: var(--color-react);
   background-color: var(--color-react-bg);
+}
+
+.materialui {
+  color: var(--color-materialui);
+  background-color: var(--color-materialui-bg);
+}
+
+.dart {
+  color: var(--color-dart);
+  background-color: var(--color-dart-bg);
+}
+
+.flutter {
+  color: var(--color-flutter);
+  background-color: var(--color-flutter-bg);
+}
+
+.python {
+  color: var(--color-python);
+  background-color: var(--color-python-bg);
+}
+
+.node {
+  color: var(--color-node);
+  background-color: var(--color-node-bg);
+}
+
+.express {
+  color: var(--color-express);
+  background-color: var(--color-express-bg);
+}
+
+.postgresql {
+  color: var(--color-postgresql);
+  background-color: var(--color-postgresql-bg);
+}
+
+.git {
+  color: var(--color-git);
+  background-color: var(--color-git-bg);
+}
+
+.postman {
+  color: var(--color-postman);
+  background-color: var(--color-postman-bg);
+}
+
+.insomnia {
+  color: var(--color-insomnia);
+  background-color: var(--color-insomnia-bg);
+}
+
+.figma {
+  color: var(--color-figma);
+  background-color: var(--color-figma-bg);
 }
 
 @media (prefers-color-scheme: dark) {
