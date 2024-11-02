@@ -146,6 +146,8 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px); /* Apply blur effect */
 }
 
 .dialog-content {
