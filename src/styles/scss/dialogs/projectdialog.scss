@@ -142,8 +142,12 @@
   background-color: var(--color-figma-bg);
 }
 
-@media (prefers-color-scheme: dark) {
-  .project-dialog--upper--image {
-    filter: brightness(80%) contrast(110%);
-  }
+/* Base styles for light mode (default) */
+.project-card--upper--image {
+  filter: brightness(100%) contrast(100%);
+}
+
+/* Styles for dark mode */
+[data-theme="dark"] .project-card--upper--image {
+  filter: brightness(80%) contrast(110%);
 }

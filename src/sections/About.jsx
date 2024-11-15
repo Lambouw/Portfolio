@@ -23,10 +23,9 @@ function About() {
         </p>
         <div className="height-s"></div>
         <p>
-          From there, I landed my first working student jobs in software
-          development, and I realized: this is exactly what I want to do. I love
-          creating solutions with code, tackling challenges, and always finding
-          something new to learn along the way.
+          From there, I landed my first jobs in software development, and I realized: 
+          this is exactly what I want to do. I love creating solutions with code, 
+          tackling challenges, and always finding something new to learn along the way.
         </p>
       </div>
     </div>
