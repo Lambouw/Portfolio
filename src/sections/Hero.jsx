@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 // Import Styles
 import "../styles/css/hero.css";
 
-import Malte from "../assets/images/malte.webp";
+import Malte from "../assets/images/hero/malte.webp";
 
 function Hero() {
   return (

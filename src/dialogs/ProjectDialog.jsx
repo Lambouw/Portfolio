@@ -2,14 +2,14 @@
 import "../styles/css/projectdialog.css";
 
 // Import Project Images
-import ilhomepage5 from "../assets/images/ilhomepage5.png";
-import portfoliov1 from "../assets/images/portfoliov1.png";
-import fmmg from "../assets/images/fmmg.png";
-import hmi from "../assets/images/hmi.png";
-import twinstore from "../assets/images/twinstore.png";
+import ilhomepage from "../assets/images/projects/ilhomepage.png";
+import portfoliov1 from "../assets/images/projects/portfoliov1.png";
+import fmmg from "../assets/images/projects/fmmg.png";
+import hmi from "../assets/images/projects/hmi.png";
+import twinstore from "../assets/images/projects/twinstore.png";
 
 const projectImageMap = {
-  ilhomepage5: ilhomepage5,
+  ilhomepage: ilhomepage,
   portfoliov1: portfoliov1,
   fmmg: fmmg,
   hmi: hmi,
