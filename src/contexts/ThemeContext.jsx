@@ -12,6 +12,15 @@ export const ThemeProvider = ({ children }) => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
 
+  // Set the initial theme based on the user's system preference
+  useEffect(() => {
+    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
+      .matches
+      ? "dark"
+      : "light";
+    setTheme(systemTheme);
+  }, []);
+
   // Apply the theme to the body or root element whenever it changes
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme); // Apply theme to HTML element
