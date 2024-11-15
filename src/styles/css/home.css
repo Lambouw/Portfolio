@@ -5,7 +5,6 @@
   transform: translateX(-50%);
   z-index: 10;
   margin: 0 auto;
-  color: black;
   height: 50px;
   animation: blink 1.5s infinite; /* Apply the blink animation */
 }

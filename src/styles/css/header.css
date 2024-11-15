@@ -5,4 +5,7 @@
 }
 .header--name {
   font-weight: 600;
+}
+.header--name:hover {
+  color: var(--highlight);
 }/*# sourceMappingURL=header.css.map */

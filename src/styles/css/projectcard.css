@@ -1,33 +1,27 @@
 :root {
-  --color-no-background: rgba(0, 0, 0, 0);
-  --color-background: rgb(255, 255, 255);
-  --color-font: rgb(30, 30, 30);
-  --color-font-hover: rgb(100, 100, 100);
-  --color-border: rgba(30, 30, 30, 0.2);
-  --color-border-hover: rgba(30, 30, 30, 0.3);
-  --color-tech: rgba(30, 30, 30, 0.06);
-  --color-dialog-border: rgb(207, 207, 207);
-  --color-dialog: rgb(244, 244, 244);
-  --color-dialog-image-border: rgb(207, 207, 207);
-  --color-icon: rgb(30, 30, 30);
-  --color-icon-hover: rgb(100, 100, 100);
-  --color-link: rgb(0, 0, 0);
-  --color-link-hover: rgb(100, 100, 100);
-  --color-link-extern: rgb(90, 146, 197);
-  --color-card: rgb(210, 222, 231);
-  --color-card-hover: rgb(230, 230, 230);
-  --color-input-background: rgb(240, 240, 240);
-  --color-input-font: rgb(30, 30, 30);
-  --color-input-font-placeholder: rgb(100, 100, 100);
-  --color-button-background: rgb(240, 240, 240);
-  --color-button-background-hover: rgb(184, 197, 206);
-  --color-button-font: rgb(30, 30, 30);
-  --color-button-background-disabled: rgb(255, 255, 255);
-  --color-button-font-disabled: rgb(200, 200, 200);
-  --color-button-border-disabled: rgb(230, 230, 230);
-  --color-tech-background: rgba(50, 50, 50, 0.2);
-  --color-highlight: rgb(116, 188, 255);
-  --color-shadow: rgb(0, 0, 0, 0.1);
+  --root-bg: rgb(245, 245, 245);
+  --text-primary: rgba(33, 33, 33, 1);
+  --text-secondary: rgba(117, 117, 117, 1);
+  --text-tertiary: rgba(189, 189, 189, 1);
+  --text-placeholder: rgba(189, 189, 189, 1);
+  --text-primary-hover: rgba(66, 66, 66, 1);
+  --text-secondary-hover: rgba(150, 150, 150, 1);
+  --text-tertiary-hover: rgba(220, 220, 220, 1);
+  --highlight: rgb(116, 188, 255);
+  --input-border: rgba(200, 200, 200, 1);
+  --button-bg: rgba(200, 200, 200, 1);
+  --button-bg-hover: rgba(220, 220, 220, 1);
+  --button-bg-disabled: rgba(0, 0, 0, 0);
+  --button-no-bg: rgba(0, 0, 0, 0);
+  --button-border: rgba(200, 200, 200, 1);
+  --button-border-hover: rgba(200, 200, 200, 1);
+  --card-bg: rgba(235, 235, 235, 1);
+  --card-border: rgba(200, 200, 200, 1);
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --card-shadow-hover: rgba(0, 0, 0, 0.2);
+  --dialog-bg: rgba(235, 235, 235, 1);
+  --dialog-border: rgba(200, 200, 200, 1);
+  --image-border: rgba(200, 200, 200, 1);
   --color-css: rgba(20, 114, 182, 1);
   --color-css-bg: rgba(20, 114, 182, 0.1);
   --color-dart: rgba(0, 196, 179, 1);
@@ -67,33 +61,29 @@
 }
 
 [data-theme=dark] {
-  --color-no-background: rgba(0, 0, 0, 0);
-  --color-background: rgb(0, 0, 0);
-  --color-font: rgb(255, 255, 255);
-  --color-font-hover: rgb(200, 200, 200);
-  --color-border: rgba(170, 170, 170, 0.2);
-  --color-border-hover: rgba(170, 170, 170, 0.3);
-  --color-tech: rgba(2, 2, 2, 0.5);
-  --color-dialog-border: rgb(44, 44, 44);
-  --color-dialog: rgb(5, 5, 5);
-  --color-dialog-image-border: rgb(44, 44, 44);
-  --color-icon: rgb(255, 255, 255);
-  --color-icon-hover: rgb(200, 200, 200);
-  --color-link: rgb(255, 255, 255);
-  --color-link-hover: rgb(200, 200, 200);
-  --color-link-extern: rgb(90, 146, 197);
-  --color-card: rgb(13, 23, 31);
-  --color-card-hover: rgb(40, 40, 40);
-  --color-input-background: rgb(30, 30, 30);
-  --color-input-font: rgb(255, 255, 255);
-  --color-input-font-placeholder: rgb(200, 200, 200);
-  --color-button-background: rgb(30, 30, 30);
-  --color-button-background-hover: rgb(27, 46, 62);
-  --color-button-font: rgb(255, 255, 255);
-  --color-button-background-disabled: rgb(0, 0, 0);
-  --color-button-font-disabled: rgb(100, 100, 100);
-  --color-button-border-disabled: rgb(100, 100, 100);
-  --color-highlight: rgb(116, 188, 255);
+  --root-bg: rgb(18, 18, 18);
+  --text-primary: rgba(255, 255, 255, 0.87);
+  --text-secondary: rgba(255, 255, 255, 0.6);
+  --text-tertiary: rgba(255, 255, 255, 0.38);
+  --text-placeholder: rgba(255, 255, 255, 0.38);
+  --text-primary-hover: rgba(255, 255, 255, 0.6);
+  --text-secondary-hover: rgba(255, 255, 255, 0.4);
+  --text-tertiary-hover: rgba(255, 255, 255, 0.2);
+  --highlight: rgb(116, 188, 255);
+  --input-border: rgba(50, 50, 50, 1);
+  --button-bg: rgba(50, 50, 50, 1);
+  --button-bg-hover: rgba(60, 60, 60, 1);
+  --button-bg-disabled: rgba(0, 0, 0, 0);
+  --button-no-bg: rgba(0, 0, 0, 0);
+  --button-border: rgba(50, 50, 50, 1);
+  --button-border-hover: rgba(50, 50, 50, 1);
+  --card-bg: rgba(24, 24, 24, 1);
+  --card-border: rgba(50, 50, 50, 1);
+  --card-shadow: rgba(0, 0, 0, 0.5);
+  --card-shadow-hover: rgba(0, 0, 0, 0.8);
+  --dialog-bg: rgba(24, 24, 24, 1);
+  --dialog-border: rgba(50, 50, 50, 1);
+  --image-border: rgba(50, 50, 50, 1);
   --color-css: rgba(20, 114, 182, 1);
   --color-css-bg: rgba(20, 114, 182, 0.1);
   --color-dart: rgba(0, 196, 179, 1);
@@ -156,18 +146,18 @@
   padding: 20px;
   width: 310px;
   height: 310px;
-  background-color: var(--color-tech);
-  border: 1px solid var(--color-border);
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: var(--border-radius);
   opacity: 0;
   transition: opacity 0.3s ease-in;
-  box-shadow: 0 4px 8px var(--color-shadow);
+  box-shadow: 0 4px 8px var(--card-shadow);
 }
 .project-card:hover {
   cursor: pointer;
   transform: scale(1.03); /* Slightly scale on hover */
   transition: transform 0.2s ease-in;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px var(--card-shadow-hover);
 }
 .project-card--upper {
   display: flex;
@@ -181,7 +171,7 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: var(--image-radius);
-  border: 1px solid var(--color-dialog-image-border);
+  border: 1px solid var(--image-border);
 }
 .project-card--upper--name {
   /* Add additional styles if needed */

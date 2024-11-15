@@ -33,17 +33,14 @@
       width: 110px; /* Ensure width is equal to height */
       height: 110px; /* Ensure height is equal to width */
 
-      // background-color: var(--color-card);
-      // border: 1px solid var(--color-card);
-
-      background-color: var(--color-tech);
-      border: 1px solid var(--color-border);
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
 
       border-radius: var(--border-radius);
 
       opacity: 0;
       transition: opacity 0.3s ease-in;
-      box-shadow: 0 4px 8px var(--color-shadow);
+      box-shadow: 0 4px 8px var(--card-shadow);
 
       &.slide-in {
         opacity: 1;
@@ -53,7 +50,7 @@
       &:hover {
         transform: scale(1.05); /* Slightly scale on hover */
         transition: transform 0.2s ease-in;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 6px 12px var(--card-shadow-hover);
       }
 
       &--image {

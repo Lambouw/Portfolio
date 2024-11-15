@@ -60,7 +60,7 @@ function NavBar() {
         <button className="theme-toggler" onClick={handleToggleTheme}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="var(--color-font)"
+            fill="var(--text-primary)"
             viewBox="0 0 24 24"
           >
             <path
@@ -74,7 +74,7 @@ function NavBar() {
         <button className="theme-toggler" onClick={handleToggleTheme}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="var(--color-font)"
+            fill="var(--text-primary)"
             viewBox="0 0 24 24"
           >
             <path

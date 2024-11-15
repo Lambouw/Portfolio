@@ -7,8 +7,8 @@
   -moz-osx-font-smoothing: grayscale;
 
   font-family: Helvetica;
-  background-color: var(--color-background);
-  color: var(--color-font);
+  background-color: var(--root-bg);
+  color: var(--text-primary);
 }
 
 .app {
@@ -17,6 +17,6 @@
 }
 
 a {
-  color: var(--color-font);
+  color: var(--text-primary);
   text-decoration: none;
 }

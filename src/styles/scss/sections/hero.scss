@@ -24,7 +24,7 @@
       line-height: 1;
       letter-spacing: 1px;
 
-      color: var(--color-highlight);
+      color: var(--highlight);
     }
 
     &--text3 {
@@ -58,7 +58,7 @@
         transition: all 0.3s ease;
 
         &:hover {
-          fill: var(--color-icon-hover);
+          fill: var(--highlight);
           transform: scale(1.2);
           transition: all 0.3s ease;
         }
@@ -88,7 +88,7 @@
       transform: translateX(-50%);
       width: 300px;
       height: 300px;
-      background-color: var(--color-highlight);
+      background-color: var(--highlight);
       border-radius: 150px;
       z-index: 0;
     }

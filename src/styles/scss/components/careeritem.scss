@@ -19,17 +19,14 @@
   margin-bottom: 20px;
   padding: 15px;
 
-  // background-color: var(--color-card);
-  // border: 1px solid var(--color-card);
-
-  background-color: var(--color-tech);
-  border: 1px solid var(--color-border);
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
 
   border-radius: 10px;
 
   opacity: 0;
   transition: opacity 0.3s ease-in;
-  box-shadow: 0 4px 8px var(--color-shadow);
+  box-shadow: 0 4px 8px var(--card-shadow);
 
   &.slide-in {
     opacity: 1;
@@ -40,7 +37,7 @@
     cursor: pointer;
     transform: scale(1.03); /* Slightly scale on hover */
     transition: transform 0.2s ease-in;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px var(--card-shadow-hover);
   }
 
   &--title {
@@ -51,13 +48,13 @@
 
   &--company {
     font-size: 16px;
-    color: #555;
+    color: var(--text-secondary);
     margin-bottom: 5px;
   }
 
   &--date {
     font-size: 14px;
-    color: #888;
+    color: var(--text-tertiary);
     margin-bottom: 10px;
   }
 

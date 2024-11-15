@@ -10,7 +10,7 @@
   padding: none;
 
   border: none;
-  background-color: var(--color-no-background);
+  background-color: var(--button-no-bg);
 
   cursor: pointer;
 
@@ -24,6 +24,7 @@
   &:hover {
     svg {
       transform: scale(1.1);
+      fill: var(--highlight);
     }
   }
 
