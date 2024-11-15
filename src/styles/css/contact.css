@@ -4,6 +4,7 @@
   --color-font: rgb(30, 30, 30);
   --color-font-hover: rgb(100, 100, 100);
   --color-border: rgba(30, 30, 30, 0.2);
+  --color-border-hover: rgba(30, 30, 30, 0.3);
   --color-tech: rgba(30, 30, 30, 0.06);
   --color-dialog-border: rgb(207, 207, 207);
   --color-dialog: rgb(244, 244, 244);
@@ -71,6 +72,7 @@
   --color-font: rgb(255, 255, 255);
   --color-font-hover: rgb(200, 200, 200);
   --color-border: rgba(170, 170, 170, 0.2);
+  --color-border-hover: rgba(170, 170, 170, 0.3);
   --color-tech: rgba(2, 2, 2, 0.5);
   --color-dialog-border: rgb(44, 44, 44);
   --color-dialog: rgb(5, 5, 5);
@@ -182,17 +184,17 @@
   justify-content: flex-end; /* Aligns the button to the right */
 }
 .contact--container--left--formular--button--btn {
-  background-color: var(--color-card);
+  background-color: var(--color-border);
   border: none;
   border-radius: var(--border-radius);
   padding-left: 6px;
   width: 100px;
   height: 30px;
-  color: var(--color-button-font);
+  color: var(--color-input-font);
   font-weight: 300;
 }
 .contact--container--left--formular--button--btn:hover {
-  background-color: var(--color-button-background-hover);
+  background-color: var(--color-border-hover);
   cursor: pointer;
 }
 .contact--container--left--formular--button--btn:focus {
@@ -200,8 +202,8 @@
 }
 .contact--container--left--formular--button--btn:disabled {
   background-color: var(--color-button-background-disabled);
-  border: 1px solid var(--color-card);
-  color: var(--color-card);
+  border: 1px solid var(--color-border);
+  color: var(--color-border);
 }
 .contact--container--left--formular--button--btn:disabled:hover {
   cursor: not-allowed;
