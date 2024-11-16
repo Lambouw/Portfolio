@@ -4,8 +4,20 @@ import "../styles/css/about.css";
 function About() {
   return (
     <div id="about" className="about">
-      <h1 className="about--heading">About</h1>
-      <div className="height-s"></div>
+      <div className="about--heading">
+        {/* <h1 className="about--heading--icon">/</h1> */}
+        {/* <h1 className="about--heading--icon">&#8594;</h1> */}
+        <h1 className="about--heading--icon">&#8811;</h1>
+        {/* <h1 className="about--heading--icon">&#8810;</h1> */}
+        {/* <h1 className="about--heading--icon">&#8827;</h1> */}
+        {/* <h1 className="about--heading--icon">&#8826;</h1> */}
+        {/* <h1 className="about--heading--icon">&#8883;</h1> */}
+        <div className="width-s"></div>
+        <h1 className="about--heading--text">about me</h1>
+        <div className="width-m"></div>
+        <div className="about--heading--line"></div>
+      </div>
+      <div className="height-l"></div>
       <div className="about--text">
         <p>
           Hi, I'm <span className="about--text--name">Malte Lindemann</span>, a
@@ -23,9 +35,10 @@ function About() {
         </p>
         <div className="height-s"></div>
         <p>
-          From there, I landed my first jobs in software development, and I realized: 
-          this is exactly what I want to do. I love creating solutions with code, 
-          tackling challenges, and always finding something new to learn along the way.
+          From there, I landed my first jobs in software development, and I
+          realized: this is exactly what I want to do. I love creating solutions
+          with code, tackling challenges, and always finding something new to
+          learn along the way.
         </p>
       </div>
     </div>

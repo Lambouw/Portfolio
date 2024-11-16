@@ -128,6 +128,20 @@
 .about {
   padding-bottom: 50px;
 }
+.about--heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+.about--heading--icon {
+  color: var(--text-primary);
+}
+.about--heading--line {
+  margin-top: 15px;
+  width: 400px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
 .about--tech-items {
   display: flex;
   overflow: hidden; /* Hide overflow to ensure items slide out of view */
