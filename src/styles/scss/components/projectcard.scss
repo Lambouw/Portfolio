@@ -25,19 +25,18 @@
   height: 310px;
 
   background-color: var(--card-bg);
-  border: 1px solid var(--card-border);
 
   border-radius: var(--border-radius);
 
   opacity: 0;
   transition: opacity 0.3s ease-in;
-  box-shadow: 0 4px 8px var(--card-shadow);
+  box-shadow: 0 15px 25px var(--card-shadow);
 
   &:hover {
     cursor: pointer;
     transform: scale(1.03); /* Slightly scale on hover */
     transition: transform 0.2s ease-in;
-    box-shadow: 0 6px 12px var(--card-shadow-hover);
+    box-shadow: 0 15px 25px var(--card-shadow-hover);
   }
 
   &--upper {
@@ -51,7 +50,6 @@
       width: 350px;
       object-fit: cover;
       border-radius: var(--image-radius);
-      border: 1px solid var(--image-border);
     }
 
     &--name {

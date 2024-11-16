@@ -1,6 +1,6 @@
 :root {
   // Root
-  --root-bg: rgb(245, 245, 245);
+  --root-bg: rgba(240, 248, 255, 1);
 
   // Text
   --text-primary: rgba(33, 33, 33, 1);
@@ -19,28 +19,25 @@
   // --highlight: rgb(255, 129, 129);
 
   // Input
-  --input-border: rgba(200, 200, 200, 1);
+  --input-bg: rgba(255, 255, 255, 1);
 
   // Button
-  --button-bg: rgba(200, 200, 200, 1);
-  --button-bg-hover: rgba(220, 220, 220, 1);
+  --button-bg: rgba(182, 217, 249, 1);
+  --button-bg-hover: rgb(213, 234, 253, 1);
   --button-bg-disabled: rgba(0, 0, 0, 0);
   --button-no-bg: rgba(0, 0, 0, 0);
-  --button-border: rgba(200, 200, 200, 1);
-  --button-border-hover: rgba(200, 200, 200, 1);
+  --button-border: rgba(182, 217, 249, 1);
+  --button-border-hover: rgba(213, 234, 253, 1);
+  --button-border-disabled: rgba(182, 217, 249, 1);
 
   // Card
-  --card-bg: rgba(235, 235, 235, 1);
-  --card-border: rgba(200, 200, 200, 1);
-  --card-shadow: rgba(0, 0, 0, 0.1);
-  --card-shadow-hover: rgba(0, 0, 0, 0.2);
+  --card-bg: rgba(255, 255, 255, 1);
+  --card-shadow: rgba(0, 0, 0, 0.03);
+  --card-shadow-hover: rgba(0, 0, 0, 0.06);
 
   // Dialog
   --dialog-bg: rgba(235, 235, 235, 1);
   --dialog-border: rgba(200, 200, 200, 1);
-
-  // Image
-  --image-border: rgba(200, 200, 200, 1);
 
   // Tech
   --color-css: rgba(20, 114, 182, 1);
@@ -83,7 +80,7 @@
 
 [data-theme="dark"] {
   // Root
-  --root-bg: rgb(18, 18, 18);
+  --root-bg: rgb(36, 40, 45);
 
   // Text
   --text-primary: rgba(255, 255, 255, 0.87);
@@ -102,28 +99,25 @@
   // --highlight: rgb(255, 129, 129);
 
   // Input
-  --input-border: rgba(50, 50, 50, 1);
+  --input-bg: rgba(49, 56, 64, 1);
 
   // Button
-  --button-bg: rgba(50, 50, 50, 1);
-  --button-bg-hover: rgba(60, 60, 60, 1);
+  --button-bg: rgba(55, 89, 121, 1);
+  --button-bg-hover: rgb(88, 102, 114, 1);
   --button-bg-disabled: rgba(0, 0, 0, 0);
   --button-no-bg: rgba(0, 0, 0, 0);
-  --button-border: rgba(50, 50, 50, 1);
-  --button-border-hover: rgba(50, 50, 50, 1);
+  --button-border: rgba(55, 89, 121, 1);
+  --button-border-hover: rgb(88, 102, 114, 1);
+  --button-border-disabled: rgba(55, 89, 121, 1);
 
   // Card
-  --card-bg: rgba(24, 24, 24, 1);
-  --card-border: rgba(50, 50, 50, 1);
-  --card-shadow: rgba(0, 0, 0, 0.5);
-  --card-shadow-hover: rgba(0, 0, 0, 0.8);
+  --card-bg: rgba(49, 56, 64, 1);
+  --card-shadow: rgba(0, 0, 0, 0.03);
+  --card-shadow: rgba(0, 0, 0, 0.06);
 
   // Dialog
   --dialog-bg: rgba(24, 24, 24, 1);
   --dialog-border: rgba(50, 50, 50, 1);
-
-  // Image
-  --image-border: rgba(50, 50, 50, 1);
 
   // Tech
   --color-css: rgba(20, 114, 182, 1);
