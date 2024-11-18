@@ -120,6 +120,15 @@
   --color-typescript-bg: rgba(1, 122, 204, 0.1);
 }
 
+@keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}
+.blink {
+  animation: blink 1.4s linear infinite;
+}
+
 .hero {
   height: 90vh;
   padding-bottom: 50px;
@@ -129,17 +138,24 @@
   align-items: center;
 }
 .hero--left--text1 {
+  display: flex;
   font-size: 50px;
   font-weight: 800;
   line-height: 1;
   letter-spacing: 1px;
+}
+.hero--left--text1--name {
+  color: var(--highlight);
+}
+.hero--left--text1--cursor {
+  font-size: 60px;
+  font-weight: normal;
 }
 .hero--left--text2 {
   font-size: 50px;
   font-weight: 800;
   line-height: 1;
   letter-spacing: 1px;
-  color: var(--highlight);
 }
 .hero--left--text3 {
   margin-top: 10px;

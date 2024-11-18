@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 import { Link } from "react-scroll";
+import Typist from "react-typist-component";
 
 // Import Styles
 import "../styles/css/hero.css";
@@ -6,11 +9,25 @@ import "../styles/css/hero.css";
 import Malte from "../assets/images/hero/malte.webp";
 
 function Hero() {
+  const [blink, setBlink] = useState('');
+
+  const addBlinkClassToCursor = () => {
+    setBlink('blink');
+  }
+
   return (
     <div id="hero" className="hero">
       <div className="hero--left">
-        <div className="hero--left--text1">Hi, I'm Malte</div>
-        <div className="hero--left--text2">Software Engineer</div>
+        <div className="hero--left--text1">
+          <Typist onTypingDone={addBlinkClassToCursor}>
+            hi,&nbsp;
+            <span className="hero--left--text1--name">malte</span>
+            &nbsp;here.
+          </Typist>
+          <div className="width-s"></div>
+          <div className={`hero--left--text1--cursor ${blink}`}>|</div>
+        </div>
+        {/* <div className="hero--left--text2">software engineer</div> */}
         {/* <div className="hero--left--text3">Focusing on Frontend Development</div> */}
         <div className="height-s"></div>
         <div className="hero--left--socials">
