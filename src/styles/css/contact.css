@@ -14,13 +14,11 @@
   --button-bg-hover: rgba(0, 0, 0, 0.1);
   --button-bg-disabled: rgba(0, 0, 0, 0);
   --button-bg-click: rgba(0, 0, 0, 0.07);
-  --button-bg-clicked: rgba(0, 0, 0, 0.1);
   --button-no-bg: rgba(0, 0, 0, 0);
   --button-border: rgba(0, 0, 0, 0);
   --button-border-hover: rgba(0, 0, 0, 0.2);
   --button-border-disabled: rgba(0, 0, 0, 0.2);
-  --button-border-click: rgba(0, 0, 0, 0);
-  --button-border-clicked: rgba(0, 0, 0, 0.1);
+  --button-outline-clicked: rgba(0, 0, 0, 0.5);
   --card-bg: rgba(255, 255, 255, 1);
   --card-shadow: rgba(0, 0, 0, 0.03);
   --card-shadow-hover: rgba(0, 0, 0, 0.06);
@@ -89,11 +87,11 @@
   --button-bg-hover: rgb(49, 56, 64, 0.6);
   --button-bg-disabled: rgba(0, 0, 0, 0);
   --button-bg-click: rgba(49, 56, 64, 0.3);
-  --button-bg-clicked: rgba(49, 56, 64, 0.6);
   --button-no-bg: rgba(0, 0, 0, 0);
   --button-border: rgba(0, 0, 0, 0);
   --button-border-hover: rgba(0, 0, 0, 0);
   --button-border-disabled: rgba(49, 56, 64, 1);
+  --button-outline-clicked: rgba(255, 255, 255, 0.2);
   --card-bg: rgba(49, 56, 64, 1);
   --card-shadow: rgba(0, 0, 0, 0);
   --card-shadow-hover: rgba(0, 0, 0, 0);
@@ -219,6 +217,10 @@
   cursor: pointer;
 }
 .contact--container--left--formular--button--btn:focus {
+  outline: solid 1px var(--button-outline-clicked);
+}
+.contact--container--left--formular--button--btn:active {
+  background-color: var(--button-bg-click);
   outline: none;
 }
 .contact--container--left--formular--button--btn:disabled {
@@ -228,12 +230,6 @@
 }
 .contact--container--left--formular--button--btn:disabled:hover {
   cursor: not-allowed;
-}
-.contact--container--left--formular--button--btn:focus {
-  background-color: var(--button-bg-clicked);
-}
-.contact--container--left--formular--button--btn:active {
-  background-color: var(--button-bg-click);
 }
 .contact--container--right {
   width: 50%;

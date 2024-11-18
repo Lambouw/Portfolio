@@ -88,6 +88,11 @@
             }
 
             &:focus {
+              outline: solid 1px var(--button-outline-clicked);
+            }
+
+            &:active {
+              background-color: var(--button-bg-click);
               outline: none;
             }
 
@@ -99,14 +104,6 @@
               &:hover {
                 cursor: not-allowed;
               }
-            }
-
-            &:focus {
-              background-color: var(--button-bg-clicked);
-            }
-
-            &:active {
-              background-color: var(--button-bg-click);
             }
           }
         }

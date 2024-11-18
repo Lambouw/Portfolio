@@ -27,13 +27,11 @@
   --button-bg-hover: rgba(0, 0, 0, 0.1);
   --button-bg-disabled: rgba(0, 0, 0, 0);
   --button-bg-click: rgba(0, 0, 0, 0.07);
-  --button-bg-clicked: rgba(0, 0, 0, 0.1);
   --button-no-bg: rgba(0, 0, 0, 0);
   --button-border: rgba(0, 0, 0, 0);
   --button-border-hover: rgba(0, 0, 0, 0.2);
   --button-border-disabled: rgba(0, 0, 0, 0.2);
-  --button-border-click: rgba(0, 0, 0, 0);
-  --button-border-clicked: rgba(0, 0, 0, 0.1);
+  --button-outline-clicked: rgba(0, 0, 0, 0.5);
 
   // Card
   --card-bg: rgba(255, 255, 255, 1);
@@ -125,11 +123,11 @@
   --button-bg-hover: rgb(49, 56, 64, 0.6);
   --button-bg-disabled: rgba(0, 0, 0, 0);
   --button-bg-click: rgba(49, 56, 64, 0.3);
-  --button-bg-clicked: rgba(49, 56, 64, 0.6);
   --button-no-bg: rgba(0, 0, 0, 0);
   --button-border: rgba(0, 0, 0, 0);
   --button-border-hover: rgba(0, 0, 0, 0);
   --button-border-disabled: rgba(49, 56, 64, 1);
+  --button-outline-clicked: rgba(255, 255, 255, 0.2);
 
   // Card
   --card-bg: rgba(49, 56, 64, 1);
