@@ -1,5 +1,6 @@
 // Import Styles
 import "../styles/css/projectdialog.css";
+import "../styles/css/techcolors.css";
 
 // Import Project Images
 import ilhomepage from "../assets/images/projects/ilhomepage.png";
