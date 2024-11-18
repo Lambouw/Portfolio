@@ -1,7 +1,7 @@
 @import "../basics/colors";
 @import "../basics/constants";
 
-.dialog-overlay {
+.custom-dialog-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -13,13 +13,13 @@
   align-items: center;
   z-index: 1000;
   backdrop-filter: blur(6px); /* Apply blur effect */
-}
 
-.dialog-content {
-  padding: 20px;
-  max-width: 700px;
-  border-radius: var(--border-radius);
-
-  background-color: var(--dialog-bg);
-  border: 1px solid var(--dialog-border);
+  &--content {
+    padding: 20px;
+    max-width: 700px;
+    border-radius: var(--border-radius);
+  
+    background-color: var(--dialog-bg);
+    border: 1px solid var(--dialog-border);
+  } 
 }

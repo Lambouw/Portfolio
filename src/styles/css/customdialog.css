@@ -127,7 +127,7 @@
   --image-radius: 20px;
 }
 
-.dialog-overlay {
+.custom-dialog-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -141,8 +141,7 @@
   -webkit-backdrop-filter: blur(6px);
           backdrop-filter: blur(6px); /* Apply blur effect */
 }
-
-.dialog-content {
+.custom-dialog-overlay--content {
   padding: 20px;
   max-width: 700px;
   border-radius: var(--border-radius);
