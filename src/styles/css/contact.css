@@ -78,8 +78,8 @@
   --button-border-hover: rgb(88, 102, 114, 1);
   --button-border-disabled: rgba(55, 89, 121, 1);
   --card-bg: rgba(49, 56, 64, 1);
-  --card-shadow: rgba(0, 0, 0, 0.03);
-  --card-shadow: rgba(0, 0, 0, 0.06);
+  --card-shadow: rgba(0, 0, 0, 0);
+  --card-shadow-hover: rgba(0, 0, 0, 0);
   --dialog-bg: rgba(24, 24, 24, 1);
   --dialog-border: rgba(50, 50, 50, 1);
   --color-css: rgba(20, 114, 182, 1);
