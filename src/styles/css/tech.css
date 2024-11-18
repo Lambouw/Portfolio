@@ -142,6 +142,20 @@
 .tech {
   padding-bottom: 50px;
 }
+.tech--heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+.tech--heading--icon {
+  color: var(--text-primary);
+}
+.tech--heading--line {
+  margin-top: 15px;
+  width: 400px;
+  border-bottom: 1px solid var(--section-header-line);
+}
 .tech--items {
   display: flex;
   flex-wrap: wrap; /* Macht das Wrappen möglich */

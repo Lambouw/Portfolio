@@ -11,7 +11,7 @@ import Hero from "../sections/Hero";
 import About from "../sections/About";
 import Tech from "../sections/Tech";
 import Projects from "../sections/Projects";
-import Career from "../sections/Career";
+import Experience from "../sections/Experience";
 import Contact from "../sections/Contact";
 import Footer from "../sections/Footer";
 
@@ -50,7 +50,7 @@ function Home() {
       <About />
       <Tech />
       <Projects />
-      <Career />
+      <Experience />
       <Contact />
       <Footer />
       {isVisible &&

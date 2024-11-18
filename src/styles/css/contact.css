@@ -150,6 +150,20 @@
 .contact {
   padding-bottom: 50px;
 }
+.contact--heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+.contact--heading--icon {
+  color: var(--text-primary);
+}
+.contact--heading--line {
+  margin-top: 15px;
+  width: 400px;
+  border-bottom: 1px solid var(--section-header-line);
+}
 .contact--container {
   display: flex;
   flex-direction: row;

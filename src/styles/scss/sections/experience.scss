@@ -1,6 +1,6 @@
 @import "../basics/colors";
 
-.projects {
+.experience {
   padding-bottom: 50px;
 
   &--heading {
@@ -18,13 +18,5 @@
       width: 400px;
       border-bottom: 1px solid var(--section-header-line);
     }
-  }
-
-  &--container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
   }
 }

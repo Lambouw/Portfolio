@@ -122,58 +122,20 @@
   --color-typescript-bg: rgba(1, 122, 204, 0.1);
 }
 
-@keyframes slide-in {
-  0% {
-    transform: translateY(80px);
-  }
-  80% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+.experience {
+  padding-bottom: 50px;
 }
-.career-item {
+.experience--heading {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 20px;
-  padding: 15px;
-  background-color: var(--card-bg);
-  border-radius: 10px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in;
-  box-shadow: 0 15px 25px var(--card-shadow);
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
 }
-.career-item.slide-in {
-  opacity: 1;
-  animation: slide-in 0.5s ease-in;
+.experience--heading--icon {
+  color: var(--text-primary);
 }
-.career-item:hover {
-  cursor: pointer;
-  transform: scale(1.03); /* Slightly scale on hover */
-  transition: transform 0.2s ease-in;
-  box-shadow: 0 15px 25px var(--card-shadow-hover);
-}
-.career-item--title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-.career-item--company {
-  font-size: 16px;
-  color: var(--text-secondary);
-  margin-bottom: 5px;
-}
-.career-item--date {
-  font-size: 14px;
-  color: var(--text-tertiary);
-  margin-bottom: 10px;
-}
-.career-item--work ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-.career-item--work li {
-  margin-bottom: 5px;
-}/*# sourceMappingURL=careeritem.css.map */
+.experience--heading--line {
+  margin-top: 15px;
+  width: 400px;
+  border-bottom: 1px solid var(--section-header-line);
+}/*# sourceMappingURL=experience.css.map */

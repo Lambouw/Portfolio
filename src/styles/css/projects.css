@@ -125,6 +125,20 @@
 .projects {
   padding-bottom: 50px;
 }
+.projects--heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+.projects--heading--icon {
+  color: var(--text-primary);
+}
+.projects--heading--line {
+  margin-top: 15px;
+  width: 400px;
+  border-bottom: 1px solid var(--section-header-line);
+}
 .projects--container {
   display: flex;
   flex-direction: row;

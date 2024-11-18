@@ -128,8 +128,20 @@ function Tech() {
 
   return (
     <div id="tech" className="tech">
-      <h1 className="tech--heading">Tech Stack</h1>
-      <div className="height-s"></div>
+      <div className="tech--heading">
+        {/* <h1 className="tech--heading--icon">/</h1> */}
+        {/* <h1 className="tech--heading--icon">&#8594;</h1> */}
+        <h1 className="tech--heading--icon">&#8811;</h1>
+        {/* <h1 className="tech--heading--icon">&#8810;</h1> */}
+        {/* <h1 className="tech--heading--icon">&#8827;</h1> */}
+        {/* <h1 className="tech--heading--icon">&#8826;</h1> */}
+        {/* <h1 className="tech--heading--icon">&#8883;</h1> */}
+        <div className="width-s"></div>
+        <h1 className="tech--heading--text">tech stack</h1>
+        <div className="width-m"></div>
+        <div className="tech--heading--line"></div>
+      </div>
+      <div className="height-l"></div>
       <div className="tech--items">
         {tech.map((item, index) => (
           <a

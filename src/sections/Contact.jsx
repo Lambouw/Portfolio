@@ -30,12 +30,24 @@ function Contact() {
 
   return (
     <div id="contact" className="contact">
-      <h1 className="contact--heading">Contact</h1>
-      <div className="height-s"></div>
+      <div className="contact--heading">
+        {/* <h1 className="contact--heading--icon">/</h1> */}
+        {/* <h1 className="contact--heading--icon">&#8594;</h1> */}
+        <h1 className="contact--heading--icon">&#8811;</h1>
+        {/* <h1 className="contact--heading--icon">&#8810;</h1> */}
+        {/* <h1 className="contact--heading--icon">&#8827;</h1> */}
+        {/* <h1 className="contact--heading--icon">&#8826;</h1> */}
+        {/* <h1 className="contact--heading--icon">&#8883;</h1> */}
+        <div className="width-s"></div>
+        <h1 className="contact--heading--text">contact</h1>
+        <div className="width-m"></div>
+        <div className="contact--heading--line"></div>
+      </div>
+      <div className="height-l"></div>
       <div className="contact--container">
         <div className="contact--container--left">
           <div className="contact--container--left--text">
-            <p>Hit me up if you want to know more about me or my work!</p>
+            <p>Hit me up if you want to know more contact me or my work!</p>
             <p>I'd love to hear from you.</p>
           </div>
           <div className="height-m"></div>

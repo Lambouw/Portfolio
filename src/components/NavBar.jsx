@@ -38,12 +38,12 @@ function NavBar() {
       <div className="width-m"></div>
       <Link
         className="link"
-        to="career"
+        to="experience"
         spy={true}
         smooth={true}
         duration={250}
       >
-        Career
+        Experience
       </Link>
       <div className="width-m"></div>
       <Link

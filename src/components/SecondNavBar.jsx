@@ -53,8 +53,8 @@ function SecondNavBar() {
         Projects
       </span>
       <div className="width-m"></div>
-      <span className="link" onClick={() => handleNavClick("career")}>
-        Career
+      <span className="link" onClick={() => handleNavClick("experience")}>
+        Experience
       </span>
       <div className="width-m"></div>
       <span className="link" onClick={() => handleNavClick("contact")}>

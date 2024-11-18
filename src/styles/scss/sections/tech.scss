@@ -16,6 +16,23 @@
 .tech {
   padding-bottom: 50px;
 
+  &--heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    &--icon {
+      color: var(--text-primary);
+    }
+
+    &--line {
+      margin-top: 15px;
+      width: 400px;
+      border-bottom: 1px solid var(--section-header-line);
+    }
+  }
+
   &--items {
     display: flex;
     flex-wrap: wrap; /* Macht das Wrappen möglich */
