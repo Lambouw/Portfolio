@@ -21,6 +21,7 @@
   --card-shadow-hover: rgba(0, 0, 0, 0.06);
   --dialog-bg: rgba(235, 235, 235, 1);
   --dialog-border: rgba(200, 200, 200, 1);
+  --section-header-line: rgba(0, 0, 0, 0.5);
   --color-css: rgba(20, 114, 182, 1);
   --color-css-bg: rgba(20, 114, 182, 0.1);
   --color-dart: rgba(0, 196, 179, 1);
@@ -82,6 +83,7 @@
   --card-shadow-hover: rgba(0, 0, 0, 0);
   --dialog-bg: rgba(24, 24, 24, 1);
   --dialog-border: rgba(50, 50, 50, 1);
+  --section-header-line: rgba(255, 255, 255, 0.08);
   --color-css: rgba(20, 114, 182, 1);
   --color-css-bg: rgba(20, 114, 182, 0.1);
   --color-dart: rgba(0, 196, 179, 1);
