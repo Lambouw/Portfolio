@@ -36,7 +36,7 @@ const imageMap = {
   dart: dart,
   flutter: flutter,
   node: node,
-  express: express_l, // Default to light theme express logo
+  express: express_d, // Default to light theme express logo
   git: git,
   postman: postman,
   insomnia: insomnia,
@@ -82,10 +82,10 @@ function Tech() {
     // You can now respond to theme changes, for example:
     if (theme === "dark") {
       console.log("Dark theme is active");
-      imageMap.express = express_d;
+      imageMap.express = express_l;
     } else {
       console.log("Light theme is active");
-      imageMap.express = express_l;
+      imageMap.express = express_d;
     }
   }, [theme]);
 
