@@ -15,7 +15,8 @@ import scss from "../assets/logos/scss.svg";
 import react from "../assets/logos/react.svg";
 import dart from "../assets/logos/dart.svg";
 import flutter from "../assets/logos/flutter.svg";
-import node from "../assets/logos/node.svg";
+import node_d from "../assets/logos/node_d.svg";
+import node_l from "../assets/logos/node_l.svg";
 import express_d from "../assets/logos/express_d.svg";
 import express_l from "../assets/logos/express_l.svg";
 import git from "../assets/logos/git.svg";
@@ -35,7 +36,7 @@ const imageMap = {
   react: react,
   dart: dart,
   flutter: flutter,
-  node: node,
+  node: node_d, // Default to light theme node logo
   express: express_d, // Default to light theme express logo
   git: git,
   postman: postman,
@@ -81,10 +82,10 @@ function Tech() {
   useEffect(() => {
     // You can now respond to theme changes, for example:
     if (theme === "dark") {
-      console.log("Dark theme is active");
+      imageMap.node = node_l;
       imageMap.express = express_l;
     } else {
-      console.log("Light theme is active");
+      imageMap.node = node_d;
       imageMap.express = express_d;
     }
   }, [theme]);

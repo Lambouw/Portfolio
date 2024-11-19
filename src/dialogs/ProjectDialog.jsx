@@ -1,3 +1,5 @@
+import React, { useState, useEffect } from "react";
+
 // Import Styles
 import "../styles/css/projectdialog.css";
 import "../styles/css/techcolors.css";
@@ -26,7 +28,8 @@ import scss from "../assets/logos/scss.svg";
 import react from "../assets/logos/react-mini.svg";
 import dart from "../assets/logos/dart.svg";
 import flutter from "../assets/logos/flutter.svg";
-import node from "../assets/logos/node.svg";
+import node_d from "../assets/logos/node_d.svg";
+import node_l from "../assets/logos/node_l.svg";
 import express_d from "../assets/logos/express_d.svg";
 import express_l from "../assets/logos/express_l.svg";
 import git from "../assets/logos/git.svg";
@@ -46,7 +49,7 @@ const techImageMap = {
   react: react,
   dart: dart,
   flutter: flutter,
-  node: node,
+  node: node_l, // Default to light theme node logo
   express: express_l, // Default to light theme express logo
   git: git,
   postman: postman,
@@ -58,6 +61,48 @@ const techImageMap = {
 };
 
 const ProjectDialog = ({ project }) => {
+  const [theme, setTheme] = useState(
+    document.documentElement.getAttribute("data-theme") || "light"
+  );
+
+  useEffect(() => {
+    // Function to update the theme
+    const handleThemeChange = () => {
+      const currentTheme = document.documentElement.getAttribute("data-theme");
+      setTheme(currentTheme);
+    };
+
+    // Listen for changes to the 'data-theme' attribute
+    const observer = new MutationObserver(() => {
+      handleThemeChange();
+    });
+
+    // Observe changes in attributes on the root element (html or body)
+    observer.observe(document.documentElement, {
+      attributes: true, // Observe attribute changes
+      attributeFilter: ["data-theme"], // Only look for 'data-theme' changes
+    });
+
+    // Initial check
+    handleThemeChange();
+
+    // Cleanup observer on component unmount
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    // You can now respond to theme changes, for example:
+    if (theme === "dark") {
+      techImageMap.node = node_l;
+      techImageMap.express = express_l;
+    } else {
+      techImageMap.node = node_d;
+      techImageMap.express = express_d;
+    }
+  }, [theme]);
+
   return (
     <div className="project-dialog">
       <div className="project-dialog--upper">

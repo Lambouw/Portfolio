@@ -3,7 +3,7 @@
   --root-bg: rgba(240, 248, 255, 1);
   --header-border-scroll: rgba(0, 0, 0, 0.5);
   --header-backdrop-scroll: rgba(240, 248, 255, 0.6);
-  --text-primary: rgba(33, 33, 33, 1);
+  --text-primary: rgb(33, 33, 33);
   --text-secondary: rgba(117, 117, 117, 1);
   --text-tertiary: rgba(189, 189, 189, 1);
   --text-placeholder: rgba(189, 189, 189, 1);
