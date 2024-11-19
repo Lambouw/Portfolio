@@ -2,6 +2,10 @@
   // Root
   --root-bg: rgba(240, 248, 255, 1);
 
+  // Header
+  --header-border-scroll: rgba(0, 0, 0, 0.5);
+  --header-backdrop-scroll: rgba(240, 248, 255, 0.6);
+
   // Text
   --text-primary: rgba(33, 33, 33, 1);
   --text-secondary: rgba(117, 117, 117, 1);
@@ -89,6 +93,10 @@
   // Root
   --root-bg: rgb(36, 40, 45);
 
+  // Header
+  --header-border-scroll: rgba(255, 255, 255, 0.08);
+  --header-backdrop-scroll: rgba(36, 40, 45, 0.7);
+
   // Text
   --text-primary: rgba(255, 255, 255, 0.87);
   --text-secondary: rgba(255, 255, 255, 0.6);
@@ -108,15 +116,6 @@
   // Input
   --input-bg: rgba(49, 56, 64, 1);
   --input-border: rgba(0, 0, 0, 0);
-
-  // Button
-  --button-bg: rgba(55, 89, 121, 1);
-  --button-bg-hover: rgb(88, 102, 114, 1);
-  --button-bg-disabled: rgba(0, 0, 0, 0);
-  --button-no-bg: rgba(0, 0, 0, 0);
-  --button-border: rgba(55, 89, 121, 1);
-  --button-border-hover: rgb(88, 102, 114, 1);
-  --button-border-disabled: rgba(55, 89, 121, 1);
 
   // Button
   --button-bg: rgba(49, 56, 64, 1);

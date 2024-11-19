@@ -1,11 +1,28 @@
 .header {
+  width: 100%;
   padding-top: 50px;
+  padding-bottom: 20px;
+  position: fixed;
+  top: 0; /* Position the navbar at the top of the page */
+  left: 0;
+  z-index: 20;
+  background-color: var(--header-backdrop-scroll);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px); /* Apply blur effect */
+}
+.header--inner {
+  width: 1000px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
-.header--name {
+.header--inner--name {
   font-weight: 600;
 }
-.header--name:hover {
+.header--inner--name:hover {
   color: var(--highlight);
+}
+
+.scroll {
+  border-bottom: 1px solid var(--header-border-scroll);
 }/*# sourceMappingURL=header.css.map */
