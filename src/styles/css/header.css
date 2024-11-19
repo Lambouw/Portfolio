@@ -11,7 +11,7 @@
           backdrop-filter: blur(6px); /* Apply blur effect */
 }
 .header--inner {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
