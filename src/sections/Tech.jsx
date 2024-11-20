@@ -52,6 +52,10 @@ function Tech() {
     document.documentElement.getAttribute("data-theme") || "light"
   );
 
+  const [showAllTech, setShowAllTech] = useState(false); // New state for toggling tech cards
+  const cardRefs = useRef([]);
+  const animatedItems = useRef(new Set()); // Track already animated items
+
   useEffect(() => {
     // Function to update the theme
     const handleThemeChange = () => {
@@ -59,28 +63,23 @@ function Tech() {
       setTheme(currentTheme);
     };
 
-    // Listen for changes to the 'data-theme' attribute
     const observer = new MutationObserver(() => {
       handleThemeChange();
     });
 
-    // Observe changes in attributes on the root element (html or body)
     observer.observe(document.documentElement, {
-      attributes: true, // Observe attribute changes
-      attributeFilter: ["data-theme"], // Only look for 'data-theme' changes
+      attributes: true,
+      attributeFilter: ["data-theme"],
     });
 
-    // Initial check
     handleThemeChange();
 
-    // Cleanup observer on component unmount
     return () => {
       observer.disconnect();
     };
   }, []);
 
   useEffect(() => {
-    // You can now respond to theme changes, for example:
     if (theme === "dark") {
       imageMap.node = node_l;
       imageMap.express = express_l;
@@ -90,42 +89,36 @@ function Tech() {
     }
   }, [theme]);
 
-  const cardRefs = useRef([]);
-  const animatedItems = useRef(new Set()); // Set to track already animated items
-
   useEffect(() => {
-    // Set up the Intersection Observer
+    // Intersection Observer for animations
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            // Only animate if the item hasn't been animated before
             if (!animatedItems.current.has(entry.target)) {
               entry.target.classList.add("slide-in");
-              animatedItems.current.add(entry.target); // Add to animated set
+              animatedItems.current.add(entry.target);
             }
           }
         });
       },
-      { threshold: 0.5 } // 50% of the card must be visible to trigger
+      { threshold: 0.5 }
     );
 
-    // Observe each card
     cardRefs.current.forEach((card) => {
-      if (card) {
-        observer.observe(card);
-      }
+      if (card) observer.observe(card);
     });
 
-    // Cleanup on component unmount
     return () => {
       cardRefs.current.forEach((card) => {
-        if (card) {
-          observer.unobserve(card);
-        }
+        if (card) observer.unobserve(card);
       });
     };
-  }, []);
+  }, [showAllTech]);
+
+  const handleToggleTech = () => {
+    setShowAllTech((prev) => !prev);
+  };
 
   return (
     <div id="tech" className="tech">
@@ -139,7 +132,7 @@ function Tech() {
       </div>
       <div className="height-l"></div>
       <div className="tech--items">
-        {tech.map((item, index) => (
+        {tech.slice(0, showAllTech ? tech.length : 7).map((item, index) => (
           <a
             key={index}
             ref={(el) => (cardRefs.current[index] = el)}
@@ -157,6 +150,13 @@ function Tech() {
           </a>
         ))}
       </div>
+      {tech.length > 6 && (
+        <div className="tech--toggle">
+          <button className="tech--toggle--button" onClick={handleToggleTech}>
+            {showAllTech ? "Show less" : "Show more"}
+          </button>
+        </div>
+      )}
     </div>
   );
 }
