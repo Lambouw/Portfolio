@@ -153,7 +153,7 @@ function Tech() {
       {tech.length > 6 && (
         <div className="tech--toggle">
           <button className="tech--toggle--button" onClick={handleToggleTech}>
-            {showAllTech ? "Show less" : "Show more"}
+            {showAllTech ? "Show less" : "Show all"}
           </button>
         </div>
       )}

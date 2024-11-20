@@ -76,7 +76,7 @@ function Projects() {
             className="projects--toggle--button"
             onClick={handleToggleProjects}
           >
-            {showAllProjects ? "Show less" : "Show more"}
+            {showAllProjects ? "Show less" : "Show all"}
           </button>
         </div>
       )}
