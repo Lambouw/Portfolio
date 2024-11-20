@@ -179,10 +179,6 @@
 .project-dialog--stack--item--icon {
   width: 20px;
 }
-.project-dialog--stack--item--label {
-  font-weight: bold;
-}
-
 /* Base styles for light mode (default) */
 .project-dialog--upper--image {
   filter: brightness(100%) contrast(100%);
