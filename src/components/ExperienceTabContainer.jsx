@@ -62,13 +62,15 @@ function ExperienceTabContainer() {
           />
         ))}
       </Tabs>
-      {Object.keys(experienceData).map((key, i) => (
-        <TabPanel
-          experienceItem={experienceData[key]}
-          value={currentTab}
-          index={i}
-        ></TabPanel>
-      ))}
+      <div className="verticaltabs--tabpanels">
+        {Object.keys(experienceData).map((key, i) => (
+          <TabPanel
+            experienceItem={experienceData[key]}
+            value={currentTab}
+            index={i}
+          ></TabPanel>
+        ))}
+      </div>
     </div>
   );
 }

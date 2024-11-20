@@ -58,9 +58,7 @@ function Experience() {
         <div className="experience--heading--line"></div>
       </div>
       <div className="height-l"></div>
-      <div className="experience--container">
-        <ExperienceTabContainer />
-      </div>
+      <ExperienceTabContainer />
     </div>
   );
 }

@@ -5,9 +5,16 @@
   display: flex;
 
   height: 190px; // TODO: change to variable workway? -> height of tabbar should be as high as biggest TabPanel
+
+  &--tabpanels {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .horizontaltabs {
   display: flex;
   flex-direction: column;
+
+  width: 100%;
 }
