@@ -1,13 +1,13 @@
 import React, { useEffect, useRef } from "react";
 
 // Import Components
-import ExperienceItem from "../components/ExperienceItem";
+import ExperienceTabContainer from "../components/ExperienceTabContainer";
 
 // Import Styles
 import "../styles/css/experience.css";
 
 // Import Data
-import experience from "../assets/data/experience.json";
+import experienceData from "../assets/data/experience.json";
 
 function Experience() {
   const cardRefs = useRef([]);
@@ -50,13 +50,8 @@ function Experience() {
   return (
     <div id="experience" className="experience">
       <div className="experience--heading">
-        {/* <h1 className="experience--heading--icon">/</h1> */}
-        {/* <h1 className="experience--heading--icon">&#8594;</h1> */}
         <h1 className="experience--heading--icon">&#8811;</h1>
-        {/* <h1 className="experience--heading--icon">&#8810;</h1> */}
         {/* <h1 className="experience--heading--icon">&#8827;</h1> */}
-        {/* <h1 className="experience--heading--icon">&#8826;</h1> */}
-        {/* <h1 className="experience--heading--icon">&#8883;</h1> */}
         <div className="width-s"></div>
         <h1 className="experience--heading--text">experience</h1>
         <div className="width-m"></div>
@@ -64,13 +59,7 @@ function Experience() {
       </div>
       <div className="height-l"></div>
       <div className="experience--container">
-        {experience.map((experienceItem, index) => (
-          <ExperienceItem
-            key={index}
-            ref={(el) => (cardRefs.current[index] = el)}
-            experienceItem={experienceItem}
-          />
-        ))}
+        <ExperienceTabContainer />
       </div>
     </div>
   );

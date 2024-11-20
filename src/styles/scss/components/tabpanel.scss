@@ -1,0 +1,49 @@
+@import "../basics/colors";
+@import "../basics/constants";
+
+.tabpanel {
+  padding: 10px 0px 0px 40px;
+
+  &--header {
+    display: flex;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    &--title {
+    }
+
+    &--company {
+      color: var(--highlight);
+
+      &:hover {
+        color: var(--highlight-hover);
+      }
+    }
+  }
+
+  &--time {
+    font-size: 14px;
+
+    color: var(--text-secondary);
+  }
+
+  &--tasks {
+    list-style: none;
+    margin-left: -40px;
+
+    &--task {
+      color: var(--text-secondary);
+
+      position: relative;
+      padding-left: 30px;
+
+      &::before {
+        content: "▹    ";
+        color: var(--highlight);
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+}

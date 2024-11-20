@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --root-bg: rgba(240, 248, 255, 1);
   --header-border-scroll: rgba(0, 0, 0, 0.5);
@@ -135,57 +136,36 @@
   --color-typescript-bg: rgba(1, 122, 204, 0.1);
 }
 
-.about {
-  padding-bottom: 50px;
+.tabpanel {
+  padding: 10px 0px 0px 40px;
 }
-.about--heading {
+.tabpanel--header {
   display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
 }
-.about--heading--icon {
-  color: var(--text-primary);
+.tabpanel--header--company {
+  color: var(--highlight);
 }
-.about--heading--line {
-  margin-top: 15px;
-  width: 400px;
-  border-bottom: 1px solid var(--section-header-line);
+.tabpanel--header--company:hover {
+  color: var(--highlight-hover);
 }
-.about--tech-items {
-  display: flex;
-  overflow: hidden; /* Hide overflow to ensure items slide out of view */
-  white-space: nowrap; /* Prevent wrapping of items */
-  position: relative; /* For positioning the animation */
-  width: 100%; /* Full width of the container */
-  height: 80px; /* Set a height to the container to match the items */
-  /* Add a wrapper for the sliding effect */
+.tabpanel--time {
+  font-size: 14px;
+  color: var(--text-secondary);
 }
-.about--tech-items--wrapper {
-  display: flex;
-  width: 200%; /* Ensure wrapper is twice the width of the container */
-  animation: slide 15s linear infinite;
+.tabpanel--tasks {
+  list-style: none;
+  margin-left: -40px;
 }
-.about--tech-items--item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  width: 80px; /* Ensure width is equal to height */
-  height: 80px; /* Ensure height is equal to width */
-  border-radius: 10px;
-  margin-right: 30px; /* Ensure margin for spacing between items */
+.tabpanel--tasks--task {
+  color: var(--text-secondary);
+  position: relative;
+  padding-left: 30px;
 }
-.about--tech-items--item--image {
-  width: 46px; /* Adjust as needed */
-  height: 46px; /* Adjust as needed */
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}/*# sourceMappingURL=about.css.map */
+.tabpanel--tasks--task::before {
+  content: "▹    ";
+  color: var(--highlight);
+  position: absolute;
+  left: 0;
+}/*# sourceMappingURL=tabpanel.css.map */
