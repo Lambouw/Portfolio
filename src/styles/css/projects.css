@@ -141,7 +141,7 @@
 .projects--heading {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 .projects--heading--icon {
@@ -158,4 +158,20 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 25px;
+}
+.projects--toggle {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.projects--toggle--button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  color: var(--text-primary);
+}
+.projects--toggle--button:hover {
+  transform: scale(1.2);
 }/*# sourceMappingURL=projects.css.map */
