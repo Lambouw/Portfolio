@@ -69,21 +69,20 @@ function Projects() {
             />
           ))}
       </div>
-      <div className="height-s"></div>
-      <div className="projects--toggle">
-        <button
-          className="projects--toggle--button"
-          onClick={handleToggleProjects}
-        >
-          {showAllProjects ? (
-            <span>&#9650; {/* Arrow up */}</span>
-          ) : (
-            <span>&#9660; {/* Arrow down */}</span>
-          )}
-        </button>
-      </div>
+      {projects.length > 3 && (
+        <div className="projects--toggle">
+          <button
+            className="projects--toggle--button"
+            onClick={handleToggleProjects}
+          >
+            {showAllProjects ? "Show less" : "Show more"}
+          </button>
+        </div>
+      )}
     </div>
   );
 }
 
 export default Projects;
+
+
