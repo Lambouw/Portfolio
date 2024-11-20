@@ -4,7 +4,7 @@
 .input {
   background-color: var(--input-bg);
   border: 1px solid var(--input-border);
-  border-radius: var(--input-radius);
+  border-radius: $input-radius;
   padding-left: 6px;
 
   width: 100%;
@@ -73,7 +73,7 @@
           &--btn {
             background-color: var(--button-bg);
             border: 1px solid var(--button-border);
-            border-radius: var(--button-radius);
+            border-radius: $button-radius;
             padding-left: 6px;
 
             width: 100px;

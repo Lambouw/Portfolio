@@ -135,20 +135,6 @@
   --color-typescript-bg: rgba(1, 122, 204, 0.1);
 }
 
-:root {
-  --card-radius: 10px;
-  --dialog-radius: 10px;
-  --image-radius: 10px;
-  --tag-radius: 10px;
-  --input-radius: 10px;
-  --button-radius: 10px;
-  --hero-image-width: 300px;
-  --hero-image-radius: 150px;
-  --hero-circle-width: 300px;
-  --hero-circle-height: 300px;
-  --hero-circle-radius: 150px;
-}
-
 .project-dialog {
   display: flex;
   flex-direction: column;
@@ -165,7 +151,7 @@
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: var(--image-radius);
+  border-radius: 10px;
 }
 .project-dialog--upper--name {
   /* Add additional styles if needed */
@@ -183,7 +169,7 @@
   gap: 10px;
 }
 .project-dialog--stack--item {
-  border-radius: var(--tag-radius);
+  border-radius: 10px;
   padding: 4px 12px 4px 8px;
   display: flex;
 }

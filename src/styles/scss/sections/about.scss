@@ -55,7 +55,7 @@
       width: 80px; /* Ensure width is equal to height */
       height: 80px; /* Ensure height is equal to width */
 
-      border-radius: var(--image-radius);
+      border-radius: $image-radius;
       margin-right: 30px; /* Ensure margin for spacing between items */
 
       &--image {

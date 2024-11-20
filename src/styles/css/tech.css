@@ -135,20 +135,6 @@
   --color-typescript-bg: rgba(1, 122, 204, 0.1);
 }
 
-:root {
-  --card-radius: 10px;
-  --dialog-radius: 10px;
-  --image-radius: 10px;
-  --tag-radius: 10px;
-  --input-radius: 10px;
-  --button-radius: 10px;
-  --hero-image-width: 300px;
-  --hero-image-radius: 150px;
-  --hero-circle-width: 300px;
-  --hero-circle-height: 300px;
-  --hero-circle-radius: 150px;
-}
-
 @keyframes slide-in {
   0% {
     transform: translateY(80px);
@@ -193,7 +179,7 @@
   width: 110px; /* Ensure width is equal to height */
   height: 110px; /* Ensure height is equal to width */
   background-color: var(--card-bg);
-  border-radius: var(--card-radius);
+  border-radius: 10px;
   opacity: 0;
   transition: opacity 0.3s ease-in;
   box-shadow: 0 15px 25px var(--card-shadow);

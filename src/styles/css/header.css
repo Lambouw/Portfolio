@@ -25,4 +25,11 @@
 
 .scroll {
   border-bottom: 1px solid var(--header-border-scroll);
+}
+
+@media only screen and (max-width: 1040px) {
+  .header--inner {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }/*# sourceMappingURL=header.css.map */

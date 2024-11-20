@@ -92,13 +92,13 @@
     display: inline-block;
 
     &--image {
-      width: var(--hero-image-width);
+      width: $hero-image-width;
       height: auto;
 
       position: relative;
       z-index: 1;
       display: block;
-      border-radius: var(--hero-image-radius);
+      border-radius: $hero-image-radius;
     }
 
     &--circle {
@@ -106,10 +106,10 @@
       bottom: 1px; // otherwise the circle is shining under the image a bit in dark mode
       left: 50%;
       transform: translateX(-50%);
-      width: var(--hero-circle-width);
-      height: var(--hero-circle-height);
+      width: $hero-circle-width;
+      height: $hero-circle-height;
       background-color: var(--highlight);
-      border-radius: var(--hero-circle-radius);
+      border-radius: $hero-circle-radius;
       z-index: 0;
     }
   }

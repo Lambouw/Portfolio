@@ -1,4 +1,5 @@
 @import "./_colors.scss";
+@import "./_breakpoints.scss";
 
 :root {
   font-synthesis: none;
@@ -14,6 +15,13 @@
 .app {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: $bp-lg) {
+  .app {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 a {
