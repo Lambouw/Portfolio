@@ -21,7 +21,7 @@ function TabPanel({ experienceItem, value, index, ...other }) {
               <div className="tabpanel--header--title">
                 {experienceItem.title}
               </div>
-              <div className="tabpanel--header">&nbsp;@&nbsp;</div>
+              <div className="tabpanel--header--at">&nbsp;@&nbsp;</div>
               <a
                 className="tabpanel--header--company"
                 href={experienceItem.src}
