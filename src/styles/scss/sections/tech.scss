@@ -51,7 +51,7 @@
       height: 110px; /* Ensure height is equal to width */
 
       background-color: var(--card-bg);
-
+      border: 1px solid var(--card-border);
       border-radius: $card-radius;
 
       opacity: 0;

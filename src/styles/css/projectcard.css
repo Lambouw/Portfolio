@@ -23,6 +23,7 @@
   --button-border-disabled: rgba(0, 0, 0, 0.2);
   --button-outline-clicked: rgba(0, 0, 0, 0.5);
   --card-bg: rgba(255, 255, 255, 1);
+  --card-border: rgba(0, 0, 0, 0.2);
   --card-shadow: rgba(0, 0, 0, 0.03);
   --card-shadow-hover: rgba(0, 0, 0, 0.06);
   --dialog-backdrop: rgba(0, 0, 0, 0.5);
@@ -91,6 +92,7 @@
   --button-border-disabled: rgba(49, 56, 64, 1);
   --button-outline-clicked: rgba(255, 255, 255, 0.2);
   --card-bg: rgba(49, 56, 64, 1);
+  --card-border: rgba(255, 255, 255, 0);
   --card-shadow: rgba(0, 0, 0, 0);
   --card-shadow-hover: rgba(0, 0, 0, 0);
   --dialog-backdrop: rgba(0, 0, 0, 0.5);
@@ -155,6 +157,7 @@
   width: 310px;
   height: 310px;
   background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: 10px;
   opacity: 0;
   transition: opacity 0.3s ease-in;
