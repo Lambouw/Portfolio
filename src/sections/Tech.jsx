@@ -130,13 +130,8 @@ function Tech() {
   return (
     <div id="tech" className="tech">
       <div className="tech--heading">
-        {/* <h1 className="tech--heading--icon">/</h1> */}
-        {/* <h1 className="tech--heading--icon">&#8594;</h1> */}
         <h1 className="tech--heading--icon">&#8811;</h1>
-        {/* <h1 className="tech--heading--icon">&#8810;</h1> */}
         {/* <h1 className="tech--heading--icon">&#8827;</h1> */}
-        {/* <h1 className="tech--heading--icon">&#8826;</h1> */}
-        {/* <h1 className="tech--heading--icon">&#8883;</h1> */}
         <div className="width-s"></div>
         <h1 className="tech--heading--text">tech stack</h1>
         <div className="width-m"></div>

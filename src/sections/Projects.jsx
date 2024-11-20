@@ -50,13 +50,8 @@ function Projects() {
   return (
     <div id="projects" className="projects">
       <div className="projects--heading">
-        {/* <h1 className="projects--heading--icon">/</h1> */}
-        {/* <h1 className="projects--heading--icon">&#8594;</h1> */}
         <h1 className="projects--heading--icon">&#8811;</h1>
-        {/* <h1 className="projects--heading--icon">&#8810;</h1> */}
         {/* <h1 className="projects--heading--icon">&#8827;</h1> */}
-        {/* <h1 className="projects--heading--icon">&#8826;</h1> */}
-        {/* <h1 className="projects--heading--icon">&#8883;</h1> */}
         <div className="width-s"></div>
         <h1 className="projects--heading--text">projects</h1>
         <div className="width-m"></div>

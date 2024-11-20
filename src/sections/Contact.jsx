@@ -31,13 +31,8 @@ function Contact() {
   return (
     <div id="contact" className="contact">
       <div className="contact--heading">
-        {/* <h1 className="contact--heading--icon">/</h1> */}
-        {/* <h1 className="contact--heading--icon">&#8594;</h1> */}
         <h1 className="contact--heading--icon">&#8811;</h1>
-        {/* <h1 className="contact--heading--icon">&#8810;</h1> */}
         {/* <h1 className="contact--heading--icon">&#8827;</h1> */}
-        {/* <h1 className="contact--heading--icon">&#8826;</h1> */}
-        {/* <h1 className="contact--heading--icon">&#8883;</h1> */}
         <div className="width-s"></div>
         <h1 className="contact--heading--text">contact</h1>
         <div className="width-m"></div>
