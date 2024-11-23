@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { scroller } from "react-scroll";
 import { useNavigate, useLocation } from "react-router-dom";
 

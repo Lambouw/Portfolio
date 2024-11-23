@@ -1,8 +1,9 @@
+@import "../basics/colors";
 @import "../basics/breakpoints";
 
 .header {
   width: 100%;
-  padding-top: 50px;
+  padding-top: 40px;
   padding-bottom: 20px;
 
   position: fixed;
@@ -19,12 +20,25 @@
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     &--name {
       font-weight: 600;
 
       &:hover {
         color: var(--highlight);
+      }
+    }
+
+    &--logo {
+      height: 40px;
+      width: 40px;
+
+      &:hover {
+        svg {
+          transform: scale(1.1);
+          fill: var(--highlight);
+        }
       }
     }
   }

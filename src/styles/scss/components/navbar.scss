@@ -3,6 +3,7 @@
 .navbar {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .theme-toggler {
@@ -15,6 +16,8 @@
   cursor: pointer;
 
   svg {
+    margin-top: 10px;
+
     height: 32px;
     width: 32px;
     transition: transform 0.1s ease;

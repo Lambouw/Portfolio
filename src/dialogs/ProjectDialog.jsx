@@ -20,25 +20,25 @@ const projectImageMap = {
 };
 
 // Import Tech Images
-import html from "../assets/logos/html.svg";
-import javascript from "../assets/logos/javascript.svg";
-import typescript from "../assets/logos/typescript.svg";
-import css from "../assets/logos/css.svg";
-import scss from "../assets/logos/scss.svg";
-import react from "../assets/logos/react-mini.svg";
-import dart from "../assets/logos/dart.svg";
-import flutter from "../assets/logos/flutter.svg";
-import node_d from "../assets/logos/node_d.svg";
-import node_l from "../assets/logos/node_l.svg";
-import express_d from "../assets/logos/express_d.svg";
-import express_l from "../assets/logos/express_l.svg";
-import git from "../assets/logos/git.svg";
-import postman from "../assets/logos/postman.svg";
-import insomnia from "../assets/logos/insomnia.svg";
-import python from "../assets/logos/python.svg";
-import postgresql from "../assets/logos/postgresql.svg";
-import figma from "../assets/logos/figma.svg";
-import materialui from "../assets/logos/materialui.svg";
+import html from "../assets/logos/tech/html.svg";
+import javascript from "../assets/logos/tech/javascript.svg";
+import typescript from "../assets/logos/tech/typescript.svg";
+import css from "../assets/logos/tech/css.svg";
+import scss from "../assets/logos/tech/scss.svg";
+import react from "../assets/logos/tech/react-mini.svg";
+import dart from "../assets/logos/tech/dart.svg";
+import flutter from "../assets/logos/tech/flutter.svg";
+import node_d from "../assets/logos/tech/node_d.svg";
+import node_l from "../assets/logos/tech/node_l.svg";
+import express_d from "../assets/logos/tech/express_d.svg";
+import express_l from "../assets/logos/tech/express_l.svg";
+import git from "../assets/logos/tech/git.svg";
+import postman from "../assets/logos/tech/postman.svg";
+import insomnia from "../assets/logos/tech/insomnia.svg";
+import python from "../assets/logos/tech/python.svg";
+import postgresql from "../assets/logos/tech/postgresql.svg";
+import figma from "../assets/logos/tech/figma.svg";
+import materialui from "../assets/logos/tech/materialui.svg";
 
 const techImageMap = {
   html: html,
