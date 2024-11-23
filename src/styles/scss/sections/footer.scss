@@ -1,5 +1,17 @@
 .footer {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+
+  &--logo {
+    cursor: pointer;
+
+    &:hover {
+      svg {
+        transform: scale(1.1);
+        fill: var(--highlight);
+      }
+    }
+  }
 }

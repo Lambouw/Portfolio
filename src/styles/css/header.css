@@ -162,10 +162,6 @@
 .header--inner--name:hover {
   color: var(--highlight);
 }
-.header--inner--logo {
-  height: 40px;
-  width: 40px;
-}
 .header--inner--logo:hover svg {
   transform: scale(1.1);
   fill: var(--highlight);

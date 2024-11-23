@@ -1,5 +1,13 @@
 .footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 10px;
+}
+.footer--logo {
+  cursor: pointer;
+}
+.footer--logo:hover svg {
+  transform: scale(1.1);
+  fill: var(--highlight);
 }/*# sourceMappingURL=footer.css.map */
