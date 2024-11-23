@@ -165,13 +165,19 @@
   flex-direction: row;
   justify-content: start;
   align-items: center;
+  max-width: 580px;
+  width: 100%;
 }
 .contact--heading--icon {
   color: var(--text-primary);
+  flex-shrink: 0;
+}
+.contact--heading--text {
+  flex-shrink: 0;
 }
 .contact--heading--line {
   margin-top: 15px;
-  width: 400px;
+  flex-grow: 1;
   border-bottom: 1px solid var(--section-header-line);
 }
 .contact--container {

@@ -157,13 +157,19 @@
   flex-direction: row;
   justify-content: start;
   align-items: center;
+  max-width: 580px;
+  width: 100%;
 }
 .tech--heading--icon {
   color: var(--text-primary);
+  flex-shrink: 0;
+}
+.tech--heading--text {
+  flex-shrink: 0;
 }
 .tech--heading--line {
   margin-top: 15px;
-  width: 400px;
+  flex-grow: 1;
   border-bottom: 1px solid var(--section-header-line);
 }
 .tech--items {

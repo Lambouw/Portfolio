@@ -9,59 +9,22 @@
     flex-direction: row;
     justify-content: start;
     align-items: center;
+    max-width: 580px; // Set the maximum width for the heading
+    width: 100%;
 
     &--icon {
       color: var(--text-primary);
+      flex-shrink: 0; // Prevent the icon from shrinking
+    }
+
+    &--text {
+      flex-shrink: 0; // Prevent the text from shrinking
     }
 
     &--line {
       margin-top: 15px;
-      width: 400px;
+      flex-grow: 1;
       border-bottom: 1px solid var(--section-header-line);
-    }
-  }
-
-  &--text {
-    &--name {
-    }
-  }
-
-  &--tech-heading {
-  }
-
-  &--tech-items {
-    display: flex;
-    overflow: hidden; /* Hide overflow to ensure items slide out of view */
-    white-space: nowrap; /* Prevent wrapping of items */
-    position: relative; /* For positioning the animation */
-    width: 100%; /* Full width of the container */
-    height: 80px; /* Set a height to the container to match the items */
-
-    /* Add a wrapper for the sliding effect */
-    &--wrapper {
-      display: flex;
-      width: calc(
-        100% * 2
-      ); /* Ensure wrapper is twice the width of the container */
-      animation: slide 15s linear infinite;
-    }
-
-    &--item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-shrink: 0;
-
-      width: 80px; /* Ensure width is equal to height */
-      height: 80px; /* Ensure height is equal to width */
-
-      border-radius: $image-radius;
-      margin-right: 30px; /* Ensure margin for spacing between items */
-
-      &--image {
-        width: 46px; /* Adjust as needed */
-        height: 46px; /* Adjust as needed */
-      }
     }
   }
 }
