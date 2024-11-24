@@ -27,6 +27,10 @@
       border-bottom: 1px solid var(--section-header-line);
     }
   }
+
+  &--text {
+    text-align: justify;
+  }
 }
 
 @keyframes slide {

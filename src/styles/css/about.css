@@ -160,6 +160,9 @@
   flex-grow: 1;
   border-bottom: 1px solid var(--section-header-line);
 }
+.about--text {
+  text-align: justify;
+}
 
 @keyframes slide {
   0% {
