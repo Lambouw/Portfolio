@@ -157,3 +157,20 @@
     }
   }
 }
+
+@media only screen and (max-width: $bp-sm) {
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+    &--left {
+      margin-top: 50px;
+    }
+
+    &--right {
+      margin-top: 75px;
+    }
+  }
+}
