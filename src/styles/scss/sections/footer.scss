@@ -4,6 +4,11 @@
   align-items: center;
   margin-bottom: 20px;
 
+  &--left {
+    width: 200px;
+    text-align: end;
+  }
+
   &--logo {
     cursor: pointer;
 
@@ -13,5 +18,9 @@
         fill: var(--highlight);
       }
     }
+  }
+
+  &--right {
+    width: 200px;
   }
 }

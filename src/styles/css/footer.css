@@ -4,10 +4,17 @@
   align-items: center;
   margin-bottom: 20px;
 }
+.footer--left {
+  width: 200px;
+  text-align: end;
+}
 .footer--logo {
   cursor: pointer;
 }
 .footer--logo:hover svg {
   transform: scale(1.1);
   fill: var(--highlight);
+}
+.footer--right {
+  width: 200px;
 }/*# sourceMappingURL=footer.css.map */

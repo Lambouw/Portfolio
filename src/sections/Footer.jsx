@@ -34,11 +34,12 @@ function Footer() {
 
   return (
     <div className="footer">
-      <NavLink className="link" to="/imprint">
-        Imprint
-      </NavLink>
+      <div className="footer--left">
+        <NavLink className=" slink" to="/imprint">
+          Imprint
+        </NavLink>
+      </div>
       <div className="width-l"></div>
-      
       <div
         className="footer--logo header--inner--logo"
         to="/"
@@ -75,9 +76,11 @@ function Footer() {
         )}
       </div>
       <div className="width-l"></div>
-      <NavLink className="link" to="/data">
-        Data
-      </NavLink>
+      <div className="footer--right">
+        <NavLink className="link" to="/data">
+          Data
+        </NavLink>
+      </div>
     </div>
   );
 }
