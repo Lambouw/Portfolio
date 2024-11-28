@@ -263,4 +263,17 @@
   fill: var(--highlight);
   transform: scale(1.2);
   transition: all 0.3s ease;
+}
+@media only screen and (max-width: 575px) {
+  .contact--container {
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+  .contact--container--left {
+    width: 100%;
+  }
+  .contact--container--right {
+    width: 100%;
+    align-items: flex-start;
+  }
 }/*# sourceMappingURL=contact.css.map */

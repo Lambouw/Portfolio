@@ -1,5 +1,6 @@
 @import "../basics/colors";
 @import "../basics/constants";
+@import "../basics/breakpoints";
 
 .input {
   background-color: var(--input-bg);
@@ -62,12 +63,6 @@
       &--formular {
         min-width: 400px;
 
-        &--name {
-        }
-
-        &--email {
-        }
-
         &--message {
           height: 300px;
           padding-top: 6px;
@@ -123,16 +118,10 @@
       flex-direction: column;
       align-items: flex-end;
 
-      &--email-heading {
-      }
-
       &--email {
         &:hover {
           color: var(--highlight);
         }
-      }
-
-      &--socials-heading {
       }
 
       &--socials {
@@ -161,6 +150,20 @@
             transition: all 0.3s ease;
           }
         }
+      }
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      flex-direction: column;
+      flex-flow: column-reverse;
+
+      &--left {
+        width: 100%;
+      }
+
+      &--right {
+        width: 100%;
+        align-items: flex-start;
       }
     }
   }

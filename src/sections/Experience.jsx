@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 
 // Import Components
-import ExperienceTabContainer from "../components/ExperienceTabContainer";
+import TabContainer from "../components/TabContainer";
 
 // Import Styles
 import "../styles/css/experience.css";
@@ -58,7 +58,7 @@ function Experience() {
         <div className="experience--heading--line"></div>
       </div>
       <div className="height-l"></div>
-      <ExperienceTabContainer />
+      <TabContainer />
     </div>
   );
 }

@@ -1,12 +1,11 @@
 @import "../basics/colors";
 @import "../basics/constants";
+@import "../basics/breakpoints";
 
-.tabpanel {
-  margin: 0px 0px 0px 20px;
+.tab-panel {
+  width: 100%;
+
   padding: 10px 20px 10px 20px;
-
-  height: 100%;
-  width: 98%;
 
   background-color: var(--card-bg);
   border: 1px solid var(--card-border);
@@ -17,12 +16,6 @@
 
     font-size: 20px;
     font-weight: bold;
-
-    &--title {
-    }
-
-    &--at {
-    }
 
     &--company {
       color: var(--highlight);

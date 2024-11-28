@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --root-bg: rgba(240, 248, 255, 1);
   --header-border-scroll: rgba(0, 0, 0, 0.5);
@@ -138,40 +137,32 @@
   --color-typescript-bg: rgba(1, 122, 204, 0.1);
 }
 
-.tab-panel {
-  width: 100%;
-  padding: 10px 20px 10px 20px;
-  background-color: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: 10px;
-}
-.tab-panel--header {
+.tab-container {
   display: flex;
-  font-size: 20px;
-  font-weight: bold;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
-.tab-panel--header--company {
-  color: var(--highlight);
-}
-.tab-panel--header--company:hover {
-  color: var(--highlight-hover);
-}
-.tab-panel--time {
-  font-size: 14px;
-  color: var(--text-secondary);
-}
-.tab-panel--tasks {
-  list-style: none;
-  margin-left: -40px;
-}
-.tab-panel--tasks--task {
-  color: var(--text-secondary);
+.tab-container--tabbar {
   position: relative;
-  padding-left: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
-.tab-panel--tasks--task::before {
-  content: "▹    ";
-  color: var(--highlight);
+.tab-container--highlight {
   position: absolute;
-  left: 0;
-}/*# sourceMappingURL=tabpanel.css.map */
+  bottom: 0;
+  height: 34px;
+  border: 1px solid var(--highlight);
+  border-radius: 10px;
+  transition: transform 0.3s ease, width 0.3s ease;
+  pointer-events: none;
+}
+.tab-container--spacer {
+  height: 20px;
+}
+.tab-container--panel-wrapper {
+  width: 100%;
+  height: 165px;
+}/*# sourceMappingURL=tabcontainer.css.map */

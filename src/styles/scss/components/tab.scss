@@ -1,0 +1,30 @@
+@import "../basics/colors";
+@import "../basics/constants";
+@import "../basics/breakpoints";
+
+.tab {
+  margin-right: 10px;
+
+  padding: 5px 20px 5px 20px;
+
+  background-color: var(--button-bg);
+  border-radius: $card-radius;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--button-bg-hover);
+  }
+}
+
+.selected-tab {
+  background-color: var(--highlight);
+
+  &:hover {
+    background-color: var(--highlight);
+  }
+}
+
+.last-tab {
+  margin-right: 0;
+}

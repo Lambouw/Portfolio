@@ -1,0 +1,40 @@
+@import "../basics/colors";
+@import "../basics/constants";
+@import "../basics/breakpoints";
+
+.tab-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+
+  &--tabbar {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &--highlight {
+    position: absolute;
+    bottom: 0;
+    height: 34px;
+
+    border: 1px solid var(--highlight);
+    border-radius: $card-radius;
+    transition: transform 0.3s ease, width 0.3s ease;
+    pointer-events: none;
+  }
+
+  &--spacer {
+    height: 20px;
+  }
+
+  &--panel-wrapper {
+    width: 100%;
+    height: 165px;
+  }
+}
