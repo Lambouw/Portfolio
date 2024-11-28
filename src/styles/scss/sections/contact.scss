@@ -149,10 +149,10 @@
               cursor: pointer;
               width: 100%;
               height: 100%;
-  
+
               transform: scale(1.1);
               transition: all 0.3s ease;
-  
+
               &:hover {
                 fill: var(--highlight);
                 transform: scale(1.2);
@@ -173,10 +173,7 @@
 
     &--form {
       width: 100%;
-
-      &--formular {
-        min-width: 0;
-      }
+      min-width: 0;
     }
 
     &--addresses {
