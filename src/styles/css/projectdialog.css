@@ -81,6 +81,7 @@
   --text-secondary-hover: rgba(255, 255, 255, 0.4);
   --text-tertiary-hover: rgba(255, 255, 255, 0.2);
   --highlight: rgb(116, 188, 255);
+  --highlight-hover: rgba(116, 188, 255, 0.6);
   --input-bg: rgba(49, 56, 64, 1);
   --input-border: rgba(0, 0, 0, 0);
   --button-bg: rgba(49, 56, 64, 1);
