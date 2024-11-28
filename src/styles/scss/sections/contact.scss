@@ -53,118 +53,134 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 
-    &--left {
+    &--form {
       width: 50%;
       display: flex;
       flex-direction: column;
 
-      &--formular {
-        min-width: 400px;
+      min-width: 400px;
 
-        &--message {
-          height: 300px;
-          padding-top: 6px;
-        }
+      &--message {
+        height: 300px;
+        padding-top: 6px;
+      }
 
-        &--button {
-          display: flex;
-          justify-content: flex-end; /* Aligns the button to the right */
+      &--row {
+        display: flex;
+        justify-content: flex-end; /* Aligns the button to the right */
 
-          &--btn {
-            background-color: var(--button-bg);
-            border: 1px solid var(--button-border);
-            border-radius: $button-radius;
-            padding-left: 6px;
+        &--btn {
+          background-color: var(--button-bg);
+          border: 1px solid var(--button-border);
+          border-radius: $button-radius;
+          padding-left: 6px;
 
-            width: 100px;
-            height: 30px;
-            color: var(--text-primary);
-            font-weight: 300;
+          width: 100px;
+          height: 30px;
+          color: var(--text-primary);
+          font-weight: 300;
+
+          &:hover {
+            background-color: var(--button-bg-hover);
+            border: var(--button-border-hover);
+            cursor: pointer;
+          }
+
+          &:focus {
+            outline: solid 1px var(--button-outline-clicked);
+          }
+
+          &:active {
+            background-color: var(--button-bg-click);
+            outline: none;
+          }
+
+          &:disabled {
+            background-color: var(--button-bg-disabled);
+            border: 1px solid var(--button-border-disabled);
+            color: var(--text-placeholder);
 
             &:hover {
-              background-color: var(--button-bg-hover);
-              border: var(--button-border-hover);
+              cursor: not-allowed;
+            }
+          }
+        }
+      }
+    }
+
+    &--addresses {
+      padding-left: 40px;
+
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      &--text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        &--line {
+          text-align: end;
+        }
+      }
+
+      &--spacer {
+        height: 5px;
+        width: 0;
+      }
+
+      &--socials {
+        display: flex;
+        align-items: flex-end;
+
+        &--icons {
+          display: flex;
+          flex-direction: row;
+
+          &--icon {
+            width: 32px;
+            height: 32px;
+
+            svg {
               cursor: pointer;
-            }
-
-            &:focus {
-              outline: solid 1px var(--button-outline-clicked);
-            }
-
-            &:active {
-              background-color: var(--button-bg-click);
-              outline: none;
-            }
-
-            &:disabled {
-              background-color: var(--button-bg-disabled);
-              border: 1px solid var(--button-border-disabled);
-              color: var(--text-placeholder);
-
+              width: 100%;
+              height: 100%;
+  
+              transform: scale(1.1);
+              transition: all 0.3s ease;
+  
               &:hover {
-                cursor: not-allowed;
+                fill: var(--highlight);
+                transform: scale(1.2);
+                transition: all 0.3s ease;
               }
             }
           }
         }
       }
     }
+  }
+}
 
-    &--right {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
+@media only screen and (max-width: $bp-contact) {
+  .contact--container {
+    flex-direction: column;
+    flex-flow: column;
 
-      &--email {
-        &:hover {
-          color: var(--highlight);
-        }
-      }
+    &--form {
+      width: 100%;
 
-      &--socials {
-        display: flex;
-        align-items: center;
-
-        &--icon {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 32px;
-          height: 32px;
-        }
-
-        svg {
-          cursor: pointer;
-          width: 100%;
-          height: 100%;
-
-          transform: scale(1.1);
-          transition: all 0.3s ease;
-
-          &:hover {
-            fill: var(--highlight);
-            transform: scale(1.2);
-            transition: all 0.3s ease;
-          }
-        }
+      &--formular {
+        min-width: 0;
       }
     }
 
-    @media only screen and (max-width: $bp-sm) {
-      flex-direction: column;
-      flex-flow: column-reverse;
-
-      &--left {
-        width: 100%;
-      }
-
-      &--right {
-        width: 100%;
-        align-items: flex-start;
-      }
+    &--addresses {
+      display: none;
     }
   }
 }
