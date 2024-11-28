@@ -175,4 +175,11 @@
   color: var(--highlight);
   position: absolute;
   left: 0;
+}
+
+@media only screen and (max-width: 840px) {
+  .tab-panel--header {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=tabpanel.css.map */
