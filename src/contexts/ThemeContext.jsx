@@ -1,40 +1,5 @@
 import React, { createContext, useState, useEffect, useContext } from "react";
 
-// Import Material UI Components
-import {
-  createTheme,
-  ThemeProvider as MuiThemeProvider,
-} from "@mui/material/styles";
-
-const muiTheme = createTheme({
-  components: {
-    MuiTabs: {
-      styleOverrides: {
-        indicator: {
-          backgroundColor: "var(--highlight)",
-        },
-      },
-    },
-    MuiTab: {
-      styleOverrides: {
-        root: {
-          // Default text color
-          color: "var(--text-primary)",
-          // Hover color
-          "&:hover": {
-            color: "var(--highlight)",
-          },
-          // Clicked (active) color
-          "&.Mui-selected": {
-            color: "var(--highlight)",
-            fontWeight: "bold", // Optional: Make selected tab bold
-          },
-        },
-      },
-    },
-  },
-});
-
 // Create a context with a default value of "light"
 const ThemeContext = createContext();
 
@@ -63,7 +28,7 @@ export const ThemeProvider = ({ children }) => {
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <MuiThemeProvider theme={muiTheme}>{children}</MuiThemeProvider>
+      {children}
     </ThemeContext.Provider>
   );
 };
