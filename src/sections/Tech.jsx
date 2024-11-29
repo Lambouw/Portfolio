@@ -27,34 +27,39 @@ import postgresql from "../assets/logos/tech/postgresql.svg";
 import figma from "../assets/logos/tech/figma.svg";
 import materialui from "../assets/logos/tech/materialui.svg";
 
-const imageMap = {
-  html: html,
-  javascript: javascript,
-  typescript: typescript,
-  css: css,
-  scss: scss,
-  react: react,
-  dart: dart,
-  flutter: flutter,
-  node: node_d, // Default to light theme node logo
-  express: express_d, // Default to light theme express logo
-  git: git,
-  postman: postman,
-  insomnia: insomnia,
-  python: python,
-  postgresql: postgresql,
-  figma: figma,
-  materialui: materialui,
-};
-
 function Tech() {
+  const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+
   const [theme, setTheme] = useState(
-    document.documentElement.getAttribute("data-theme") || "light"
+    document.documentElement.getAttribute("data-theme") || systemTheme
   );
 
   const [showAllTech, setShowAllTech] = useState(false); // New state for toggling tech cards
   const cardRefs = useRef([]);
   const animatedItems = useRef(new Set()); // Track already animated items
+
+  // Dynamic imageMap based on theme
+  const imageMap = {
+    html: html,
+    javascript: javascript,
+    typescript: typescript,
+    css: css,
+    scss: scss,
+    react: react,
+    dart: dart,
+    flutter: flutter,
+    node: theme === "dark" ? node_d : node_l,
+    express: theme === "dark" ? express_d : express_l,
+    git: git,
+    postman: postman,
+    insomnia: insomnia,
+    python: python,
+    postgresql: postgresql,
+    figma: figma,
+    materialui: materialui,
+  };
 
   useEffect(() => {
     // Function to update the theme

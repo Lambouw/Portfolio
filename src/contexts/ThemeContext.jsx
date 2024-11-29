@@ -1,25 +1,17 @@
 import React, { createContext, useState, useEffect, useContext } from "react";
 
-// Create a context with a default value of "light"
 const ThemeContext = createContext();
 
 // ThemeProvider component to wrap the app
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(() =>
+    window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
+  );
 
   // Toggle between light and dark themes
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
-
-  // Set the initial theme based on the user's system preference
-  useEffect(() => {
-    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
-      .matches
-      ? "dark"
-      : "light";
-    setTheme(systemTheme);
-  }, []);
 
   // Apply the theme to the body or root element whenever it changes
   useEffect(() => {

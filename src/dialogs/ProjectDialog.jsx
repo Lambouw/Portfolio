@@ -40,30 +40,35 @@ import postgresql from "../assets/logos/tech/postgresql.svg";
 import figma from "../assets/logos/tech/figma.svg";
 import materialui from "../assets/logos/tech/materialui.svg";
 
-const techImageMap = {
-  html: html,
-  javascript: javascript,
-  typescript: typescript,
-  css: css,
-  scss: scss,
-  react: react,
-  dart: dart,
-  flutter: flutter,
-  node: node_l, // Default to light theme node logo
-  express: express_l, // Default to light theme express logo
-  git: git,
-  postman: postman,
-  insomnia: insomnia,
-  python: python,
-  postgresql: postgresql,
-  figma: figma,
-  materialui: materialui,
-};
-
 const ProjectDialog = ({ project }) => {
+  const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+
   const [theme, setTheme] = useState(
-    document.documentElement.getAttribute("data-theme") || "light"
+    document.documentElement.getAttribute("data-theme") || systemTheme
   );
+
+  // Dynamic imageMap based on theme
+  const techImageMap = {
+    html: html,
+    javascript: javascript,
+    typescript: typescript,
+    css: css,
+    scss: scss,
+    react: react,
+    dart: dart,
+    flutter: flutter,
+    node: theme === "dark" ? node_d : node_l,
+    express: theme === "dark" ? express_d : express_l,
+    git: git,
+    postman: postman,
+    insomnia: insomnia,
+    python: python,
+    postgresql: postgresql,
+    figma: figma,
+    materialui: materialui,
+  };
 
   useEffect(() => {
     // Function to update the theme
@@ -91,17 +96,6 @@ const ProjectDialog = ({ project }) => {
       observer.disconnect();
     };
   }, []);
-
-  useEffect(() => {
-    // You can now respond to theme changes, for example:
-    if (theme === "dark") {
-      techImageMap.node = node_l;
-      techImageMap.express = express_l;
-    } else {
-      techImageMap.node = node_d;
-      techImageMap.express = express_d;
-    }
-  }, [theme]);
 
   return (
     <div className="project-dialog">
