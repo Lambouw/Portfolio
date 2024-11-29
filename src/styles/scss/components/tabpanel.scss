@@ -11,6 +11,32 @@
   border: 1px solid var(--card-border);
   border-radius: $card-radius;
 
+  position: absolute;
+  top: 54px;
+  left: 0;
+  z-index: 10;
+
+  &--hidden {
+    visibility: hidden;
+
+    position: static;
+    top: auto;
+    left: auto;
+    z-index: auto;
+
+    width: 100%;
+
+    padding: 10px 20px 10px 20px;
+
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: $card-radius;
+  }
+
+  &--unselected {
+    display: none;
+  }
+
   &--header {
     display: flex;
 
@@ -53,6 +79,13 @@
 }
 
 @media only screen and (max-width: $bp-md) {
+  .hidden-tab-panel {
+    &--header {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
   .tab-panel {
     &--header {
       display: flex;

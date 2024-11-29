@@ -58,7 +58,6 @@ function TabContainer() {
   return (
     <div className="tab-container">
       <div className="tab-container--tabbar" ref={tabBarRef}>
-        {/* Highlight element */}
         <div className="tab-container--highlight" style={highlightStyle}></div>
         {Object.keys(experienceData).map((key, i) => (
           <Tab
@@ -74,15 +73,9 @@ function TabContainer() {
         ))}
       </div>
       <div className="tab-container--spacer"></div>
+      <TabPanel tabKey={"ISG"} selectedKey={"PLACEHOLDER"} hidden={true} />
       {Object.keys(experienceData).map((key) => (
-        <div
-          className="tab-container--panel-wrapper"
-          style={{
-            display: key === selectedKey ? "block" : "none",
-          }}
-        >
-          <TabPanel content={experienceData[key]} />
-        </div>
+        <TabPanel tabKey={key} selectedKey={selectedKey} hidden={false} />
       ))}
     </div>
   );

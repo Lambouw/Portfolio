@@ -142,7 +142,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   width: 100%;
+  height: auto;
 }
 .tab-container--tabbar {
   position: relative;
@@ -162,8 +164,4 @@
 }
 .tab-container--spacer {
   height: 20px;
-}
-.tab-container--panel-wrapper {
-  width: 100%;
-  height: 165px;
 }/*# sourceMappingURL=tabcontainer.css.map */

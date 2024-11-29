@@ -145,6 +145,25 @@
   background-color: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: 10px;
+  position: absolute;
+  top: 54px;
+  left: 0;
+  z-index: 10;
+}
+.tab-panel--hidden {
+  visibility: hidden;
+  position: static;
+  top: auto;
+  left: auto;
+  z-index: auto;
+  width: 100%;
+  padding: 10px 20px 10px 20px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+}
+.tab-panel--unselected {
+  display: none;
 }
 .tab-panel--header {
   display: flex;
@@ -178,6 +197,10 @@
 }
 
 @media only screen and (max-width: 840px) {
+  .hidden-tab-panel--header {
+    display: flex;
+    flex-direction: column;
+  }
   .tab-panel--header {
     display: flex;
     flex-direction: column;
