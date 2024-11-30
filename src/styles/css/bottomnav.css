@@ -2,6 +2,8 @@
   --root-bg: rgba(240, 248, 255, 1);
   --header-border-scroll: rgba(0, 0, 0, 0.5);
   --header-backdrop-scroll: rgba(240, 248, 255, 0.6);
+  --bottomnav-border-scroll: rgba(0, 0, 0, 0.5);
+  --bottomnav-backdrop-scroll: rgba(240, 248, 255, 0.6);
   --text-primary: rgb(33, 33, 33);
   --text-secondary: rgba(117, 117, 117, 1);
   --text-tertiary: rgba(189, 189, 189, 1);
@@ -72,6 +74,8 @@
   --root-bg: rgb(36, 40, 45);
   --header-border-scroll: rgba(255, 255, 255, 0.08);
   --header-backdrop-scroll: rgba(36, 40, 45, 0.7);
+  --bottomnav-border-scroll: rgba(255, 255, 255, 0.08);
+  --bottomnav-backdrop-scroll: rgba(36, 40, 45, 0.7);
   --text-primary: rgba(255, 255, 255, 0.87);
   --text-secondary: rgba(255, 255, 255, 0.6);
   --text-tertiary: rgba(255, 255, 255, 0.38);
@@ -148,8 +152,10 @@
   justify-content: space-around;
   align-items: center;
   padding: 15px;
-  background-color: var(--card-bg);
-  border-top: 1px solid var(--header-border-scroll);
+  background-color: var(--bottomnav-backdrop-scroll);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px); /* Apply blur effect */
+  border-top: 1px solid var(--bottomnav-border-scroll);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }

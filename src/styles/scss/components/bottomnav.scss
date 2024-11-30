@@ -16,10 +16,12 @@
 
   padding: 15px;
 
-  background-color: var(--card-bg);
-  border-top: 1px solid var(--header-border-scroll);
-  border-top-left-radius: $card-radius;
-  border-top-right-radius: $card-radius;
+  background-color: var(--bottomnav-backdrop-scroll);
+  backdrop-filter: blur(6px); /* Apply blur effect */
+
+  border-top: 1px solid var(--bottomnav-border-scroll);
+  border-top-left-radius: $bottomnav-radius;
+  border-top-right-radius: $bottomnav-radius;
 
   &--logo {
     cursor: pointer;
