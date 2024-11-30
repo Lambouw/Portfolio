@@ -32,6 +32,9 @@
   --dialog-backdrop: rgba(0, 0, 0, 0.5);
   --dialog-bg: rgba(255, 255, 255, 1);
   --dialog-border: rgba(0, 0, 0, 0.6);
+  --dialog-close-btn-bg: rgba(255, 255, 255, 1);
+  --dialog-close-btn-bg-hover: rgb(232, 232, 232);
+  --dialog-close-btn-border: rgba(0, 0, 0, 0.5);
   --section-header-line: rgba(0, 0, 0, 0.5);
   --color-css: rgba(20, 114, 182, 1);
   --color-css-bg: rgba(20, 114, 182, 0.1);
@@ -104,6 +107,9 @@
   --dialog-backdrop: rgba(0, 0, 0, 0.5);
   --dialog-bg: rgba(49, 56, 64, 1);
   --dialog-border: rgba(255, 255, 255, 0.2);
+  --dialog-close-btn-bg: rgba(49, 56, 64, 1);
+  --dialog-close-btn-bg-hover: rgba(44, 50, 57, 1);
+  --dialog-close-btn-border: rgba(255, 255, 255, 0.08);
   --section-header-line: rgba(255, 255, 255, 0.08);
   --color-css: rgba(20, 114, 182, 1);
   --color-css-bg: rgba(20, 114, 182, 0.1);
@@ -143,45 +149,46 @@
   --color-typescript-bg: rgba(1, 122, 204, 0.1);
 }
 
-.project-dialog {
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+.project--upper {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
-.project-dialog--upper {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.project-dialog--upper--image {
+.project--upper--image {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
 }
-.project-dialog--upper--name {
+.project--upper--name {
   /* Add additional styles if needed */
 }
-.project-dialog--description {
+.project--description {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   line-height: 1.5em; /* Adjust line height if necessary */
 }
-.project-dialog--stack {
+.project--stack {
   display: flex;
   flex-wrap: wrap; /* Macht das Wrappen möglich */
   justify-content: flex-start; /* Zentriert die Cards mit Lücken dazwischen */
   gap: 10px;
 }
-.project-dialog--stack--item {
+.project--stack--item {
   border-radius: 10px;
   padding: 4px 12px 4px 8px;
   display: flex;
 }
-.project-dialog--stack--item--icon {
+.project--stack--item--icon {
   width: 20px;
 }
 /* Base styles for light mode (default) */
@@ -192,4 +199,4 @@
 /* Styles for dark mode */
 [data-theme=dark] .project-dialog--upper--image {
   filter: brightness(80%) contrast(110%);
-}/*# sourceMappingURL=projectdialog.css.map */
+}/*# sourceMappingURL=project.css.map */

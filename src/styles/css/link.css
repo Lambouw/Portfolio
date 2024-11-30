@@ -31,6 +31,9 @@
   --dialog-backdrop: rgba(0, 0, 0, 0.5);
   --dialog-bg: rgba(255, 255, 255, 1);
   --dialog-border: rgba(0, 0, 0, 0.6);
+  --dialog-close-btn-bg: rgba(255, 255, 255, 1);
+  --dialog-close-btn-bg-hover: rgb(232, 232, 232);
+  --dialog-close-btn-border: rgba(0, 0, 0, 0.5);
   --section-header-line: rgba(0, 0, 0, 0.5);
   --color-css: rgba(20, 114, 182, 1);
   --color-css-bg: rgba(20, 114, 182, 0.1);
@@ -103,6 +106,9 @@
   --dialog-backdrop: rgba(0, 0, 0, 0.5);
   --dialog-bg: rgba(49, 56, 64, 1);
   --dialog-border: rgba(255, 255, 255, 0.2);
+  --dialog-close-btn-bg: rgba(49, 56, 64, 1);
+  --dialog-close-btn-bg-hover: rgba(44, 50, 57, 1);
+  --dialog-close-btn-border: rgba(255, 255, 255, 0.08);
   --section-header-line: rgba(255, 255, 255, 0.08);
   --color-css: rgba(20, 114, 182, 1);
   --color-css-bg: rgba(20, 114, 182, 0.1);

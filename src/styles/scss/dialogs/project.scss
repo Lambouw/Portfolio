@@ -1,11 +1,14 @@
 @import "../basics/colors";
 @import "../basics/constants";
+@import "../basics/breakpoints";
 
-.project-dialog {
+.project {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+
+  position: relative;
 
   &--upper {
     display: flex;

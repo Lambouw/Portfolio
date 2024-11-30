@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 // Import Styles
-import "../styles/css/projectdialog.css";
+import "../styles/css/project.css";
 import "../styles/css/techcolors.css";
 
 // Import Project Images
@@ -40,7 +40,7 @@ import postgresql from "../assets/logos/tech/postgresql.svg";
 import figma from "../assets/logos/tech/figma.svg";
 import materialui from "../assets/logos/tech/materialui.svg";
 
-const ProjectDialog = ({ project }) => {
+const Project = ({ project }) => {
   const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
     ? "dark"
     : "light";
@@ -98,32 +98,30 @@ const ProjectDialog = ({ project }) => {
   }, []);
 
   return (
-    <div className="project-dialog">
-      <div className="project-dialog--upper">
+    <div className="project">
+      <div className="project--upper">
         <img
-          className="project-dialog--upper--image"
+          className="project--upper--image"
           aria-label={project.name}
           alt={project.name}
           src={projectImageMap[project.image]}
         />
         <div className="height-s"></div>
-        <h3 className="project-dialog--upper--name">{project.name}</h3>
+        <h3 className="project--upper--name">{project.name}</h3>
       </div>
       <div className="height-s"></div>
-      <div className="project-dialog--description">{project.description}</div>
+      <div className="project--description">{project.description}</div>
       <div className="height-s"></div>
-      <div className="project-dialog--stack">
+      <div className="project--stack">
         {project.stack.map((item, index) => (
-          <div className={`project-dialog--stack--item ${item.image}`}>
+          <div className={`project--stack--item ${item.image}`}>
             <img
               src={techImageMap[item.image]}
-              className="project-dialog--stack--item--icon"
+              className="project--stack--item--icon"
               alt={item.name}
             />
             <div className="width-s"></div>
-            <div className="project-dialog--stack--item--label">
-              {item.name}
-            </div>
+            <div className="project--stack--item--label">{item.name}</div>
           </div>
         ))}
       </div>
@@ -131,4 +129,4 @@ const ProjectDialog = ({ project }) => {
   );
 };
 
-export default ProjectDialog;
+export default Project;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 // Import Components
-import CustomDialog from "./CustomDialog";
+import Dialog from "./Dialog";
 
 // Import Styles
 import "../styles/css/projectcard.css";
@@ -47,8 +47,7 @@ const ProjectCard = React.forwardRef(({ project }, ref) => {
         <div className="project-card--description">{project.description}</div>
       </div>
 
-      {/* Dialog to show details */}
-      <CustomDialog
+      <Dialog
         open={open}
         onClose={toggleDialog}
         type="project"
