@@ -12,37 +12,35 @@ function Privacy() {
       <div className="privacy--container">
         <h1 className="privacy--container--title">Privacy Policy</h1>
         <div className="height-m"></div>
-        <h3>1. Allgemeine Hinweise und Pflichtinformationen</h3>
+        <h3>General Information and Mandatory Disclosures</h3>
         <div className="height-s"></div>
-        <p className="privacy--container--header">Datenschutz</p>
+        <p className="privacy--container--header">Privacy Policy</p>
         <p className="privacy--container--text">
-          Der Betreiber dieser Seiten nimmt den Schutz Ihrer persönlichen
-          Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten
-          vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften
-          sowie dieser Datenschutzerklärung.
+          The operator of this website takes the protection of your personal
+          data very seriously. We treat your personal information confidentially
+          and in accordance with legal data protection regulations as well as
+          this Privacy Policy.
         </p>
         <div className="height-xs"></div>
         <p className="privacy--container--text">
-          Wenn Sie diese Website benutzen, werden verschiedene personenbezogene
-          Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie
-          persönlich identifiziert werden können. Die vorliegende
-          Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir
-          sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das
-          geschieht.
+          When you use this website, various personal data is collected.
+          Personal data refers to information that can be used to personally
+          identify you. This Privacy Policy explains which data we collect and
+          how we use it. It also describes how and for what purpose this data is
+          processed.
         </p>
         <div className="height-s"></div>
         <p className="privacy--container--header">
-          Hinweise zur verantwortlichen Stelle
+          Information on the Responsible Party
         </p>
         <p className="privacy--container--text">
-          Die verantwortliche Stelle für die Datenverarbeitung auf dieser
-          Website ist:
+          The responsible party for data processing on this website is:
         </p>
         <div className="height-xs"></div>
         <p className="privacy--container--text">Malte Lindemann</p>
         <p className="privacy--container--text">Loeweweg 3</p>
         <p className="privacy--container--text">71397 Leutenbach</p>
-        <p className="privacy--container--text">Deutschland</p>
+        <p className="privacy--container--text">Germany</p>
         <div className="height-xs"></div>
         <p className="privacy--container--text">
           E-Mail:&nbsp;
@@ -52,101 +50,97 @@ function Privacy() {
         </p>
         <div className="height-xs"></div>
         <p className="privacy--container--text">
-          Verantwortliche Stelle ist die natürliche oder juristische Person, die
-          allein oder gemeinsam mit anderen über die Zwecke und Mittel der
-          Verarbeitung von personenbezogenen Daten (z.B. Namen, E-Mail-Adressen
-          o. Ä.) entscheidet.
+          The responsible party is the natural or legal person who, alone or
+          jointly with others, determines the purposes and means of processing
+          personal data (e.g., names, email addresses, etc.).
         </p>
         <div className="height-s"></div>
         <p className="privacy--container--header">
-          Widerruf Ihrer Einwilligung zur Datenverarbeitung
+          Revocation of Your Consent to Data Processing
         </p>
         <p className="privacy--container--text">
-          Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen
-          Einwilligung möglich. Sie können eine bereits erteilte Einwilligung
-          jederzeit widerrufen. Dazu reicht eine formlose Mitteilung per E-Mail
-          an uns. Die Rechtmäßigkeit der bis zum Widerruf erfolgten
-          Datenverarbeitung bleibt vom Widerruf unberührt.
+          Many data processing activities are only possible with your explicit
+          consent. You can revoke any consent you have previously given at any
+          time. A simple informal notification via email to us is sufficient for
+          this purpose. The legality of the data processing carried out prior to
+          the revocation remains unaffected by the revocation.
         </p>
         <div className="height-s"></div>
         <p className="privacy--container--header">
-          Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde
+          Right to Lodge a Complaint with the Competent Supervisory Authority
         </p>
         <p className="privacy--container--text">
-          Im Falle datenschutzrechtlicher Verstöße steht dem Betroffenen ein
-          Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.
+          In the case of data protection violations, the data subject has the
+          right to lodge a complaint with the competent supervisory authority.
         </p>
         <div className="height-m"></div>
         <h3 className="privacy--container--header">
-          2. Datenerfassung auf dieser Website
+          2. Data Collection on This Website
         </h3>
         <div className="height-s"></div>
         <p className="privacy--container--header">Server-Log-Dateien</p>
         <p className="privacy--container--text">
-          Der Provider dieser Seiten (Strato AG, Pascalstraße 10, 10587 Berlin,
-          Deutschland) erhebt und speichert automatisch Informationen in
-          sogenannten Server-Log-Dateien, die Ihr Browser automatisch an uns
-          übermittelt. Dies sind:
+          The provider of this website (Strato AG, Pascalstraße 10, 10587
+          Berlin, Germany) automatically collects and stores information in
+          so-called server log files, which your browser automatically transmits
+          to us. These include:
         </p>
         <div className="height-xs"></div>
         <p className="privacy--container--list">
           <ul>
-            <li>Browsertyp und Browserversion</li>
-            <li>Verwendetes Betriebssystem</li>
+            <li>Browser type and version</li>
+            <li>Operating system used</li>
             <li>Referrer URL</li>
-            <li>Hostname des zugreifenden Rechners</li>
-            <li>Uhrzeit der Serveranfrage</li>
-            <li>IP-Adresse</li>
+            <li>Hostname of the accessing computer</li>
+            <li>Time of the server requestage</li>
+            <li>IP address</li>
           </ul>
         </p>
         <div className="height-xs"></div>
         <p className="privacy--container--text">
-          Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht
-          vorgenommen.
+          A combination of this data with other data sources is not performed.
         </p>
         <div className="height-xs"></div>
         <p className="privacy--container--text">
-          Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1
-          lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an
-          der technisch fehlerfreien Darstellung und der Optimierung seiner
-          Website – hierzu müssen die Server-Log-Files erfasst werden.
+          The collection of this data is based on Article 6(1)(f) of the DSGVO.
+          The website operator has a legitimate interest in ensuring the
+          technically error-free presentation and optimization of the website,
+          which requires the recording of server log files.
         </p>
         <div className="height-s"></div>
-        <p className="privacy--container--header">Kontaktformular</p>
+        <p className="privacy--container--header">Contact Form</p>
         <p className="privacy--container--text">
-          Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre
-          Angaben aus dem Anfrageformular inklusive der von Ihnen dort
-          angegebenen Kontaktdaten (Name, E-Mail-Adresse, Betreff und Nachricht)
-          zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen
-          bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre
-          Einwilligung weiter.
+          If you send us inquiries via the contact form, the information you
+          provide in the inquiry form, including the contact details you specify
+          (name, email address, subject, and message), will be stored by us for
+          the purpose of processing your inquiry and in case of follow-up
+          questions. We do not share this data without your consent.
         </p>
         <div className="height-xs"></div>
         <p className="privacy--container--text">
-          Die Verarbeitung der in das Kontaktformular eingegebenen Daten erfolgt
-          ausschließlich auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a
-          DSGVO). Sie können diese Einwilligung jederzeit widerrufen. Dazu
-          reicht eine formlose Mitteilung per E-Mail an uns. Die Rechtmäßigkeit
-          der bis zum Widerruf erfolgten Datenverarbeitungsvorgänge bleibt vom
-          Widerruf unberührt.
+          The processing of data entered into the contact form is carried out
+          exclusively based on your consent (Article 6(1)(a) DSGVO). You can
+          revoke this consent at any time. An informal email notification to us
+          is sufficient for this purpose. The legality of the data processing
+          carried out prior to the revocation remains unaffected by the
+          revocation.
         </p>
         <div className="height-xs"></div>
         <p className="privacy--container--text">
-          Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei
-          uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur
-          Speicherung widerrufen oder der Zweck für die Datenspeicherung
-          entfällt (z.B. nach abgeschlossener Bearbeitung Ihrer Anfrage).
-          Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen
-          – bleiben unberührt.
+          The data you enter in the contact form will remain with us until you
+          request its deletion, revoke your consent to storage, or the purpose
+          for data storage no longer applies (e.g., after your inquiry has been
+          fully processed). Mandatory legal provisions — particularly retention
+          periods — remain unaffected.
         </p>
         <div className="height-m"></div>
-        <h3>3. Hosting bei Strato</h3>
+        <h3>3. Hosting with Strato</h3>
         <p className="privacy--container--text">
-          Diese Website wird bei Strato gehostet. Der Anbieter ist die Strato
-          AG, Pascalstraße 10, 10587 Berlin, Deutschland. Wenn Sie diese Website
-          besuchen, werden automatisch personenbezogene Daten (Server-Logfiles)
-          durch Strato erhoben. Details zur Datenverarbeitung finden Sie in der
-          Datenschutzerklärung von Strato:&nbsp;
+          This website is hosted by Strato. The provider is Strato AG,
+          Pascalstraße 10, 10587 Berlin, Germany. When you visit this website,
+          personal data (server log files) is automatically collected by Strato.
+          For details on data processing, please refer to Strato's Privacy
+          Policy:&nbsp;
           <a
             className="extern"
             href="https://www.strato.de/datenschutz"
@@ -158,25 +152,24 @@ function Privacy() {
         </p>
         <div className="height-xs"></div>
         <p className="privacy--container--text">
-          Mit Strato haben wir einen Vertrag zur Auftragsverarbeitung (AVV)
-          abgeschlossen, um sicherzustellen, dass die Datenverarbeitung im
-          Einklang mit den Datenschutzbestimmungen erfolgt.
+          We have entered into a Data Processing Agreement (DPA) with Strato to
+          ensure that data processing is carried out in compliance with data
+          protection regulations.
         </p>
         <div className="height-m"></div>
-        <h3>4. SSL- bzw. TLS-Verschlüsselung</h3>
+        <h3>4. SSL and TLS Encryption</h3>
         <p className="privacy--container--text">
-          Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der
-          Übertragung vertraulicher Inhalte, wie zum Beispiel Anfragen, die Sie
-          an uns als Seitenbetreiberin senden, eine SSL- bzw.
-          TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie
-          daran, dass die Adresszeile des Browsers von "http://" auf "https://"
-          wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.
+          This site uses SSL or TLS encryption for security reasons and to
+          protect the transmission of confidential information, such as
+          inquiries you send to us as the site operator. You can recognize an
+          encrypted connection by the browser's address bar switching from
+          "http://" to "https://" and by the lock icon in your browser's address
+          bar.
         </p>
         <div className="height-xs"></div>
         <p className="dat--container--text">
-          Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die
-          Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen
-          werden.
+          When SSL or TLS encryption is activated, the data you transmit to us
+          cannot be read by third parties.
         </p>
       </div>
       <Footer />

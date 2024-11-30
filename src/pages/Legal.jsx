@@ -13,17 +13,17 @@ function Legal() {
         <h1>Legal Notice</h1>
         <div className="height-m"></div>
         <section className="legal--container--contact">
-          <h3>Angaben gemäß § 5 TMG:</h3>
+          <h3>Information Pursuant to § 5 TMG (Telemedia Act):</h3>
           <div className="height-s"></div>
           <p className="legal--container--contact--header">
-            Name und Anschrift des Inhabers:
+            Name and Address of the Owner:
           </p>
           <p>Malte Lindemann</p>
           <p>Loeweweg 3</p>
           <p>71397 Leutenbach</p>
-          <p>Deutschland</p>
+          <p>Germany</p>
           <div className="height-s"></div>
-          <p className="legal--container--contact--header">Kontakt:</p>
+          <p className="legal--container--contact--header">Contact:</p>
           <p>
             E-Mail:&nbsp;
             <a className="extern" href="mailto:jm.lindemann@web.de">
@@ -32,15 +32,15 @@ function Legal() {
           </p>
           <div className="height-s"></div>
           <p className="legal--container--contact--header">
-            Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
+            Responsible for the content pursuant to § 55 (2) RStV:
           </p>
           <p>Malte Lindemann</p>
           <p>Loeweweg 3</p>
           <p>71397 Leutenbach</p>
-          <p>Deutschland</p>
+          <p>Germany</p>
           <div className="height-xs"></div>
           <p>
-            Quelle:&nbsp;
+            Source:&nbsp;
             <a
               className="extern"
               target="_blank"
@@ -52,60 +52,56 @@ function Legal() {
           </p>
         </section>
         <div className="height-m"></div>
-        <h3 className="legal--container--header">Haftung für Inhalte:</h3>
+        <h3 className="legal--container--header">Liability for Content:</h3>
         <p className="legal--container--text">
-          Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte
-          auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach
-          §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht
-          verpflichtet, übermittelte oder gespeicherte fremde Informationen zu
-          überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige
-          Tätigkeit hinweisen.
+          As a service provider, we are responsible for our own content on these
+          pages in accordance with § 7 (1) of the German Telemedia Act (TMG) and
+          general laws. However, according to §§ 8 to 10 TMG, we are not
+          obligated as a service provider to monitor transmitted or stored
+          third-party information or to investigate circumstances that indicate
+          illegal activity.
         </p>
         <div className="height-xs"></div>
         <p className="legal--container--text">
-          Verpflichtungen zur Entfernung oder Sperrung der Nutzung von
-          Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.
-          Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der
-          Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden
-          von entsprechenden Rechtsverletzungen werden wir diese Inhalte
-          umgehend entfernen.
+          Obligations to remove or block the use of information under general
+          laws remain unaffected. However, liability in this regard is only
+          possible from the moment we become aware of a specific legal
+          violation. Upon becoming aware of such violations, we will promptly
+          remove the relevant content.
         </p>
         <div className="height-m"></div>
-        <h3 className="legal--container--header">Haftung für Links:</h3>
+        <h3 className="legal--container--header">Liability for Links:</h3>
         <p className="legal--container--text">
-          Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren
-          Inhalte wir keinen Einfluss haben. Deshalb können wir für diese
-          fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der
-          verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der
-          Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der
-          Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige
-          Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
+          Our website contains links to external third-party websites over whose
+          content we have no control. Therefore, we cannot assume any liability
+          for these external contents. The respective provider or operator of
+          the linked websites is always responsible for their content. The
+          linked pages were checked for possible legal violations at the time of
+          linking. No unlawful content was detected at the time of linking.
         </p>
         <div className="height-xs"></div>
         <p className="legal--container--text">
-          Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch
-          ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei
-          Bekanntwerden von Rechtsverletzungen werden wir derartige Links
-          umgehend entfernen.
+          A permanent content check of the linked pages is not reasonable
+          without concrete evidence of a legal violation. Upon becoming aware of
+          any legal violations, we will promptly remove such links.
         </p>
         <div className="height-m"></div>
-        <h3 className="legal--container--header">Urheberrecht:</h3>
+        <h3 className="legal--container--header">Copyright:</h3>
         <p className="legal--container--text">
-          Die durch den Seitenbetreiber erstellten Inhalte und Werke auf
-          diesen Seiten unterliegen dem deutschen Urheberrecht. Die
-          Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung
-          außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen
-          Zustimmung des Inhabers. Downloads und Kopien dieser Seite sind nur
-          für den privaten, nicht kommerziellen Gebrauch gestattet.
+          The content and works created by the site operator on these pages are
+          subject to German copyright law. Reproduction, editing, distribution,
+          and any kind of use outside the limits of copyright law require the
+          written consent of the owner. Downloads and copies of this site are
+          only permitted for private, non-commercial use.
         </p>
         <div className="height-xs"></div>
         <p className="legal--container--text">
-          Soweit die Inhalte auf dieser Seite nicht von dem Betreiber erstellt
-          wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden
-          Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf
-          eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen
-          entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen
-          werden wir derartige Inhalte umgehend entfernen.
+          Insofar as the content on this site was not created by the operator,
+          the copyrights of third parties are respected. Third-party content is
+          specifically marked as such. If you nonetheless become aware of a
+          copyright infringement, we request that you notify us accordingly.
+          Upon becoming aware of any legal violations, we will promptly remove
+          such content.
         </p>
       </div>
       <Footer />
