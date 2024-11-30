@@ -1,11 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// Import Logos / Images
-
 // Import Pages
 import Home from "./pages/Home";
 import Imprint from "./pages/Imprint";
 import Data from "./pages/Data";
+
+// Import Components
+import BottomNav from "./components/BottomNav";
 
 // Import Styles
 import "./styles/css/reset.css";
@@ -17,15 +18,16 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 function App() {
   return (
     <ThemeProvider>
-      <div className="app">
-        <Router>
+      <Router>
+        <div className="app">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/imprint" element={<Imprint />} />
             <Route path="/data" element={<Data />} />
           </Routes>
-        </Router>
-      </div>
+        </div>
+        <BottomNav />
+      </Router>
     </ThemeProvider>
   );
 }

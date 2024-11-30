@@ -42,7 +42,6 @@ function Footer() {
       <div className="width-l"></div>
       <div
         className="footer--logo header--inner--logo"
-        to="/"
         onClick={() => handleNavClick()}
       >
         {theme === "light" ? (

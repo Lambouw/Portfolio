@@ -1,39 +1,35 @@
 @import "../basics/colors";
+@import "../basics/constants";
+@import "../basics/breakpoints";
 
 .navbar {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
 
-.theme-toggler {
-  margin: none;
-  padding: none;
+  &--theme-toggler {
+    background-color: var(--button-no-bg);
 
-  border: none;
-  background-color: var(--button-no-bg);
+    cursor: pointer;
 
-  cursor: pointer;
-
-  svg {
-    margin-top: 10px;
-
-    height: 32px;
-    width: 32px;
-    transition: transform 0.1s ease;
-    transform-origin: center;
-  }
-
-  &:hover {
     svg {
-      transform: scale(1.1);
-      fill: var(--highlight);
+      height: 20px;
+      width: 20px;
+      transition: transform 0.1s ease;
+      transform-origin: center;
     }
-  }
 
-  &.clicked {
-    svg {
-      animation: rotate 0.1s ease-in-out;
+    &:hover {
+      svg {
+        transform: scale(1.1);
+        fill: var(--highlight);
+      }
+    }
+
+    &.clicked {
+      svg {
+        animation: rotate 0.1s ease-in-out;
+      }
     }
   }
 }

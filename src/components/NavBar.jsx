@@ -13,7 +13,7 @@ function NavBar() {
   const location = useLocation(); // Get current location
 
   const handleToggleTheme = () => {
-    const toggler = document.querySelector(".theme-toggler");
+    const toggler = document.querySelector(".navbar--theme-toggler");
     toggler.classList.add("clicked");
 
     setTimeout(() => {
@@ -63,11 +63,11 @@ function NavBar() {
       </span>
       <div className="width-m"></div>
       {theme === "light" ? (
-        <button className="theme-toggler" onClick={handleToggleTheme}>
+        <div className="navbar--theme-toggler" onClick={handleToggleTheme}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="var(--text-primary)"
-            viewBox="0 0 24 24"
+            viewBox="0 0 15 15"
           >
             <path
               fillRule="evenodd"
@@ -75,13 +75,13 @@ function NavBar() {
               clipRule="evenodd"
             ></path>
           </svg>
-        </button>
+        </div>
       ) : (
-        <button className="theme-toggler" onClick={handleToggleTheme}>
+        <div className="navbar--theme-toggler" onClick={handleToggleTheme}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="var(--text-primary)"
-            viewBox="0 0 24 24"
+            viewBox="0 0 15 15" 
           >
             <path
               fillRule="evenodd"
@@ -89,7 +89,7 @@ function NavBar() {
               clipRule="evenodd"
             ></path>
           </svg>
-        </button>
+        </div>
       )}
     </div>
   );

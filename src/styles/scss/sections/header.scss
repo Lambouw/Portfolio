@@ -31,6 +31,8 @@
     }
 
     &--logo {
+      cursor: pointer;
+      
       &:hover {
         svg {
           transform: scale(1.1);
@@ -49,5 +51,11 @@
   .header--inner {
     margin-left: 20px;
     margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: $bp-sm) {
+  .header {
+    display: none;
   }
 }

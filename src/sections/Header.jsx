@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 
 // Import Contexts
 import { useTheme } from "../contexts/ThemeContext";
@@ -13,6 +13,7 @@ import "../styles/css/header.css";
 function Header() {
   const { theme, toggleTheme } = useTheme("light");
   const location = useLocation(); // Get current location
+  const navigate = useNavigate(); // React Router's navigate hook
   const [scroll, setScroll] = useState(false);
 
   useEffect(() => {
@@ -21,10 +22,36 @@ function Header() {
     });
   }, []);
 
+  const handleLogoClick = () => {
+    // If already on '/', just scroll to the section
+    if (location.pathname === "/") {
+      scrollToTop();
+    } else {
+      // Navigate to '/' first, then scroll after a short delay
+      navigate("/");
+      setTimeout(() => {
+        scrollToTop();
+      }, 100); // Delay for navigation to complete
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Enables smooth scrolling
+      duration: 250,
+    });
+  };
+
   return (
     <div className={`header ${scroll && "scroll"}`}>
       <div className="header--inner">
-        <NavLink className="header--inner--logo" to="/">
+        <div
+          className="header--inner--logo"
+          onClick={() => {
+            handleLogoClick();
+          }}
+        >
           {theme === "light" ? (
             <svg
               width="40"
@@ -54,7 +81,7 @@ function Header() {
               />
             </svg>
           )}
-        </NavLink>
+        </div>
         <NavBar />
       </div>
     </div>

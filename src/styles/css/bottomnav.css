@@ -138,51 +138,54 @@
   --color-typescript-bg: rgba(1, 122, 204, 0.1);
 }
 
-.header {
-  width: 100%;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  position: fixed;
-  top: 0; /* Position the navbar at the top of the page */
+.bottomnav {
+  position: sticky;
+  bottom: 0;
   left: 0;
-  z-index: 20;
-  background-color: var(--header-backdrop-scroll);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px); /* Apply blur effect */
-}
-.header--inner {
-  max-width: 1000px;
-  margin: 0 auto;
+  z-index: 100;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
+  padding: 15px;
+  background-color: var(--card-bg);
+  border-top: 1px solid var(--header-border-scroll);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
-.header--inner--name {
-  font-weight: 600;
-}
-.header--inner--name:hover {
-  color: var(--highlight);
-}
-.header--inner--logo {
+.bottomnav--logo {
   cursor: pointer;
 }
-.header--inner--logo:hover svg {
+.bottomnav--logo:hover svg {
   transform: scale(1.1);
   fill: var(--highlight);
 }
-
-.scroll {
-  border-bottom: 1px solid var(--header-border-scroll);
+.bottomnav--icon {
+  cursor: pointer;
+}
+.bottomnav--icon:hover {
+  color: var(--highlight);
+}
+.bottomnav--theme-toggler {
+  background-color: var(--button-no-bg);
+  cursor: pointer;
+}
+.bottomnav--theme-toggler svg {
+  height: 20px;
+  width: 20px;
+  transition: transform 0.1s ease;
+  transform-origin: center;
+}
+.bottomnav--theme-toggler:hover svg {
+  transform: scale(1.1);
+  fill: var(--highlight);
+}
+.bottomnav--theme-toggler.clicked svg {
+  animation: rotate 0.1s ease-in-out;
 }
 
-@media only screen and (max-width: 1040px) {
-  .header--inner {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-}
-@media only screen and (max-width: 575px) {
-  .header {
+@media only screen and (min-width: 575px) {
+  .bottomnav {
     display: none;
   }
-}/*# sourceMappingURL=header.css.map */
+}/*# sourceMappingURL=bottomnav.css.map */

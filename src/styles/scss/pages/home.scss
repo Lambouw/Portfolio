@@ -1,3 +1,17 @@
+@import "../basics/colors";
+@import "../basics/constants";
+@import "../basics/breakpoints";
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1; /* Fully visible */
+  }
+  50% {
+    opacity: 0; /* Invisible */
+  }
+}
+
 .scroll-icon {
   position: fixed;
   bottom: 25px;
@@ -10,12 +24,9 @@
   animation: blink 1.5s infinite; /* Apply the blink animation */
 }
 
-@keyframes blink {
-  0%,
-  100% {
-    opacity: 1; /* Fully visible */
-  }
-  50% {
-    opacity: 0; /* Invisible */
+@media only screen and (max-width: $bp-sm) {
+  .scroll-icon {
+    bottom: 70px;
+    transform: translateX(-50%) scale(0.75);
   }
 }
