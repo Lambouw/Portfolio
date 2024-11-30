@@ -23,46 +23,49 @@
   border-top-left-radius: $bottomnav-radius;
   border-top-right-radius: $bottomnav-radius;
 
-  &--logo {
-    cursor: pointer;
-    &:hover {
-      svg {
+  &--item {
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--icon {
+      cursor: pointer;
+
+      &:hover {
+        color: var(--highlight);
         transform: scale(1.1);
-        fill: var(--highlight);
-      }
-    }
-  }
 
-  &--icon {
-    cursor: pointer;
-
-    &:hover {
-      color: var(--highlight);
-    }
-  }
-
-  &--theme-toggler {
-    background-color: var(--button-no-bg);
-
-    cursor: pointer;
-
-    svg {
-      height: 20px;
-      width: 20px;
-      transition: transform 0.1s ease;
-      transform-origin: center;
-    }
-
-    &:hover {
-      svg {
-        transform: scale(1.1);
-        fill: var(--highlight);
+        svg {
+          transform: scale(1.1);
+          fill: var(--highlight);
+        }
       }
     }
 
-    &.clicked {
+    &--theme-toggler {
+      background-color: var(--button-no-bg);
+
+      cursor: pointer;
+
       svg {
-        animation: rotate 0.1s ease-in-out;
+        height: 20px;
+        width: 20px;
+        transition: transform 0.1s ease;
+        transform-origin: center;
+      }
+
+      &:hover {
+        svg {
+          transform: scale(1.1);
+          fill: var(--highlight);
+        }
+      }
+
+      &.clicked {
+        svg {
+          animation: rotate 0.1s ease-in-out;
+        }
       }
     }
   }
