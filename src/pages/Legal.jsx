@@ -3,19 +3,19 @@ import Header from "../sections/Header";
 import Footer from "../sections/Footer";
 
 // Import Styles
-import "../styles/css/imprint.css";
+import "../styles/css/legal.css";
 
-function Imprint() {
+function Legal() {
   return (
-    <div className="imprint">
+    <div className="legal">
       <Header />
-      <div className="imprint--container">
+      <div className="legal--container">
         <h1>Legal Notice</h1>
         <div className="height-m"></div>
-        <section className="imprint--container--contact">
+        <section className="legal--container--contact">
           <h3>Angaben gemäß § 5 TMG:</h3>
           <div className="height-s"></div>
-          <p className="imprint--container--contact--header">
+          <p className="legal--container--contact--header">
             Name und Anschrift des Inhabers:
           </p>
           <p>Malte Lindemann</p>
@@ -23,7 +23,7 @@ function Imprint() {
           <p>71397 Leutenbach</p>
           <p>Deutschland</p>
           <div className="height-s"></div>
-          <p className="imprint--container--contact--header">Kontakt:</p>
+          <p className="legal--container--contact--header">Kontakt:</p>
           <p>
             E-Mail:&nbsp;
             <a className="extern" href="mailto:jm.lindemann@web.de">
@@ -31,7 +31,7 @@ function Imprint() {
             </a>
           </p>
           <div className="height-s"></div>
-          <p className="imprint--container--contact--header">
+          <p className="legal--container--contact--header">
             Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
           </p>
           <p>Malte Lindemann</p>
@@ -52,8 +52,8 @@ function Imprint() {
           </p>
         </section>
         <div className="height-m"></div>
-        <h3 className="imprint--container--header">Haftung für Inhalte:</h3>
-        <p className="imprint--container--text">
+        <h3 className="legal--container--header">Haftung für Inhalte:</h3>
+        <p className="legal--container--text">
           Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte
           auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach
           §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht
@@ -62,7 +62,7 @@ function Imprint() {
           Tätigkeit hinweisen.
         </p>
         <div className="height-xs"></div>
-        <p className="imprint--container--text">
+        <p className="legal--container--text">
           Verpflichtungen zur Entfernung oder Sperrung der Nutzung von
           Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.
           Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der
@@ -71,8 +71,8 @@ function Imprint() {
           umgehend entfernen.
         </p>
         <div className="height-m"></div>
-        <h3 className="imprint--container--header">Haftung für Links:</h3>
-        <p className="imprint--container--text">
+        <h3 className="legal--container--header">Haftung für Links:</h3>
+        <p className="legal--container--text">
           Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren
           Inhalte wir keinen Einfluss haben. Deshalb können wir für diese
           fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der
@@ -82,15 +82,15 @@ function Imprint() {
           Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
         </p>
         <div className="height-xs"></div>
-        <p className="imprint--container--text">
+        <p className="legal--container--text">
           Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch
           ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei
           Bekanntwerden von Rechtsverletzungen werden wir derartige Links
           umgehend entfernen.
         </p>
         <div className="height-m"></div>
-        <h3 className="imprint--container--header">Urheberrecht:</h3>
-        <p className="imprint--container--text">
+        <h3 className="legal--container--header">Urheberrecht:</h3>
+        <p className="legal--container--text">
           Die durch den Seitenbetreiber erstellten Inhalte und Werke auf
           diesen Seiten unterliegen dem deutschen Urheberrecht. Die
           Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung
@@ -99,7 +99,7 @@ function Imprint() {
           für den privaten, nicht kommerziellen Gebrauch gestattet.
         </p>
         <div className="height-xs"></div>
-        <p className="imprint--container--text">
+        <p className="legal--container--text">
           Soweit die Inhalte auf dieser Seite nicht von dem Betreiber erstellt
           wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden
           Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf
@@ -113,4 +113,4 @@ function Imprint() {
   );
 }
 
-export default Imprint;
+export default Legal;

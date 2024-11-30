@@ -1,0 +1,30 @@
+@import "../basics/colors";
+@import "../basics/constants";
+@import "../basics/breakpoints";
+
+.legal {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &--container {
+    margin-top: 130px;
+    padding-bottom: 50px;
+
+    &--header {
+      font-weight: bold;
+    }
+
+    &--text {
+      text-align: justify;
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-sm) {
+  .legal {
+    &--container {
+      margin-top: 50px;
+    }
+  }
+}

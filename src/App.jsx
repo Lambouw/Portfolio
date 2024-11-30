@@ -5,8 +5,8 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 
 // Import Pages
 import Home from "./pages/Home";
-import Imprint from "./pages/Imprint";
-import Data from "./pages/Data";
+import Legal from "./pages/Legal";
+import Privacy from "./pages/Privacy";
 
 // Import Components
 import BottomNav from "./components/BottomNav";
@@ -24,8 +24,8 @@ function App() {
         <div className="app">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/imprint" element={<Imprint />} />
-            <Route path="/data" element={<Data />} />
+            <Route path="/legal" element={<Legal />} />
+            <Route path="/privacy" element={<Privacy />} />
           </Routes>
         </div>
         <BottomNav />

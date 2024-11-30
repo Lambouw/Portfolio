@@ -1,4 +1,8 @@
-.data {
+@import "../basics/colors";
+@import "../basics/constants";
+@import "../basics/breakpoints";
+
+.privacy {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -13,6 +17,14 @@
 
     &--text {
       text-align: justify;
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-sm) {
+  .privacy {
+    &--container {
+      margin-top: 50px;
     }
   }
 }

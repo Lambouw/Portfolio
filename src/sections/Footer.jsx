@@ -35,8 +35,8 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footer--left">
-        <NavLink className="link" to="/imprint">
-          Imprint
+        <NavLink className="link" to="/legal">
+          Legal Notice
         </NavLink>
       </div>
       <div className="width-l"></div>
@@ -76,8 +76,8 @@ function Footer() {
       </div>
       <div className="width-l"></div>
       <div className="footer--right">
-        <NavLink className="link" to="/data">
-          Data
+        <NavLink className="link" to="/privacy">
+          Privacy Policy
         </NavLink>
       </div>
     </div>
