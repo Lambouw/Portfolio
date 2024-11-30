@@ -1,5 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+// Import Contexts
+import { ThemeProvider } from "./contexts/ThemeContext";
+
 // Import Pages
 import Home from "./pages/Home";
 import Imprint from "./pages/Imprint";
@@ -13,7 +16,6 @@ import "./styles/css/reset.css";
 import "./styles/css/app.css";
 import "./styles/css/link.css";
 import "./styles/css/spaceconstants.css";
-import { ThemeProvider } from "./contexts/ThemeContext";
 
 function App() {
   return (

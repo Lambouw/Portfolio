@@ -2,9 +2,6 @@ import { useState, useEffect } from "react";
 
 import { useTheme } from "../contexts/ThemeContext";
 
-// Import Components
-import NavBar from "../components/NavBar";
-
 // Import Sections
 import Header from "../sections/Header";
 import Hero from "../sections/Hero";

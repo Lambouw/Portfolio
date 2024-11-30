@@ -6,9 +6,6 @@ import TabContainer from "../components/TabContainer";
 // Import Styles
 import "../styles/css/experience.css";
 
-// Import Data
-import experienceData from "../assets/data/experience.json";
-
 function Experience() {
   const cardRefs = useRef([]);
   const animatedItems = useRef(new Set()); // Set to track already animated items
