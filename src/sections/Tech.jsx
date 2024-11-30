@@ -150,7 +150,7 @@ function Tech() {
               className="tech--items--card--image"
               alt={item.name}
             />
-            <div className="height-s"></div>
+            <div className="tech--items--card--spacer"></div>
             <div className="tech--items--card--name">{item.name}</div>
           </a>
         ))}

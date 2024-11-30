@@ -209,6 +209,9 @@
   width: 40px; /* Adjust as needed */
   height: 40px; /* Adjust as needed */
 }
+.tech--items--card--spacer {
+  height: 10px;
+}
 .tech--toggle {
   display: flex;
   justify-content: center;
@@ -228,4 +231,25 @@
 }
 .tech--toggle--button:active {
   background-color: var(--button-bg-click);
+}
+
+@media only screen and (max-width: 575px) {
+  .tech--items {
+    gap: 15px;
+  }
+  .tech--items--card {
+    width: 72px; /* Ensure width is equal to height */
+    height: 72px; /* Ensure height is equal to width */
+  }
+  .tech--items--card--image {
+    margin-top: 10px;
+    width: 30px; /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
+  }
+  .tech--items--card--spacer {
+    height: 2px;
+  }
+  .tech--items--card--name {
+    font-size: 13px;
+  }
 }/*# sourceMappingURL=tech.css.map */

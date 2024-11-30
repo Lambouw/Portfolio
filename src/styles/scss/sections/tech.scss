@@ -1,5 +1,6 @@
 @import "../basics/colors";
 @import "../basics/constants";
+@import "../basics/breakpoints";
 
 @keyframes slide-in {
   0% {
@@ -81,6 +82,10 @@
         width: 40px; /* Adjust as needed */
         height: 40px; /* Adjust as needed */
       }
+
+      &--spacer {
+        height: 10px;
+      }
     }
   }
 
@@ -106,6 +111,33 @@
 
       &:active {
         background-color: var(--button-bg-click);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-sm) {
+  .tech {
+    &--items {
+      gap: 15px;
+
+      &--card {
+        width: 72px; /* Ensure width is equal to height */
+        height: 72px; /* Ensure height is equal to width */
+
+        &--image {
+          margin-top: 10px;
+          width: 30px; /* Adjust as needed */
+          height: 30px; /* Adjust as needed */
+        }
+
+        &--spacer {
+          height: 2px;
+        }
+
+        &--name {
+          font-size: 13px;
+        }
       }
     }
   }
