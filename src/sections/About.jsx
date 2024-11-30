@@ -15,25 +15,35 @@ function About() {
       <div className="height-l"></div>
       <div className="about--text">
         <p>
-          Hi, I'm <span className="about--text--name">Malte Lindemann</span>, a
-          self taught software engineer. My first real taste of programming came
-          during university through an introductory computer science course, and
-          that was the spark. Since then, I've always been curious about
-          software development, wanting to learn more and more.
+          I am currently completing my Master's degree in Mechanical Engineering
+          at the{" "}
+          <span className="about--text--highlight">
+            University of Stuttgart
+          </span>
+          . As part of my studies, I am working on my Master's thesis at{" "}
+          <span className="about--text--highlight">
+            ISG Industrielle Steuerungstechnik GmbH
+          </span>
+          , where I am developing an adaptive Human-Machine Interface (HMI)
+          tailored to different machine configurations.
         </p>
         <div className="height-s"></div>
         <p>
-          When the first lockdown hit, I decided to dive in headfirst. I spent
-          hours teaching myself web development using online resources and
-          documentation, and that’s when things really clicked. What started as
-          a hobby quickly became a passion.
+          My journey into software development began during the COVID pandemic.
+          After being introduced to programming in university computer science
+          lectures, I decided to dive deeper and{" "}
+          <span className="about--text--highlight">teach myself coding</span> —
+          a decision that has become a passion and an integral part of my career
+          aspirations.
         </p>
         <div className="height-s"></div>
         <p>
-          From there, I landed my first jobs in software development, and I
-          realized: this is exactly what I want to do. I love creating solutions
-          with code, tackling challenges, and always finding something new to
-          learn along the way.
+          Outside of software development and engineering, I am deeply
+          passionate about{" "}
+          <span className="about--text--highlight">football</span>. Whether it’s
+          playing with friends at my local club or cheering on my favorite teams
+          from the stadium or in front of the TV, football has always been a
+          source of joy and inspiration in my life.
         </p>
       </div>
     </div>

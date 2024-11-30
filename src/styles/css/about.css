@@ -164,6 +164,9 @@
 .about--text {
   text-align: justify;
 }
+.about--text--highlight {
+  color: var(--highlight);
+}
 
 @keyframes slide {
   0% {
