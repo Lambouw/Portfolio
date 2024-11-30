@@ -35,7 +35,7 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footer--left">
-        <NavLink className=" slink" to="/imprint">
+        <NavLink className="link" to="/imprint">
           Imprint
         </NavLink>
       </div>
