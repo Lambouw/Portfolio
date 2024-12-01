@@ -160,17 +160,6 @@
   --color-nestjs-bg: rgb(234, 39, 92, 0.1);
 }
 
-@keyframes slide-in {
-  0% {
-    transform: translateY(80px);
-  }
-  80% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 .project-card {
   display: flex;
   flex-direction: column;
@@ -182,8 +171,6 @@
   background-color: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: 10px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in;
   box-shadow: 0 15px 25px var(--card-shadow);
 }
 .project-card:hover {
@@ -217,11 +204,6 @@
   word-wrap: break-word;
   line-height: 1.5em; /* Adjust line height if necessary */
   max-height: 4.5em; /* Limit height to 3 lines */
-}
-
-.slide-in {
-  opacity: 1;
-  animation: slide-in 0.5s ease-in;
 }
 
 /* Base styles for light mode (default) */

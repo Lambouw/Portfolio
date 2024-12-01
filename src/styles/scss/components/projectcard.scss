@@ -1,17 +1,17 @@
 @import "../basics/colors";
 @import "../basics/constants";
 
-@keyframes slide-in {
-  0% {
-    transform: translateY(80px);
-  }
-  80% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
+// @keyframes slide-in {
+//   0% {
+//     transform: translateY(80px);
+//   }
+//   80% {
+//     transform: translateY(-10px);
+//   }
+//   100% {
+//     transform: translateY(0);
+//   }
+// }
 
 .project-card {
   display: flex;
@@ -28,8 +28,8 @@
   border: 1px solid var(--card-border);
   border-radius: $card-radius;
 
-  opacity: 0;
-  transition: opacity 0.3s ease-in;
+  // opacity: 0;
+  // transition: opacity 0.3s ease-in;
   box-shadow: 0 15px 25px var(--card-shadow);
 
   &:hover {
@@ -69,10 +69,10 @@
   }
 }
 
-.slide-in {
-  opacity: 1;
-  animation: slide-in 0.5s ease-in;
-}
+// .slide-in {
+//   opacity: 1;
+//   animation: slide-in 0.5s ease-in;
+// }
 
 /* Base styles for light mode (default) */
 .project-card--upper--image {
