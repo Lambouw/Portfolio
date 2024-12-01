@@ -21,7 +21,7 @@ function Projects() {
 
   return (
     <div id="projects" className="projects">
-      <FadeInContainer type={"left"}>
+      <FadeInContainer type={"left"} threshold={0.4}>
         <div className="projects--heading">
           <h1 className="projects--heading--icon">&#8811;</h1>
           {/* <h1 className="tech--heading--icon">&#8827;</h1> */}

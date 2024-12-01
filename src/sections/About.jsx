@@ -8,8 +8,8 @@ function About() {
   return (
     <div id="about" className="about">
       {/* need threshold, because about section is a bit visible on hero/start view */}
-      <FadeInContainer type={"left"} threshold={0.1}> 
-      {/* <FadeInContainer type={"bottom"}> */}
+      <FadeInContainer type={"left"} threshold={0.4}>
+        {/* <FadeInContainer type={"bottom"}> */}
         <div className="about--heading">
           <h1 className="about--heading--icon">&#8811;</h1>
           {/* <h1 className="about--heading--icon">&#8827;</h1> */}

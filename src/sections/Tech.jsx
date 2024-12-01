@@ -108,7 +108,7 @@ function Tech() {
 
   return (
     <div id="tech" className="tech">
-      <FadeInContainer type={"right"}>
+      <FadeInContainer type={"right"} threshold={0.4}>
         <div className="tech--heading">
           <h1 className="tech--heading--icon">&#8811;</h1>
           {/* <h1 className="tech--heading--icon">&#8827;</h1> */}
