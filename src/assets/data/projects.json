@@ -58,7 +58,7 @@
       { "name": "Figma", "image": "figma", "class": "figma" }
     ],
     "git": "https://github.com/Lambouw/portfolio_v1",
-    "site": null
+    "site": "https://portfolio-v1-omega-one.vercel.app/"
   },
   {
     "name": "Manager Mission Generator",
@@ -70,6 +70,6 @@
       { "name": "JavaScript", "image": "javascript", "class": "javascript" }
     ],
     "git": "https://github.com/Lambouw/Manager-Mission-Generator",
-    "site": null
+    "site": "https://manager-mission-generator.vercel.app/"
   }
 ]
