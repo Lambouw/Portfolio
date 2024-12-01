@@ -5,11 +5,6 @@ import "../styles/css/tabpanel.css";
 import experienceData from "../assets/data/experience.json";
 
 function TabPanel({ tabKey, selectedKey, hidden }) {
-  console.log("hidden: " + hidden);
-  console.log(tabKey);
-  console.log(selectedKey);
-  console.log(experienceData);
-
   return (
     <div className={`tab-panel${hidden ? "--hidden" : tabKey !== selectedKey ? '--unselected' : ''}`}>
       <div className="tab-panel--header">
