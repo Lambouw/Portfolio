@@ -1,5 +1,17 @@
 import React, { useState, useEffect } from "react";
 
+// Import Descriptions
+import HMI from "../projectdescriptions/HMI";
+import ArtistPortfolio from "../projectdescriptions/ArtistPortfolio";
+import TwinStore from "../projectdescriptions/TwinStore";
+import Portfoliov1 from "../projectdescriptions/Portfoliov1";
+import ManagerMissionGenerator from "../projectdescriptions/ManagerMissionGenerator";
+
+// Import Components
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+
 // Import Styles
 import "../styles/css/project.css";
 import "../styles/css/techcolors.css";
@@ -39,6 +51,9 @@ import python from "../assets/logos/tech/python.svg";
 import postgresql from "../assets/logos/tech/postgresql.svg";
 import figma from "../assets/logos/tech/figma.svg";
 import materialui from "../assets/logos/tech/materialui.svg";
+import socketio_d from "../assets/logos/tech/socketio_d.svg";
+import socketio_l from "../assets/logos/tech/socketio_l.svg";
+import nestjs from "../assets/logos/tech/nestjs.svg";
 
 const Project = ({ project }) => {
   const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -68,6 +83,8 @@ const Project = ({ project }) => {
     postgresql: postgresql,
     figma: figma,
     materialui: materialui,
+    socketio: theme === "dark" ? socketio_d : socketio_l,
+    nestjs: nestjs,
   };
 
   useEffect(() => {
@@ -107,14 +124,47 @@ const Project = ({ project }) => {
           src={projectImageMap[project.image]}
         />
         <div className="height-s"></div>
-        <h3 className="project--upper--name">{project.name}</h3>
+        <div className="project--upper--title">
+          <h3 className="project--upper--title--name">{project.name}</h3>
+          <div className="project--upper--title--buttons">
+            {project.git !== null && (
+              <a
+                href={project.git}
+                className="project--upper--title--buttons--git"
+                target="blank"
+              >
+                <FontAwesomeIcon icon={faGithub} />
+              </a>
+            )}
+            {project.site !== null && (
+              <div className="project--upper--title--buttons--spacer"></div>
+            )}
+            {project.site !== null && (
+              <a
+                href={project.site}
+                className="project--upper--title--buttons--site"
+                target="blank"
+              >
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+              </a>
+            )}
+          </div>
+        </div>
       </div>
       <div className="height-s"></div>
-      <div className="project--description">{project.description}</div>
-      <div className="height-s"></div>
+      <div className="project--description">
+        {project.name == "Adaptive HMI" && <HMI />}
+        {project.name == "Artist Portfolio Website" && <ArtistPortfolio />}
+        {project.name == "TwinStore" && <TwinStore />}
+        {project.name == "Portfolio v1" && <Portfoliov1 />}
+        {project.name == "Manager Mission Generator" && (
+          <ManagerMissionGenerator />
+        )}
+      </div>
+      <div className="height-m"></div>
       <div className="project--stack">
         {project.stack.map((item, index) => (
-          <div className={`project--stack--item ${item.image}`}>
+          <div className={`project--stack--item ${item.class}`}>
             <img
               src={techImageMap[item.image]}
               className="project--stack--item--icon"

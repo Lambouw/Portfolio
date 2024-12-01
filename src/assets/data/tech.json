@@ -60,9 +60,14 @@
     "src": "https://expressjs.com/"
   },
   {
-    "name": "Postgresql",
+    "name": "PostgreSQL",
     "image": "postgresql",
     "src": "https://www.postgresql.org/"
+  },
+  {
+    "name": "pgAdmin",
+    "image": "postgresql",
+    "src": "https://www.pgadmin.org/"
   },
   {
     "name": "Git",
@@ -83,5 +88,15 @@
     "name": "Figma",
     "image": "figma",
     "src": "https://www.figma.com/"
+  },
+  {
+    "name": "Socket.io",
+    "image": "socketio",
+    "src": "https://www.socket.io/"
+  },
+  {
+    "name": "NestJS",
+    "image": "nestjs",
+    "src": "https://nestjs.com/"
   }
 ]

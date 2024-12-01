@@ -76,6 +76,12 @@
   background-color: var(--color-postgresql-bg);
 }
 
+.pgadmin {
+  color: var(--color-pgadmin);
+  // color: var(--text-primary);
+  background-color: var(--color-pgadmin-bg);
+}
+
 .git {
   color: var(--color-git);
   // color: var(--text-primary);
@@ -98,4 +104,16 @@
   color: var(--color-figma);
   // color: var(--text-primary);
   background-color: var(--color-figma-bg);
+}
+
+.socketio {
+  color: var(--color-socketio);
+  // color: var(--text-primary);
+  background-color: var(--color-socketio-bg);
+}
+
+.nestjs {
+  color: var(--color-nestjs);
+  // color: var(--text-primary);
+  background-color: var(--color-nestjs-bg);
 }

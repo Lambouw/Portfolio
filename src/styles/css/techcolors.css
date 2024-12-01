@@ -63,6 +63,11 @@
   background-color: var(--color-postgresql-bg);
 }
 
+.pgadmin {
+  color: var(--color-pgadmin);
+  background-color: var(--color-pgadmin-bg);
+}
+
 .git {
   color: var(--color-git);
   background-color: var(--color-git-bg);
@@ -81,4 +86,14 @@
 .figma {
   color: var(--color-figma);
   background-color: var(--color-figma-bg);
+}
+
+.socketio {
+  color: var(--color-socketio);
+  background-color: var(--color-socketio-bg);
+}
+
+.nestjs {
+  color: var(--color-nestjs);
+  background-color: var(--color-nestjs-bg);
 }/*# sourceMappingURL=techcolors.css.map */

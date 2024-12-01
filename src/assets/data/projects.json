@@ -1,32 +1,75 @@
 [
   {
     "name": "Adaptive HMI",
-    "description": "An adaptive HMI (human machine interface) for cnc-machines for different machine configurations. In my masters thesis i had the exercise to develop and implement a solution for a hmi for different machine configurations. For the Frontend i used React with TypeScript and SCSS. For the Backend i used Node.js. The Communication between the backend and the machine is via OPC UA and the communication between the frontend and the backend is via websockets with the framework Socket.io.",
+    "description": "This was the first project where I was responsible for both the frontend and backend development. The project involved creating an adaptive Human-Machine Interface (HMI) for machines with varying configurations and was a core part of my master's thesis titled 'Development of a flexible and adaptive HMI for different machine configurations.' The tech stack for the application included React with TypeScript and SCSS for the frontend, incorporating Material-UI components to enhance the design and usability. The backend was built using a Node.js server with TypeScript, and the communication between the frontend and backend was implemented using WebSocket via the Socket.io library. For UI design, I used Figma once again to create mockups and prototypes, ensuring a streamlined and cohesive user experience. To connect the application to machines, the system utilized an OPC UA server, which managed the data exchange and control utilities of the machine's control system. This project demonstrated my ability to design and implement a full-stack application tailored for industrial use cases and adaptive functionality.",
     "image": "hmi",
-    "stack": [{"name": "React", "image": "react"}, {"name": "HTML", "image": "html"}, {"name": "TypeScript", "image": "typescript"}, {"name": "Node.js", "image": "node"}]
+    "stack": [
+      { "name": "React", "image": "react", "class": "react" },
+      { "name": "TypeScript", "image": "typescript", "class": "typescript" },
+      { "name": "HTML", "image": "html", "class": "html" },
+      { "name": "SCSS", "image": "scss", "class": "scss" },
+      { "name": "Material-UI", "image": "materialui", "class": "materialui" },
+      { "name": "Node.js", "image": "node", "class": "node" },
+      { "name": "Socket.io", "image": "socketio", "class": "socketio" },
+      { "name": "Figma", "image": "figma", "class": "figma" }
+    ],
+    "git": null,
+    "site": null
   },
   {
     "name": "Artist Portfolio Website",
-    "description": "This project is a portfolio website designed for Ingrid Lindemann, a semi-professional artist and sculptor. The primary goal of the website is to provide a visually engaging platform that showcases the artist’s body of work, including sculptures, paintings, and mixed media. The site is designed to reflect the artist’s unique style while ensuring easy navigation for potential clients, galleries, and art enthusiasts.",
+    "description": "This project highlights my first freelancing work: creating a portfolio website for an artist and sculptor. The primary goal of the site was to provide a visually engaging platform to showcase the artist's diverse body of work, including sculptures, paintings, and mixed media. The design reflects the artist's unique style while ensuring a seamless and intuitive user experience for potential clients, galleries, and art enthusiasts. The website was developed using React and SCSS, with the initial UI designed in Figma. This project allowed me to combine technical skills with creative design, resulting in a polished and professional portfolio that effectively represents the artist's vision.",
     "image": "ilhomepage",
-    "stack": [{"name": "React", "image": "react"}, {"name": "HTML", "image": "html"}, {"name": "CSS", "image": "css"}, {"name": "JavaScript", "image": "javascript"}]
+    "stack": [
+      { "name": "React", "image": "react", "class": "react" },
+      { "name": "JavaScript", "image": "javascript", "class": "javascript" },
+      { "name": "HTML", "image": "html", "class": "html" },
+      { "name": "SCSS", "image": "scss", "class": "scss" },
+      { "name": "Figma", "image": "figma", "class": "figma" }
+    ],
+    "git": "https://github.com/Lambouw/Artist-Portfolio",
+    "site": "https://www.ilindemann.com"
   },
   {
     "name": "TwinStore",
-    "description": "During my time at ISG Industrielle Steuerungstechnik i was part of a team rebuilding the exchange platform for simulation models TwinStore. We were rebuilding the whole platform and my focus was mainly on the frontend part of the platform. In the frontend we used Flutter.",
+    "description": "During my time at ISG Industrielle Steuerungstechnik GmbH, I was part of a team tasked with rebuilding the exchange platform for simulation models, TwinStore. I was actively involved in all phases of the project, from planning the architecture of the new platform and selecting tools and technologies, to developing, hosting, and maintaining the application after it went live. // My primary focus was on the frontend and UI development, which we built using Flutter. For the backend, we utilized NestJS, while the database was powered by PostgreSQL. Throughout the development process, we relied on tools such as Figma for UI/UX design, Insomnia for API testing, and pgAdmin for database management. // This project not only strengthened my skills in modern web and app development but also gave me hands-on experience in delivering a robust, production-ready application.",
     "image": "twinstore",
-    "stack": [{"name": "Flutter", "image": "flutter"}]
+    "stack": [
+      { "name": "Flutter", "image": "flutter", "class": "flutter" },
+      { "name": "NestJS", "image": "nestjs", "class": "nestjs" },
+      { "name": "TypeScript", "image": "typescript", "class": "typescript" },
+      { "name": "PostgreSQL", "image": "postgresql", "class": "postgresql" },
+      { "name": "Figma", "image": "figma", "class": "figma" },
+      { "name": "Insomnia", "image": "insomnia", "class": "insomnia" },
+      { "name": "pgAdmin", "image": "postgresql", "class": "pgadmin" }
+    ],
+    "git": null,
+    "site": "https://www.twinstore.de"
   },
   {
     "name": "Portfolio v1",
-    "description": "My first Porfolio Website.",
+    "description": "This project showcases my very first portfolio website. I built it using React and CSS, and for the first time, I used Figma to create mockups of the UI. Although it's no longer hosted due to my new and updated portfolio, this project marked a significant step in my development journey and highlights my early work in web design and front-end development.",
     "image": "portfoliov1",
-    "stack": [{"name": "React", "image": "react"}, {"name": "HTML", "image": "html"}, {"name": "CSS", "image": "css"}, {"name": "JavaScript", "image": "javascript"}]
+    "stack": [
+      { "name": "React", "image": "react", "class": "react" },
+      { "name": "JavaScript", "image": "css", "class": "css" },
+      { "name": "HTML", "image": "html", "class": "html" },
+      { "name": "CSS", "image": "css", "class": "css" },
+      { "name": "Figma", "image": "figma", "class": "figma" }
+    ],
+    "git": "https://github.com/Lambouw/portfolio_v1",
+    "site": null
   },
   {
     "name": "Manager Mission Generator",
-    "description": "This app randomly generates a mission for the manager career mode in FIFA 22. This app randomly generates a mission for the manager career mode in FIFA 22. This app randomly generates a mission for the manager career mode in FIFA 22.",
+    "description": "This app is a simple yet exciting tool for FIFA 22 players. It generates random missions tailored for Career Mode, adding a fresh twist to your gaming experience. Built using vanilla HTML, CSS, and JavaScript, this app is my very first project. Whether you're looking to spice up your gameplay or challenge yourself with unique objectives, this generator will elevate your FIFA 22 Career Mode adventures!",
     "image": "fmmg",
-    "stack": [{"name": "HTML", "image": "html"}, {"name": "CSS", "image": "css"}, {"name": "JavaScript", "image": "javascript"}]
+    "stack": [
+      { "name": "HTML", "image": "html", "class": "html" },
+      { "name": "CSS", "image": "css", "class": "css" },
+      { "name": "JavaScript", "image": "javascript", "class": "javascript" }
+    ],
+    "git": "https://github.com/Lambouw/Manager-Mission-Generator",
+    "site": null
   }
 ]

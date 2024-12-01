@@ -26,6 +26,9 @@ import python from "../assets/logos/tech/python.svg";
 import postgresql from "../assets/logos/tech/postgresql.svg";
 import figma from "../assets/logos/tech/figma.svg";
 import materialui from "../assets/logos/tech/materialui.svg";
+import socketio_d from "../assets/logos/tech/socketio_d.svg";
+import socketio_l from "../assets/logos/tech/socketio_l.svg";
+import nestjs from "../assets/logos/tech/nestjs.svg";
 
 function Tech() {
   const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -59,6 +62,8 @@ function Tech() {
     postgresql: postgresql,
     figma: figma,
     materialui: materialui,
+    socketio: theme === "dark" ? socketio_d : socketio_l,
+    nestjs: nestjs,
   };
 
   useEffect(() => {
@@ -88,9 +93,11 @@ function Tech() {
     if (theme === "dark") {
       imageMap.node = node_l;
       imageMap.express = express_l;
+      imageMap.socketio = socketio_l;
     } else {
       imageMap.node = node_d;
       imageMap.express = express_d;
+      imageMap.socketio = socketio_d;
     }
   }, [theme]);
 

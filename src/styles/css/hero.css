@@ -49,16 +49,18 @@
   --color-git-bg: rgba(243, 79, 42, 0.1);
   --color-html: rgba(228, 77, 38, 1);
   --color-html-bg: rgba(228, 77, 38, 0.1);
-  --color-isomnia: rgba(64, 1, 191, 1);
-  --color-isomnia-bg: rgba(64, 1, 191, 0.1);
+  --color-insomnia: rgba(64, 1, 191, 1);
+  --color-insomnia-bg: rgba(64, 1, 191, 0.1);
   --color-javascript: rgba(240, 219, 79, 1);
   --color-javascript-bg: rgba(240, 219, 79, 0.1);
   --color-materialui: rgba(1, 129, 203, 1);
   --color-materialui-bg: rgba(1, 129, 203, 0.1);
   --color-node: rgba(84, 163, 68, 1);
   --color-node-bg: rgba(84, 163, 68, 0.1);
-  --color-postgres: rgba(51, 103, 145, 1);
-  --color-postgres-bg: rgba(51, 103, 145, 0.1);
+  --color-postgresql: rgba(51, 103, 145, 1);
+  --color-postgresql-bg: rgba(51, 103, 145, 0.1);
+  --color-pgadmin: rgba(51, 103, 145, 1);
+  --color-pgadmin-bg: rgba(51, 103, 145, 0.1);
   --color-postman: rgba(255, 108, 55, 1);
   --color-postman-bg: rgba(255, 108, 55, 0.1);
   --color-python: rgba(255, 225, 99, 1);
@@ -71,6 +73,10 @@
   --color-scss-bg: rgba(203, 102, 153, 0.1);
   --color-typescript: rgba(1, 122, 204, 1);
   --color-typescript-bg: rgba(1, 122, 204, 0.1);
+  --color-socketio: rgb(33, 33, 33, 1);
+  --color-socketio-bg: rgba(33, 33, 33, 0.1);
+  --color-nestjs: rgb(234, 39, 92);
+  --color-nestjs-bg: rgb(234, 39, 92, 0.1);
 }
 
 [data-theme=dark] {
@@ -124,16 +130,18 @@
   --color-git-bg: rgba(243, 79, 42, 0.1);
   --color-html: rgba(228, 77, 38, 1);
   --color-html-bg: rgba(228, 77, 38, 0.1);
-  --color-isomnia: rgba(64, 1, 191, 1);
-  --color-isomnia-bg: rgba(64, 1, 191, 0.1);
+  --color-insomnia: rgb(101, 55, 192);
+  --color-insomnia-bg: rgba(101, 55, 192, 0.1);
   --color-javascript: rgba(240, 219, 79, 1);
   --color-javascript-bg: rgba(240, 219, 79, 0.1);
   --color-materialui: rgba(1, 129, 203, 1);
   --color-materialui-bg: rgba(1, 129, 203, 0.1);
   --color-node: rgba(84, 163, 68, 1);
   --color-node-bg: rgba(84, 163, 68, 0.1);
-  --color-postgres: rgba(51, 103, 145, 1);
-  --color-postgres-bg: rgba(51, 103, 145, 0.1);
+  --color-postgresql: rgba(51, 103, 145, 1);
+  --color-postgresql-bg: rgba(51, 103, 145, 0.1);
+  --color-pgadmin: rgba(51, 103, 145, 1);
+  --color-pgadmin-bg: rgba(51, 103, 145, 0.1);
   --color-postman: rgba(255, 108, 55, 1);
   --color-postman-bg: rgba(255, 108, 55, 0.1);
   --color-python: rgba(255, 225, 99, 1);
@@ -146,6 +154,10 @@
   --color-scss-bg: rgba(203, 102, 153, 0.1);
   --color-typescript: rgba(1, 122, 204, 1);
   --color-typescript-bg: rgba(1, 122, 204, 0.1);
+  --color-socketio: rgb(255, 255, 255, 1);
+  --color-socketio-bg: rgba(255, 255, 255, 0.1);
+  --color-nestjs: rgb(234, 39, 92);
+  --color-nestjs-bg: rgb(234, 39, 92, 0.1);
 }
 
 @keyframes blink {
