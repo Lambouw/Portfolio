@@ -161,17 +161,6 @@
   --color-nestjs-bg: rgb(234, 39, 92, 0.1);
 }
 
-@keyframes slide-in {
-  0% {
-    transform: translateY(80px);
-  }
-  80% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 .tech {
   padding-bottom: 50px;
 }
@@ -213,13 +202,7 @@
   background-color: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: 10px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in;
   box-shadow: 0 15px 25px var(--card-shadow);
-}
-.tech--items--card.slide-in {
-  opacity: 1;
-  animation: slide-in 0.5s ease-in;
 }
 .tech--items--card:hover {
   transform: scale(1.05); /* Slightly scale on hover */

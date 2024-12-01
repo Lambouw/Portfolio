@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 
+// Import FadeInContainer
+import FadeInContainer from "../components/FadeInContainer";
+
 // Import Styles
 import "../styles/css/tech.css";
 
@@ -40,8 +43,6 @@ function Tech() {
   );
 
   const [showAllTech, setShowAllTech] = useState(false); // New state for toggling tech cards
-  const cardRefs = useRef([]);
-  const animatedItems = useRef(new Set()); // Track already animated items
 
   // Dynamic imageMap based on theme
   const imageMap = {
@@ -101,74 +102,48 @@ function Tech() {
     }
   }, [theme]);
 
-  useEffect(() => {
-    // Intersection Observer for animations
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            if (!animatedItems.current.has(entry.target)) {
-              entry.target.classList.add("slide-in");
-              animatedItems.current.add(entry.target);
-            }
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    cardRefs.current.forEach((card) => {
-      if (card) observer.observe(card);
-    });
-
-    return () => {
-      cardRefs.current.forEach((card) => {
-        if (card) observer.unobserve(card);
-      });
-    };
-  }, [showAllTech]);
-
   const handleToggleTech = () => {
     setShowAllTech((prev) => !prev);
   };
 
   return (
     <div id="tech" className="tech">
-      <div className="tech--heading">
-        <h1 className="tech--heading--icon">&#8811;</h1>
-        {/* <h1 className="tech--heading--icon">&#8827;</h1> */}
-        <div className="width-s"></div>
-        <h1 className="tech--heading--text">tech stack</h1>
-        <div className="width-m"></div>
-        <div className="tech--heading--line"></div>
-      </div>
-      <div className="height-l"></div>
-      <div className="tech--items">
-        {tech.slice(0, showAllTech ? tech.length : 7).map((item, index) => (
-          <a
-            key={index}
-            ref={(el) => (cardRefs.current[index] = el)}
-            className="tech--items--card"
-            href={item.src}
-            target="blank"
-          >
-            <img
-              src={imageMap[item.image]}
-              className="tech--items--card--image"
-              alt={item.name}
-            />
-            <div className="tech--items--card--spacer"></div>
-            <div className="tech--items--card--name">{item.name}</div>
-          </a>
-        ))}
-      </div>
-      {tech.length > 6 && (
-        <div className="tech--toggle">
-          <button className="tech--toggle--button" onClick={handleToggleTech}>
-            {showAllTech ? "Show less" : "Show all"}
-          </button>
+      <FadeInContainer type={"right"}>
+        <div className="tech--heading">
+          <h1 className="tech--heading--icon">&#8811;</h1>
+          {/* <h1 className="tech--heading--icon">&#8827;</h1> */}
+          <div className="width-s"></div>
+          <h1 className="tech--heading--text">tech stack</h1>
+          <div className="width-m"></div>
+          <div className="tech--heading--line"></div>
         </div>
-      )}
+        <div className="height-l"></div>
+        <div className="tech--items">
+          {tech.slice(0, showAllTech ? tech.length : 7).map((item, index) => (
+            <a
+              key={index}
+              className="tech--items--card"
+              href={item.src}
+              target="blank"
+            >
+              <img
+                src={imageMap[item.image]}
+                className="tech--items--card--image"
+                alt={item.name}
+              />
+              <div className="tech--items--card--spacer"></div>
+              <div className="tech--items--card--name">{item.name}</div>
+            </a>
+          ))}
+        </div>
+        {tech.length > 6 && (
+          <div className="tech--toggle">
+            <button className="tech--toggle--button" onClick={handleToggleTech}>
+              {showAllTech ? "Show less" : "Show all"}
+            </button>
+          </div>
+        )}
+      </FadeInContainer>
     </div>
   );
 }

@@ -7,7 +7,8 @@ import "../styles/css/about.css";
 function About() {
   return (
     <div id="about" className="about">
-      <FadeInContainer type={"left"} threshold={0.1}>
+      {/* need threshold, because about section is a bit visible on hero/start view */}
+      <FadeInContainer type={"left"} threshold={0.1}> 
       {/* <FadeInContainer type={"bottom"}> */}
         <div className="about--heading">
           <h1 className="about--heading--icon">&#8811;</h1>
