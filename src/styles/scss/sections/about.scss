@@ -1,5 +1,6 @@
 @import "../basics/colors";
 @import "../basics/constants";
+@import "../basics/breakpoints";
 
 .about {
   padding-bottom: 50px;
@@ -34,14 +35,5 @@
     &--highlight {
       color: var(--highlight);
     }
-  }
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
   }
 }

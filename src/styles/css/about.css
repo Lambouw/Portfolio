@@ -188,13 +188,4 @@
 }
 .about--text--highlight {
   color: var(--highlight);
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
 }/*# sourceMappingURL=about.css.map */
