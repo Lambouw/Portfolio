@@ -8,16 +8,12 @@ import "../styles/css/projectcard.css";
 
 // Import Images
 import ilhomepage from "../assets/images/projects/ilhomepage.png";
-import portfoliov1 from "../assets/images/projects/portfoliov1.png";
-import fmmg from "../assets/images/projects/fmmg.png";
 import hmi from "../assets/images/projects/hmi.png";
 import twinstore from "../assets/images/projects/twinstore.png";
 
 // Image mapping
 const imageMap = {
   ilhomepage: ilhomepage,
-  portfoliov1: portfoliov1,
-  fmmg: fmmg,
   hmi: hmi,
   twinstore: twinstore,
 };

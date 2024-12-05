@@ -4,8 +4,6 @@ import React, { useState, useEffect } from "react";
 import HMI from "../projectdescriptions/HMI";
 import ArtistPortfolio from "../projectdescriptions/ArtistPortfolio";
 import TwinStore from "../projectdescriptions/TwinStore";
-import Portfoliov1 from "../projectdescriptions/Portfoliov1";
-import ManagerMissionGenerator from "../projectdescriptions/ManagerMissionGenerator";
 
 // Import Components
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,15 +16,11 @@ import "../styles/css/techcolors.css";
 
 // Import Project Images
 import ilhomepage from "../assets/images/projects/ilhomepage.png";
-import portfoliov1 from "../assets/images/projects/portfoliov1.png";
-import fmmg from "../assets/images/projects/fmmg.png";
 import hmi from "../assets/images/projects/hmi.png";
 import twinstore from "../assets/images/projects/twinstore.png";
 
 const projectImageMap = {
   ilhomepage: ilhomepage,
-  portfoliov1: portfoliov1,
-  fmmg: fmmg,
   hmi: hmi,
   twinstore: twinstore,
 };
@@ -156,10 +150,6 @@ const Project = ({ project }) => {
         {project.name == "Adaptive HMI" && <HMI />}
         {project.name == "Artist Portfolio Website" && <ArtistPortfolio />}
         {project.name == "TwinStore" && <TwinStore />}
-        {project.name == "Portfolio v1" && <Portfoliov1 />}
-        {project.name == "Manager Mission Generator" && (
-          <ManagerMissionGenerator />
-        )}
       </div>
       <div className="height-m"></div>
       <div className="project--stack">

@@ -45,31 +45,5 @@
     ],
     "git": null,
     "site": "https://www.twinstore.de"
-  },
-  {
-    "name": "Portfolio v1",
-    "description": "This project showcases my very first portfolio website. I built it using React and CSS, and for the first time, I used Figma to create mockups of the UI. Although it's no longer hosted due to my new and updated portfolio, this project marked a significant step in my development journey and highlights my early work in web design and front-end development.",
-    "image": "portfoliov1",
-    "stack": [
-      { "name": "React", "image": "react", "class": "react" },
-      { "name": "JavaScript", "image": "css", "class": "css" },
-      { "name": "HTML", "image": "html", "class": "html" },
-      { "name": "CSS", "image": "css", "class": "css" },
-      { "name": "Figma", "image": "figma", "class": "figma" }
-    ],
-    "git": "https://github.com/Lambouw/portfolio_v1",
-    "site": "https://portfolio-v1-omega-one.vercel.app/"
-  },
-  {
-    "name": "Manager Mission Generator",
-    "description": "This app is a simple yet exciting tool for FIFA 22 players. It generates random missions tailored for Career Mode, adding a fresh twist to your gaming experience. Built using vanilla HTML, CSS, and JavaScript, this app is my very first project. Whether you're looking to spice up your gameplay or challenge yourself with unique objectives, this generator will elevate your FIFA 22 Career Mode adventures!",
-    "image": "fmmg",
-    "stack": [
-      { "name": "HTML", "image": "html", "class": "html" },
-      { "name": "CSS", "image": "css", "class": "css" },
-      { "name": "JavaScript", "image": "javascript", "class": "javascript" }
-    ],
-    "git": "https://github.com/Lambouw/Manager-Mission-Generator",
-    "site": "https://manager-mission-generator.vercel.app/"
   }
 ]
