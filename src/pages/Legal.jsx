@@ -52,6 +52,23 @@ function Legal() {
           </p>
         </section>
         <div className="height-m"></div>
+        <h3 className="legal--container--header">Fonts:</h3>
+        <p className="legal--container--text">
+          The font used on this website is Switzer, provided by the Indian Type
+          Foundry. Switzer is a trademark of the Indian Type Foundry. Copyright
+          © 2015-2021 Indian Type Foundry. All rights reserved. For more
+          information about the license, visit&nbsp;
+          <a
+            className="extern"
+            href="https://fontshare.com/terms"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Fontshare Terms
+          </a>
+          .
+        </p>
+        <div className="height-m"></div>
         <h3 className="legal--container--header">Liability for Content:</h3>
         <p className="legal--container--text">
           As a service provider, we are responsible for our own content on these

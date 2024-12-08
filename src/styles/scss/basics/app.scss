@@ -1,5 +1,7 @@
 @import "./_colors.scss";
+@import "./_constants.scss";
 @import "./_breakpoints.scss";
+@import "./_fonts.scss";
 
 :root {
   font-synthesis: none;
@@ -7,7 +9,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  font-family: Helvetica;
+  font-family: 'Switzer', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
   background-color: var(--root-bg);
   color: var(--text-primary);
 }
