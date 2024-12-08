@@ -4,12 +4,18 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 import Typist from "react-typist-component";
 
+// Import Custom Hooks
+import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
+
 // Import Styles
 import "../styles/css/hero.css";
 
 import Malte from "../assets/images/hero/malte.webp";
 
 function Hero() {
+  // Animation Refs
+  const [socialsIsVisible, socialsRef] = useIntersectionObserver();
+  const [malteIsVisible, malteRef] = useIntersectionObserver();
   const [blink, setBlink] = useState("");
 
   const addBlinkClassToCursor = () => {
@@ -31,7 +37,12 @@ function Hero() {
         {/* <div className="hero--left--text2">software engineer</div> */}
         {/* <div className="hero--left--text3">Focusing on Frontend Development</div> */}
         <div className="height-s"></div>
-        <div className="hero--left--socials">
+        <div
+          className={`hero--left--socials fade-in-bottom ${
+            socialsIsVisible ? "is-visible" : ""
+          }`}
+          ref={socialsRef}
+        >
           <div className="width-xs"></div>
           <Link
             className="hero--left--socials--icon"
@@ -86,7 +97,12 @@ function Hero() {
           </a>
         </div>
       </div>
-      <div className="hero--right">
+      <div
+        className={`hero--right fade-in-bottom ${
+          malteIsVisible ? "is-visible" : ""
+        }`}
+        ref={malteRef}
+      >
         <img
           className="hero--right--image"
           src={Malte}
