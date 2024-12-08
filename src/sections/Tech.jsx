@@ -1,7 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
-
-// Import FadeInContainer
-import FadeInContainer from "../components/FadeInContainer";
+import React, { useState, useEffect } from "react";
 
 // Import Styles
 import "../styles/css/tech.css";
@@ -108,42 +105,40 @@ function Tech() {
 
   return (
     <div id="tech" className="tech">
-      <FadeInContainer type={"right"} threshold={0.4}>
-        <div className="tech--heading">
-          <h1 className="tech--heading--icon">&#8811;</h1>
-          {/* <h1 className="tech--heading--icon">&#8827;</h1> */}
-          <div className="width-s"></div>
-          <h1 className="tech--heading--text">tech stack</h1>
-          <div className="width-m"></div>
-          <div className="tech--heading--line"></div>
+      <div className="tech--heading">
+        <h1 className="tech--heading--icon">&#8811;</h1>
+        {/* <h1 className="tech--heading--icon">&#8827;</h1> */}
+        <div className="width-s"></div>
+        <h1 className="tech--heading--text">tech stack</h1>
+        <div className="width-m"></div>
+        <div className="tech--heading--line"></div>
+      </div>
+      <div className="height-l"></div>
+      <div className="tech--items">
+        {tech.slice(0, showAllTech ? tech.length : 7).map((item, index) => (
+          <a
+            key={index}
+            className="tech--items--card"
+            href={item.src}
+            target="blank"
+          >
+            <img
+              src={imageMap[item.image]}
+              className="tech--items--card--image"
+              alt={item.name}
+            />
+            <div className="tech--items--card--spacer"></div>
+            <div className="tech--items--card--name">{item.name}</div>
+          </a>
+        ))}
+      </div>
+      {tech.length > 6 && (
+        <div className="tech--toggle">
+          <button className="tech--toggle--button" onClick={handleToggleTech}>
+            {showAllTech ? "Show less" : "Show all"}
+          </button>
         </div>
-        <div className="height-l"></div>
-        <div className="tech--items">
-          {tech.slice(0, showAllTech ? tech.length : 7).map((item, index) => (
-            <a
-              key={index}
-              className="tech--items--card"
-              href={item.src}
-              target="blank"
-            >
-              <img
-                src={imageMap[item.image]}
-                className="tech--items--card--image"
-                alt={item.name}
-              />
-              <div className="tech--items--card--spacer"></div>
-              <div className="tech--items--card--name">{item.name}</div>
-            </a>
-          ))}
-        </div>
-        {tech.length > 6 && (
-          <div className="tech--toggle">
-            <button className="tech--toggle--button" onClick={handleToggleTech}>
-              {showAllTech ? "Show less" : "Show all"}
-            </button>
-          </div>
-        )}
-      </FadeInContainer>
+      )}
     </div>
   );
 }

@@ -160,55 +160,22 @@
   --color-nestjs-bg: rgb(234, 39, 92, 0.1);
 }
 
-.project-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 20px;
-  width: 310px;
-  height: 310px;
-  background-color: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-radius: 10px;
-  box-shadow: 0 15px 25px var(--card-shadow);
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-10vw);
+  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 }
-.project-card:hover {
-  cursor: pointer;
-  transform: scale(1.03); /* Slightly scale on hover */
-  transition: transform 0.2s ease-in;
-  box-shadow: 0 15px 25px var(--card-shadow-hover);
-}
-.project-card--upper {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.project-card--upper--image {
-  height: 150px;
-  width: 350px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 10px;
-}
-.project-card--description {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3; /* Limit to 3 lines */
-  -webkit-box-orient: vertical;
-  text-overflow: ellipsis;
-  word-wrap: break-word;
-  line-height: 1.5em; /* Adjust line height if necessary */
-  max-height: 4.5em; /* Limit height to 3 lines */
+.fade-in-left.is-visible {
+  opacity: 1;
+  transform: none;
 }
 
-/* Base styles for light mode (default) */
-.project-card--upper--image {
-  filter: brightness(100%) contrast(100%);
+.fade-in-bottom {
+  opacity: 0;
+  transform: translateY(10vh);
+  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
 }
-
-/* Styles for dark mode */
-[data-theme=dark] .project-card--upper--image {
-  filter: brightness(80%) contrast(110%);
-}/*# sourceMappingURL=projectcard.css.map */
+.fade-in-bottom.is-visible {
+  opacity: 1;
+  transform: none;
+}/*# sourceMappingURL=animations.css.map */
