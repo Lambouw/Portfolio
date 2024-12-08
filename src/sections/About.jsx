@@ -3,11 +3,12 @@ import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 
 // Import Styles
 import "../styles/css/about.css";
-import "../styles/css/animations.css"
+import "../styles/css/animations.css";
 
 function About() {
   // Animation Refs
   const [headingIsVisible, headingRef] = useIntersectionObserver(0.1);
+  const [textIsVisible, textRef] = useIntersectionObserver(0);
 
   return (
     <div id="about" className="about">
@@ -25,7 +26,12 @@ function About() {
         <div className="about--heading--line"></div>
       </div>
       <div className="height-l"></div>
-      <div className="about--text">
+      <div
+        className={`about--text fade-in-bottom ${
+          textIsVisible ? "is-visible" : ""
+        }`}
+        ref={textRef}
+      >
         <p>
           I am currently completing my Master's degree in Mechanical Engineering
           at the{" "}
