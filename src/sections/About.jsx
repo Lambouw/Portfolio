@@ -6,6 +6,7 @@ import "../styles/css/about.css";
 import "../styles/css/animations.css"
 
 function About() {
+  // Animation Refs
   const [headingIsVisible, headingRef] = useIntersectionObserver(0.1);
 
   return (

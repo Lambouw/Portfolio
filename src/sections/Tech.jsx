@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 
+// Import Custom Hooks
+import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
+
 // Import Styles
 import "../styles/css/tech.css";
+import "../styles/css/animations.css";
 
 // Import Data
 import tech from "../assets/data/tech.json";
@@ -38,6 +42,9 @@ function Tech() {
   const [theme, setTheme] = useState(
     document.documentElement.getAttribute("data-theme") || systemTheme
   );
+
+  // Animation Refs
+  const [headingIsVisible, headingRef] = useIntersectionObserver();
 
   const [showAllTech, setShowAllTech] = useState(false); // New state for toggling tech cards
 
@@ -105,7 +112,12 @@ function Tech() {
 
   return (
     <div id="tech" className="tech">
-      <div className="tech--heading">
+      <div
+        className={`tech--heading fade-in-left ${
+          headingIsVisible ? "is-visible" : ""
+        }`}
+        ref={headingRef}
+      >
         <h1 className="tech--heading--icon">&#8811;</h1>
         {/* <h1 className="tech--heading--icon">&#8827;</h1> */}
         <div className="width-s"></div>

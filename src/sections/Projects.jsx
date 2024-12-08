@@ -3,13 +3,20 @@ import React, { useState } from "react";
 // Import Components
 import ProjectCard from "../components/ProjectCard";
 
+// Import Custom Hooks
+import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
+
 // Import Styles
 import "../styles/css/projects.css";
+import "../styles/css/animations.css";
 
 // Import Data
 import projects from "../assets/data/projects.json";
 
 function Projects() {
+  // Animation Refs
+  const [headingIsVisible, headingRef] = useIntersectionObserver();
+
   const [showAllProjects, setShowAllProjects] = useState(false); // Track whether to show all projects
 
   const handleToggleProjects = () => {
@@ -18,7 +25,12 @@ function Projects() {
 
   return (
     <div id="projects" className="projects">
-      <div className="projects--heading">
+      <div
+        className={`projects--heading fade-in-left ${
+          headingIsVisible ? "is-visible" : ""
+        }`}
+        ref={headingRef}
+      >
         <h1 className="projects--heading--icon">&#8811;</h1>
         {/* <h1 className="tech--heading--icon">&#8827;</h1> */}
         <div className="width-s"></div>
