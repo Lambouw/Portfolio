@@ -179,6 +179,7 @@
 }
 .projects--heading--text {
   flex-shrink: 0;
+  font-weight: 600;
 }
 .projects--heading--line {
   margin-top: 15px;

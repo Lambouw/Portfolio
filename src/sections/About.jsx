@@ -21,7 +21,8 @@ function About() {
         <h1 className="about--heading--icon">&#8811;</h1>
         {/* <h1 className="about--heading--icon">&#8827;</h1> */}
         <div className="width-s"></div>
-        <h1 className="about--heading--text">about me</h1>
+        {/* <h1 className="about--heading--text">about me</h1> */}
+        <h1 className="about--heading--text">About me</h1>
         <div className="width-m"></div>
         <div className="about--heading--line"></div>
       </div>

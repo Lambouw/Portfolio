@@ -51,7 +51,8 @@ function Contact() {
         <h1 className="contact--heading--icon">&#8811;</h1>
         {/* <h1 className="contact--heading--icon">&#8827;</h1> */}
         <div className="width-s"></div>
-        <h1 className="contact--heading--text">contact</h1>
+        {/* <h1 className="contact--heading--text">contact</h1> */}
+        <h1 className="contact--heading--text">Contact</h1>
         <div className="width-m"></div>
         <div className="contact--heading--line"></div>
       </div>

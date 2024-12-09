@@ -26,10 +26,15 @@ function Hero() {
     <div id="hero" className="hero">
       <div className="hero--left">
         <div className="hero--left--text1">
-          <Typist onTypingDone={addBlinkClassToCursor}>
+          {/* <Typist onTypingDone={addBlinkClassToCursor}>
             hi,&nbsp;
             <span className="hero--left--text1--name">malte</span>
             &nbsp;here.
+          </Typist> */}
+          <Typist onTypingDone={addBlinkClassToCursor}>
+            Hi,&nbsp;
+            <span className="hero--left--text1--name">Malte</span>
+            &nbsp;here!
           </Typist>
           <div className="width-s"></div>
           <div className={`hero--left--text1--cursor ${blink}`}>|</div>

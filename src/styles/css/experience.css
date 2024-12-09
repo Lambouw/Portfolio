@@ -174,9 +174,11 @@
 .experience--heading--icon {
   color: var(--text-primary);
   flex-shrink: 0;
+  font-weight: 600;
 }
 .experience--heading--text {
   flex-shrink: 0;
+  font-weight: 600;
 }
 .experience--heading--line {
   margin-top: 15px;

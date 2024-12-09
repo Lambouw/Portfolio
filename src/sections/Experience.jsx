@@ -25,7 +25,8 @@ function Experience() {
         <h1 className="experience--heading--icon">&#8811;</h1>
         {/* <h1 className="experience--heading--icon">&#8827;</h1> */}
         <div className="width-s"></div>
-        <h1 className="experience--heading--text">experience</h1>
+        {/* <h1 className="experience--heading--text">experience</h1> */}
+        <h1 className="experience--heading--text">Experience</h1>
         <div className="width-m"></div>
         <div className="experience--heading--line"></div>
       </div>

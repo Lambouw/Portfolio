@@ -20,6 +20,7 @@
 
     &--text {
       flex-shrink: 0; // Prevent the text from shrinking
+      font-weight: 600;
     }
 
     &--line {
@@ -34,6 +35,7 @@
 
     &--highlight {
       color: var(--highlight);
+      font-weight: 700;
     }
   }
 }

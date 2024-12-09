@@ -181,16 +181,14 @@
 }
 .hero--left--text1 {
   display: flex;
-  font-size: 50px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 1px;
+  font-size: 63px;
+  font-weight: 600;
+  line-height: 76px;
 }
 .hero--left--text1--name {
   color: var(--highlight);
 }
 .hero--left--text1--cursor {
-  font-size: 60px;
   font-weight: normal;
 }
 .hero--left--socials {

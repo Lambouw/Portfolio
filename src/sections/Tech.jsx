@@ -123,7 +123,8 @@ function Tech() {
         <h1 className="tech--heading--icon">&#8811;</h1>
         {/* <h1 className="tech--heading--icon">&#8827;</h1> */}
         <div className="width-s"></div>
-        <h1 className="tech--heading--text">tech stack</h1>
+        {/* <h1 className="tech--heading--text">tech stack</h1> */}
+        <h1 className="tech--heading--text">Tech stack</h1>
         <div className="width-m"></div>
         <div className="tech--heading--line"></div>
       </div>

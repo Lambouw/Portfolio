@@ -197,6 +197,7 @@
 }
 .contact--heading--text {
   flex-shrink: 0;
+  font-weight: 600;
 }
 .contact--heading--line {
   margin-top: 15px;
