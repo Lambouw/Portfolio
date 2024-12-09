@@ -14,6 +14,7 @@ import "../styles/css/tabcontainer.css";
 import experienceData from "../assets/data/experience.json";
 
 function TabContainer() {
+  const [firstLoad, setFirstLoad] = useState(true);
   const [selectedTab, setSelectedTab] = useState(0);
   const [selectedKey, setSelectedKey] = useState("ISG");
   const [highlightStyle, setHighlightStyle] = useState({
@@ -49,10 +50,21 @@ function TabContainer() {
       for (let tab of tabElements) {
         if (tab.classList.contains(selectedKey)) {
           selectedTabElement = tab;
-          newWidth = tab.offsetWidth;
-          newLeft = tab.offsetLeft;
+          if (firstLoad) {
+            newWidth = tab.offsetWidth - 3;
+            newLeft = tab.offsetLeft;
+            setFirstLoad(false);
+          } else {
+            newWidth = tab.offsetWidth;
+            newLeft = tab.offsetLeft;
+          }
         }
       }
+
+      console.log("xxx");
+      console.log(`newWidth: ${newWidth}`);
+      console.log(`newLeft: ${newLeft}`);
+      console.log("xxx");
 
       setHighlightStyle({
         width: `${newWidth}px`,
