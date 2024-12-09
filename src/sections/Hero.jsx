@@ -36,7 +36,7 @@ function Hero() {
             <span className="hero--left--text1--name">Malte</span>
             &nbsp;here!
           </Typist>
-          <div className="width-s"></div>
+          <div className="hero--left--text1--spacer"></div>
           <div className={`hero--left--text1--cursor ${blink}`}>|</div>
         </div>
         {/* <div className="hero--left--text2">software engineer</div> */}

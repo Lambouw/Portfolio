@@ -181,12 +181,15 @@
 }
 .hero--left--text1 {
   display: flex;
-  font-size: 63px;
+  font-size: 60px;
   font-weight: 600;
   line-height: 76px;
 }
 .hero--left--text1--name {
   color: var(--highlight);
+}
+.hero--left--text1--spacer {
+  width: 10px;
 }
 .hero--left--text1--cursor {
   font-weight: normal;
@@ -247,17 +250,14 @@
   }
   .hero--left--text1 {
     display: flex;
-    font-size: 30px;
-    font-weight: 800;
-    line-height: 0.8;
-    letter-spacing: 1px;
+    font-size: 36px;
+    font-weight: 600;
   }
   .hero--left--text1--name {
     color: var(--highlight);
   }
-  .hero--left--text1--cursor {
-    font-size: 40px;
-    font-weight: normal;
+  .hero--left--text1--spacer {
+    width: 4px;
   }
   .hero--left--socials--icon {
     width: 24px;

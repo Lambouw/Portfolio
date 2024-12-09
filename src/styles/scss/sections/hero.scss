@@ -27,13 +27,17 @@
   &--left {
     &--text1 {
       display: flex;
-      font-size: 63px;
+      font-size: 60px;
       font-weight: 600;
       line-height: 76px;
       // letter-spacing: 1px;
 
       &--name {
         color: var(--highlight);
+      }
+
+      &--spacer {
+        width: 10px;
       }
 
       &--cursor {
@@ -109,18 +113,20 @@
     &--left {
       &--text1 {
         display: flex;
-        font-size: 30px;
-        font-weight: 800;
-        line-height: 0.8;
-        letter-spacing: 1px;
+        font-size: 36px;
+        font-weight: 600;
 
         &--name {
           color: var(--highlight);
         }
 
+        &--spacer {
+          width: 4px;
+        }
+
         &--cursor {
-          font-size: 40px;
-          font-weight: normal;
+          // font-size: 40px;
+          // font-weight: normal;
         }
       }
 
