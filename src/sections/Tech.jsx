@@ -45,6 +45,8 @@ function Tech() {
 
   // Animation Refs
   const [headingIsVisible, headingRef] = useIntersectionObserver();
+  const [itemsIsVisible, itemsRef] = useIntersectionObserver();
+  const [toggleIsVisible, toggleRef] = useIntersectionObserver();
 
   const [showAllTech, setShowAllTech] = useState(false); // New state for toggling tech cards
 
@@ -126,7 +128,12 @@ function Tech() {
         <div className="tech--heading--line"></div>
       </div>
       <div className="height-l"></div>
-      <div className="tech--items">
+      <div
+        className={`tech--items fade-in-bottom ${
+          itemsIsVisible ? "is-visible" : ""
+        }`}
+        ref={itemsRef}
+      >
         {tech.slice(0, showAllTech ? tech.length : 7).map((item, index) => (
           <a
             key={index}
@@ -145,7 +152,12 @@ function Tech() {
         ))}
       </div>
       {tech.length > 6 && (
-        <div className="tech--toggle">
+        <div
+          className={`tech--toggle fade-in-bottom ${
+            toggleIsVisible ? "is-visible" : ""
+          }`}
+          ref={toggleRef}
+        >
           <button className="tech--toggle--button" onClick={handleToggleTech}>
             {showAllTech ? "Show less" : "Show all"}
           </button>

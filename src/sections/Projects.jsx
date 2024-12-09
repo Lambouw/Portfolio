@@ -16,6 +16,8 @@ import projects from "../assets/data/projects.json";
 function Projects() {
   // Animation Refs
   const [headingIsVisible, headingRef] = useIntersectionObserver();
+  const [projectsIsVisible, projectsRef] = useIntersectionObserver();
+  const [toggleIsVisible, toggleRef] = useIntersectionObserver();
 
   const [showAllProjects, setShowAllProjects] = useState(false); // Track whether to show all projects
 
@@ -39,7 +41,12 @@ function Projects() {
         <div className="projects--heading--line"></div>
       </div>
       <div className="height-l"></div>
-      <div className="projects--container">
+      <div
+        className={`projects--container fade-in-bottom ${
+          projectsIsVisible ? "is-visible" : ""
+        }`}
+        ref={projectsRef}
+      >
         {projects
           .slice(0, showAllProjects ? projects.length : 3)
           .map((project, index) => (
@@ -47,7 +54,12 @@ function Projects() {
           ))}
       </div>
       {projects.length > 3 && (
-        <div className="projects--toggle">
+        <div
+          className={`projects--toggle fade-in-bottom ${
+            toggleIsVisible ? "is-visible" : ""
+          }`}
+          ref={toggleRef}
+        >
           <button
             className="projects--toggle--button"
             onClick={handleToggleProjects}

@@ -8,7 +8,7 @@ import "../styles/css/animations.css";
 function About() {
   // Animation Refs
   const [headingIsVisible, headingRef] = useIntersectionObserver(0.1);
-  const [textIsVisible, textRef] = useIntersectionObserver(0);
+  const [textIsVisible, textRef] = useIntersectionObserver();
 
   return (
     <div id="about" className="about">
