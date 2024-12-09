@@ -4,6 +4,9 @@ import React, { useState, useEffect, useRef } from "react";
 import TabPanel from "./TabPanel";
 import Tab from "./Tab";
 
+// Import Custom Hooks
+import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
+
 // Import Styles
 import "../styles/css/tabcontainer.css";
 
@@ -19,6 +22,9 @@ function TabContainer() {
   });
 
   const tabBarRef = useRef(null);
+
+  // Animation Refs
+  const [tabContainerIsVisible, tabContainerRef] = useIntersectionObserver();
 
   useEffect(() => {
     setHighlight(selectedKey);
@@ -56,7 +62,12 @@ function TabContainer() {
   };
 
   return (
-    <div className="tab-container">
+    <div
+      className={`tab-container fade-in-bottom ${
+        tabContainerIsVisible ? "is-visible" : ""
+      }`}
+      ref={tabContainerRef}
+    >
       <div className="tab-container--tabbar" ref={tabBarRef}>
         <div className="tab-container--highlight" style={highlightStyle}></div>
         {Object.keys(experienceData).map((key, i) => (
