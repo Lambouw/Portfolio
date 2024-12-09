@@ -188,4 +188,14 @@
 .fade-in-top.is-visible {
   opacity: 1;
   transform: none;
+}
+
+.fade-in-opacity {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.75s ease-in-out;
+}
+.fade-in-opacity.is-visible {
+  opacity: 1;
+  visibility: visible;
 }/*# sourceMappingURL=animations.css.map */

@@ -13,6 +13,9 @@ import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 
+// Import Custom Hooks
+import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
+
 // Import Styles
 import "../styles/css/bottomnav.css";
 
@@ -20,6 +23,9 @@ const BottomNav = () => {
   const { theme, toggleTheme } = useTheme("light");
   const navigate = useNavigate(); // React Router's navigate hook
   const location = useLocation(); // Get current location
+
+  // Animation Refs
+  const [bottomNavIsVisible, bottomNavRef] = useIntersectionObserver(0.2);
 
   const handleToggleTheme = () => {
     const toggler = document.querySelector(".bottomnav--theme-toggler");
@@ -75,7 +81,12 @@ const BottomNav = () => {
   };
 
   return (
-    <div className="bottomnav">
+    <div
+      className={`bottomnav fade-in-opacity ${
+        bottomNavIsVisible ? "is-visible" : ""
+      }`}
+      ref={bottomNavRef}
+    >
       <div className="bottomnav--item">
         <div
           className="bottomnav--item--icon"

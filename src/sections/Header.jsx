@@ -19,6 +19,7 @@ function Header() {
   const navigate = useNavigate(); // React Router's navigate hook
   const [scroll, setScroll] = useState(false);
 
+  // Animation Refs
   const [headerIsVisible, headerRef] = useIntersectionObserver();
 
   useEffect(() => {
