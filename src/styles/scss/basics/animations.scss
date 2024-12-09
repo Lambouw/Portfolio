@@ -23,3 +23,14 @@
     transform: none;
   }
 }
+
+.fade-in-top {
+  opacity: 0;
+  transform: translateY(-10vh);
+  transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
+
+  &.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+}
