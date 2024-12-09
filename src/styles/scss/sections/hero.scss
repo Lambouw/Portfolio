@@ -26,6 +26,7 @@
 
   &--left {
     &--text1 {
+      width: 100%;
       display: flex;
       font-size: 60px;
       font-weight: 600;
@@ -44,6 +45,10 @@
         // font-size: 60px;
         font-weight: normal;
       }
+    }
+
+    &--spacer {
+      height: 10px;
     }
 
     &--socials {
@@ -115,6 +120,7 @@
         display: flex;
         font-size: 36px;
         font-weight: 600;
+        line-height: 50px;
 
         &--name {
           color: var(--highlight);
@@ -128,6 +134,10 @@
           // font-size: 40px;
           // font-weight: normal;
         }
+      }
+
+      &--spacer {
+        height: 5px;
       }
 
       &--socials {
@@ -173,6 +183,10 @@
 
     &--left {
       margin-top: 50px;
+
+      &--spacer {
+        height: 5px;
+      }
     }
   }
 }

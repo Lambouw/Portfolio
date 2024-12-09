@@ -180,6 +180,7 @@
   margin-right: 40px;
 }
 .hero--left--text1 {
+  width: 100%;
   display: flex;
   font-size: 60px;
   font-weight: 600;
@@ -193,6 +194,9 @@
 }
 .hero--left--text1--cursor {
   font-weight: normal;
+}
+.hero--left--spacer {
+  height: 10px;
 }
 .hero--left--socials {
   display: flex;
@@ -252,12 +256,16 @@
     display: flex;
     font-size: 36px;
     font-weight: 600;
+    line-height: 50px;
   }
   .hero--left--text1--name {
     color: var(--highlight);
   }
   .hero--left--text1--spacer {
     width: 4px;
+  }
+  .hero--left--spacer {
+    height: 5px;
   }
   .hero--left--socials--icon {
     width: 24px;
@@ -292,5 +300,8 @@
   }
   .hero--left {
     margin-top: 50px;
+  }
+  .hero--left--spacer {
+    height: 5px;
   }
 }/*# sourceMappingURL=hero.css.map */

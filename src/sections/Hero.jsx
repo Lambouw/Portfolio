@@ -41,7 +41,7 @@ function Hero() {
         </div>
         {/* <div className="hero--left--text2">software engineer</div> */}
         {/* <div className="hero--left--text3">Focusing on Frontend Development</div> */}
-        <div className="height-s"></div>
+        <div className="hero--left--spacer"></div>
         <div
           className={`hero--left--socials fade-in-bottom ${
             socialsIsVisible ? "is-visible" : ""
