@@ -28,7 +28,8 @@ const BottomNav = () => {
   const [bottomNavIsVisible, bottomNavRef] = useIntersectionObserver(0.2);
 
   const handleToggleTheme = () => {
-    const toggler = document.querySelector(".bottomnav--theme-toggler");
+    const toggler = document.querySelector(".bottomnav--item--theme-toggler");
+    console.log(toggler);
     toggler.classList.add("clicked");
 
     setTimeout(() => {
