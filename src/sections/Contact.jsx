@@ -17,10 +17,7 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  // Animation Refs
-  const [headingIsVisible, headingRef] = useIntersectionObserver();
-  const [formIsVisible, formRef] = useIntersectionObserver();
-  const [addressesIsVisible, addressesRef] = useIntersectionObserver();
+  const [isVisible, sectionRef] = useIntersectionObserver();
 
   useEffect(() => {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -41,13 +38,12 @@ function Contact() {
   }, [name, email, message]);
 
   return (
-    <div id="contact" className="contact">
-      <div
-        className={`contact--heading fade-in-left ${
-          headingIsVisible ? "is-visible" : ""
-        }`}
-        ref={headingRef}
-      >
+    <div
+      id="contact"
+      className={`contact fade-in-bottom ${isVisible ? "is-visible" : ""}`}
+      ref={sectionRef}
+    >
+      <div className="contact--heading">
         <h1 className="contact--heading--icon">&#8811;</h1>
         {/* <h1 className="contact--heading--icon">&#8827;</h1> */}
         <div className="width-s"></div>
@@ -59,12 +55,7 @@ function Contact() {
       <div className="height-l"></div>
 
       <div className="contact--container">
-        <div
-          className={`contact--container--form fade-in-left ${
-            formIsVisible ? "is-visible" : ""
-          }`}
-          ref={formRef}
-        >
+        <div className="contact--container--form">
           <input
             className="contact--container--form--name input"
             placeholder="Enter your name"
@@ -106,12 +97,7 @@ function Contact() {
           </div>
         </div>
         <div className="height-m"></div>
-        <div
-          className={`contact--container--addresses fade-in-bottom ${
-            addressesIsVisible ? "is-visible" : ""
-          }`}
-          ref={addressesRef}
-        >
+        <div className="contact--container--addresses">
           <div className="contact--container--addresses--text">
             <p className="contact--container--addresses--text--line">
               Hit me up if you want to know more contact me or my work!

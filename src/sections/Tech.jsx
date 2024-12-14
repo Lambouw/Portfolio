@@ -43,10 +43,7 @@ function Tech() {
     document.documentElement.getAttribute("data-theme") || systemTheme
   );
 
-  // Animation Refs
-  const [headingIsVisible, headingRef] = useIntersectionObserver();
-  const [itemsIsVisible, itemsRef] = useIntersectionObserver();
-  const [toggleIsVisible, toggleRef] = useIntersectionObserver();
+  const [isVisible, sectionRef] = useIntersectionObserver();
 
   const [showAllTech, setShowAllTech] = useState(false); // New state for toggling tech cards
 
@@ -113,13 +110,12 @@ function Tech() {
   };
 
   return (
-    <div id="tech" className="tech">
-      <div
-        className={`tech--heading fade-in-left ${
-          headingIsVisible ? "is-visible" : ""
-        }`}
-        ref={headingRef}
-      >
+    <div
+      id="tech"
+      className={`tech fade-in-bottom ${isVisible ? "is-visible" : ""}`}
+      ref={sectionRef}
+    >
+      <div className="tech--heading">
         <h1 className="tech--heading--icon">&#8811;</h1>
         {/* <h1 className="tech--heading--icon">&#8827;</h1> */}
         <div className="width-s"></div>
@@ -129,12 +125,7 @@ function Tech() {
         <div className="tech--heading--line"></div>
       </div>
       <div className="height-l"></div>
-      <div
-        className={`tech--items fade-in-bottom ${
-          itemsIsVisible ? "is-visible" : ""
-        }`}
-        ref={itemsRef}
-      >
+      <div className="tech--items">
         {tech.slice(0, showAllTech ? tech.length : 7).map((item, index) => (
           <a
             key={index}
@@ -153,12 +144,7 @@ function Tech() {
         ))}
       </div>
       {tech.length > 6 && (
-        <div
-          className={`tech--toggle fade-in-bottom ${
-            toggleIsVisible ? "is-visible" : ""
-          }`}
-          ref={toggleRef}
-        >
+        <div className="tech--toggle">
           <button className="tech--toggle--button" onClick={handleToggleTech}>
             {showAllTech ? "Show less" : "Show all"}
           </button>

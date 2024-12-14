@@ -6,18 +6,15 @@ import "../styles/css/about.css";
 import "../styles/css/animations.css";
 
 function About() {
-  // Animation Refs
-  const [headingIsVisible, headingRef] = useIntersectionObserver(0.1);
-  const [textIsVisible, textRef] = useIntersectionObserver();
+  const [isVisible, sectionRef] = useIntersectionObserver(0.1);
 
   return (
-    <div id="about" className="about">
-      <div
-        className={`about--heading fade-in-left ${
-          headingIsVisible ? "is-visible" : ""
-        }`}
-        ref={headingRef}
-      >
+    <div
+      id="about"
+      className={`about fade-in-bottom ${isVisible ? "is-visible" : ""}`}
+      ref={sectionRef}
+    >
+      <div className="about--heading">
         <h1 className="about--heading--icon">&#8811;</h1>
         {/* <h1 className="about--heading--icon">&#8827;</h1> */}
         <div className="width-s"></div>
@@ -27,12 +24,7 @@ function About() {
         <div className="about--heading--line"></div>
       </div>
       <div className="height-l"></div>
-      <div
-        className={`about--text fade-in-bottom ${
-          textIsVisible ? "is-visible" : ""
-        }`}
-        ref={textRef}
-      >
+      <div className="about--text">
         <p>
           I am currently completing my Master's degree in Mechanical Engineering
           at the{" "}

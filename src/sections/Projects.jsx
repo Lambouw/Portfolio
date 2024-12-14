@@ -14,10 +14,7 @@ import "../styles/css/animations.css";
 import projects from "../assets/data/projects.json";
 
 function Projects() {
-  // Animation Refs
-  const [headingIsVisible, headingRef] = useIntersectionObserver();
-  const [projectsIsVisible, projectsRef] = useIntersectionObserver();
-  const [toggleIsVisible, toggleRef] = useIntersectionObserver();
+  const [isVisible, sectionRef] = useIntersectionObserver();
 
   const [showAllProjects, setShowAllProjects] = useState(false); // Track whether to show all projects
 
@@ -26,13 +23,12 @@ function Projects() {
   };
 
   return (
-    <div id="projects" className="projects">
-      <div
-        className={`projects--heading fade-in-left ${
-          headingIsVisible ? "is-visible" : ""
-        }`}
-        ref={headingRef}
-      >
+    <div
+      id="projects"
+      className={`projects fade-in-bottom ${isVisible ? "is-visible" : ""}`}
+      ref={sectionRef}
+    >
+      <div className="projects--heading">
         <h1 className="projects--heading--icon">&#8811;</h1>
         {/* <h1 className="tech--heading--icon">&#8827;</h1> */}
         <div className="width-s"></div>
@@ -42,12 +38,7 @@ function Projects() {
         <div className="projects--heading--line"></div>
       </div>
       <div className="height-l"></div>
-      <div
-        className={`projects--container fade-in-bottom ${
-          projectsIsVisible ? "is-visible" : ""
-        }`}
-        ref={projectsRef}
-      >
+      <div className="projects--container">
         {projects
           .slice(0, showAllProjects ? projects.length : 3)
           .map((project, index) => (
@@ -55,12 +46,7 @@ function Projects() {
           ))}
       </div>
       {projects.length > 3 && (
-        <div
-          className={`projects--toggle fade-in-bottom ${
-            toggleIsVisible ? "is-visible" : ""
-          }`}
-          ref={toggleRef}
-        >
+        <div className="projects--toggle">
           <button
             className="projects--toggle--button"
             onClick={handleToggleProjects}
