@@ -1,23 +1,23 @@
 import React from "react";
 
+// Import Contexts
+import { useLayout } from '../contexts/LayoutContext';
+
 // Import Components
 import TabContainer from "../components/TabContainer";
-
-// Import Custom Hooks
-import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 
 // Import Styles
 import "../styles/css/experience.css";
 import "../styles/css/animations.css";
 
 function Experience() {
-  const [isVisible, sectionRef] = useIntersectionObserver();
+  const {experienceVisible, experienceRef} = useLayout();
 
   return (
     <div
       id="experience"
-      className={`experience fade-in-bottom ${isVisible ? "is-visible" : ""}`}
-      ref={sectionRef}
+      className={`experience fade-in-bottom ${experienceVisible ? "is-visible" : ""}`}
+      ref={experienceRef}
     >
       <div className="experience--heading">
         <h1 className="experience--heading--icon">&#8811;</h1>

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
+// Import Contexts
+import { useLayout } from "../contexts/LayoutContext";
+
 // Import Components
 import ProjectCard from "../components/ProjectCard";
-
-// Import Custom Hooks
-import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 
 // Import Styles
 import "../styles/css/projects.css";
@@ -14,7 +14,7 @@ import "../styles/css/animations.css";
 import projects from "../assets/data/projects.json";
 
 function Projects() {
-  const [isVisible, sectionRef] = useIntersectionObserver();
+  const { projectsVisible, projectsRef } = useLayout();
 
   const [showAllProjects, setShowAllProjects] = useState(false); // Track whether to show all projects
 
@@ -25,8 +25,10 @@ function Projects() {
   return (
     <div
       id="projects"
-      className={`projects fade-in-bottom ${isVisible ? "is-visible" : ""}`}
-      ref={sectionRef}
+      className={`projects fade-in-bottom ${
+        projectsVisible ? "is-visible" : ""
+      }`}
+      ref={projectsRef}
     >
       <div className="projects--heading">
         <h1 className="projects--heading--icon">&#8811;</h1>

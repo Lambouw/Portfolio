@@ -1,18 +1,18 @@
-// Import Custom Hooks
-import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
+// Import Contexts
+import { useLayout } from '../contexts/LayoutContext';
 
 // Import Styles
 import "../styles/css/about.css";
 import "../styles/css/animations.css";
 
 function About() {
-  const [isVisible, sectionRef] = useIntersectionObserver(0.1);
+  const {aboutVisible, aboutRef} = useLayout();
 
   return (
     <div
       id="about"
-      className={`about fade-in-bottom ${isVisible ? "is-visible" : ""}`}
-      ref={sectionRef}
+      className={`about fade-in-bottom ${aboutVisible ? "is-visible" : ""}`}
+      ref={aboutRef}
     >
       <div className="about--heading">
         <h1 className="about--heading--icon">&#8811;</h1>

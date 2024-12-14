@@ -3,12 +3,20 @@ import { scroller } from "react-scroll";
 
 // Import Contexts
 import { useTheme } from "../contexts/ThemeContext";
+import { useLayout } from "../contexts/LayoutContext";
 
 // Import Styles
 import "../styles/css/navbar.css";
 
 function NavBar() {
   const { theme, toggleTheme } = useTheme("light");
+  const {
+    aboutRef,
+    projectsRef,
+    experienceRef,
+    contactRef,
+  } = useLayout();
+
   const navigate = useNavigate(); // React Router's navigate hook
   const location = useLocation(); // Get current location
 
@@ -36,12 +44,71 @@ function NavBar() {
   };
 
   const scrollToSection = (sectionId) => {
-    scroller.scrollTo(sectionId, {
-      duration: 250,
-      smooth: true,
-      spy: true,
-      offset: -150, // Add offset for fixed navbar
-    });
+    if (sectionId === "about") {
+      if (aboutRef.current.classList.contains("is-visible")) {
+        scroller.scrollTo(sectionId, {
+          duration: 250,
+          smooth: true,
+          spy: true,
+          offset: -150, // Add offset for fixed navbar
+        });
+      } else {
+        scroller.scrollTo(sectionId, {
+          duration: 250,
+          smooth: true,
+          spy: true,
+          offset: -247, // Add offset for fixed navbar
+        });
+      }
+    } else if (sectionId === "projects") {
+      if (projectsRef.current.classList.contains("is-visible")) {
+        scroller.scrollTo(sectionId, {
+          duration: 250,
+          smooth: true,
+          spy: true,
+          offset: -150, // Add offset for fixed navbar
+        });
+      } else {
+        scroller.scrollTo(sectionId, {
+          duration: 250,
+          smooth: true,
+          spy: true,
+          offset: -247, // Add offset for fixed navbar
+        });
+      }
+    } else if (sectionId === "experience") {
+      if (experienceRef.current.classList.contains("is-visible")) {
+        scroller.scrollTo(sectionId, {
+          duration: 250,
+          smooth: true,
+          spy: true,
+          offset: -150, // Add offset for fixed navbar
+        });
+      } else {
+        scroller.scrollTo(sectionId, {
+          duration: 250,
+          smooth: true,
+          spy: true,
+          offset: -247, // Add offset for fixed navbar
+        });
+      }
+    } else if (sectionId === "contact") {
+      if (contactRef.current.classList.contains("is-visible")) {
+        scroller.scrollTo(sectionId, {
+          duration: 250,
+          smooth: true,
+          spy: true,
+          offset: -150, // Add offset for fixed navbar
+        });
+      } else {
+        scroller.scrollTo(sectionId, {
+          duration: 250,
+          smooth: true,
+          spy: true,
+          offset: -247, // Add offset for fixed navbar
+        });
+      }
+    }
   };
 
   return (
@@ -81,7 +148,7 @@ function NavBar() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="var(--text-primary)"
-            viewBox="0 0 15 15" 
+            viewBox="0 0 15 15"
           >
             <path
               fillRule="evenodd"

@@ -1,23 +1,20 @@
 import { useEffect, useState } from "react";
 
-// Import Components
-import { Link } from "react-scroll";
-
-// Import Custom Hooks
-import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
+// Import Contexts
+import { useLayout } from '../contexts/LayoutContext';
 
 // Import Styles
 import "../styles/css/contact.css";
 import "../styles/css/animations.css";
 
 function Contact() {
+  const {contactVisible, contactRef} = useLayout();
+
   const [sendEnabled, setSendEnabled] = useState(false);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
-  const [isVisible, sectionRef] = useIntersectionObserver();
 
   useEffect(() => {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -40,8 +37,8 @@ function Contact() {
   return (
     <div
       id="contact"
-      className={`contact fade-in-bottom ${isVisible ? "is-visible" : ""}`}
-      ref={sectionRef}
+      className={`contact fade-in-bottom ${contactVisible ? "is-visible" : ""}`}
+      ref={contactRef}
     >
       <div className="contact--heading">
         <h1 className="contact--heading--icon">&#8811;</h1>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
-// Import Custom Hooks
-import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
+// Import Contexts
+import { useLayout } from "../contexts/LayoutContext";
 
 // Import Styles
 import "../styles/css/tech.css";
@@ -35,6 +35,8 @@ import socketio_l from "../assets/logos/tech/socketio_l.svg";
 import nestjs from "../assets/logos/tech/nestjs.svg";
 
 function Tech() {
+  const { techVisible, techRef } = useLayout();
+
   const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
     ? "dark"
     : "light";
@@ -42,8 +44,6 @@ function Tech() {
   const [theme, setTheme] = useState(
     document.documentElement.getAttribute("data-theme") || systemTheme
   );
-
-  const [isVisible, sectionRef] = useIntersectionObserver();
 
   const [showAllTech, setShowAllTech] = useState(false); // New state for toggling tech cards
 
@@ -112,8 +112,8 @@ function Tech() {
   return (
     <div
       id="tech"
-      className={`tech fade-in-bottom ${isVisible ? "is-visible" : ""}`}
-      ref={sectionRef}
+      className={`tech fade-in-bottom ${techVisible ? "is-visible" : ""}`}
+      ref={techRef}
     >
       <div className="tech--heading">
         <h1 className="tech--heading--icon">&#8811;</h1>

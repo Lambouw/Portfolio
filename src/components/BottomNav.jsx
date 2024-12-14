@@ -41,22 +41,22 @@ const BottomNav = () => {
   const handleNavClick = (section) => {
     // If already on '/', just scroll to the section
     if (location.pathname === "/") {
-      scrollToSection(section);
+      scrollToSection(section, -60);
     } else {
       // Navigate to '/' first, then scroll after a short delay
       navigate("/");
       setTimeout(() => {
-        scrollToSection(section);
+        scrollToSection(section, -95);
       }, 100); // Delay for navigation to complete
     }
   };
 
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = (sectionId, offset) => {
     scroller.scrollTo(sectionId, {
       duration: 250,
       smooth: true,
       spy: true,
-      offset: -30, // Add offset for fixed navbar
+      offset: offset, // Add offset for fixed navbar
     });
   };
 

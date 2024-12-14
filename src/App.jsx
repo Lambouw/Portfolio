@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Import Contexts
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { LayoutProvider } from "./contexts/LayoutContext";
 
 // Import Pages
 import Home from "./pages/Home";
@@ -20,16 +21,18 @@ import "./styles/css/spaceconstants.css";
 function App() {
   return (
     <ThemeProvider>
-      <Router>
-        <div className="app">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/legal" element={<Legal />} />
-            <Route path="/privacy" element={<Privacy />} />
-          </Routes>
-        </div>
-        <BottomNav />
-      </Router>
+      <LayoutProvider>
+        <Router>
+          <div className="app">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/legal" element={<Legal />} />
+              <Route path="/privacy" element={<Privacy />} />
+            </Routes>
+          </div>
+          <BottomNav />
+        </Router>
+      </LayoutProvider>
     </ThemeProvider>
   );
 }
