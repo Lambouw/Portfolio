@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
+import emailjs from "emailjs-com";
 
 // Import Contexts
-import { useLayout } from '../contexts/LayoutContext';
+import { useLayout } from "../contexts/LayoutContext";
 
 // Import Styles
 import "../styles/css/contact.css";
 import "../styles/css/animations.css";
 
 function Contact() {
-  const {contactVisible, contactRef} = useLayout();
+  const { contactVisible, contactRef } = useLayout();
 
   const [sendEnabled, setSendEnabled] = useState(false);
 
@@ -33,6 +34,32 @@ function Contact() {
       setSendEnabled(false);
     }
   }, [name, email, message]);
+
+  const sendMail = () => {
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID, // Replace with your EmailJS Service ID
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID, // Replace with your EmailJS Template ID
+        {
+          name: name,
+          email: email,
+          message: message,
+        }, // Dynamic data from the form
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY // Replace with your EmailJS Public Key
+      )
+      .then(
+        (response) => {
+          console.log(
+            "Email sent successfully:",
+            response.status,
+            response.text
+          );
+        },
+        (error) => {
+          console.error("Failed to send email:", error);
+        }
+      );
+  };
 
   return (
     <div
@@ -85,7 +112,7 @@ function Contact() {
             <button
               className="contact--container--form--row--btn"
               onClick={() => {
-                console.log("Implement send function");
+                sendMail();
               }}
               disabled={!sendEnabled}
             >
