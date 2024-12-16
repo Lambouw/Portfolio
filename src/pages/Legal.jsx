@@ -26,8 +26,8 @@ function Legal() {
           <p className="legal--container--contact--header">Contact:</p>
           <p>
             E-Mail:&nbsp;
-            <a className="extern" href="mailto:jm.lindemann@web.de">
-              jm.lindemann@web.de
+            <a className="extern" href="mailto:info@maltelindemann.com">
+              info@maltelindemann.com
             </a>
           </p>
           <div className="height-s"></div>

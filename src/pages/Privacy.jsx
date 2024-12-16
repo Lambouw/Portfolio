@@ -44,8 +44,8 @@ function Privacy() {
         <div className="height-xs"></div>
         <p className="privacy--container--text">
           E-Mail:&nbsp;
-          <a className="extern" href="mailto:jm.lindemann@web.de">
-            jm.lindemann@web.de
+          <a className="extern" href="mailto:info@maltelindemann.com">
+            info@maltelindemann.com
           </a>
         </p>
         <div className="height-xs"></div>

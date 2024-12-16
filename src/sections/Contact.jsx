@@ -134,7 +134,7 @@ function Contact() {
           <div className="contact--container--addresses--socials">
             <a
               className="contact--container--addresses--socials--icons--icon"
-              href="mailto:jm.lindemann@web.de"
+              href="mailto:info@maltelindemann.com"
             >
               <svg
                 stroke="currentColor"
