@@ -124,7 +124,7 @@ function Contact() {
         <div className="contact--container--addresses">
           <div className="contact--container--addresses--text">
             <p className="contact--container--addresses--text--line">
-              Hit me up if you want to know more contact me or my work!
+              Hit me up if you want to know more about me or my work!
             </p>
             <p className="contact--container--addresses--text--line">
               I'd love to hear from you.
