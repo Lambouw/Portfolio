@@ -45,7 +45,7 @@ function Home() {
       <Header />
       <Hero />
       <About />
-      <Tech />
+      {/* <Tech /> */}
       <Projects />
       <Experience />
       <Contact />

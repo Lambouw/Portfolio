@@ -151,7 +151,7 @@ const Project = ({ project }) => {
         {project.name == "Artist Portfolio Website" && <ArtistPortfolio />}
         {project.name == "TwinStore" && <TwinStore />}
       </div>
-      <div className="height-m"></div>
+      {/* <div className="height-m"></div>
       <div className="project--stack">
         {project.stack.map((item, index) => (
           <div className={`project--stack--item ${item.class}`}>
@@ -164,7 +164,7 @@ const Project = ({ project }) => {
             <div className="project--stack--item--label">{item.name}</div>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

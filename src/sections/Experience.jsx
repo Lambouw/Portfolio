@@ -28,7 +28,8 @@ function Experience() {
         <div className="width-m"></div>
         <div className="experience--heading--line"></div>
       </div>
-      <div className="height-l"></div>
+      <div className="height-m"></div>
+      <div className="height-s"></div>
       <TabContainer />
     </div>
   );

@@ -1,5 +1,6 @@
 @charset "UTF-8";
 :root {
+  --transparent: rgba(0, 0, 0, 0);
   --root-bg: rgba(240, 248, 255, 1);
   --header-border-scroll: rgba(0, 0, 0, 0.5);
   --header-backdrop-scroll: rgba(240, 248, 255, 0.6);
@@ -18,10 +19,7 @@
   --input-border: rgba(0, 0, 0, 0.2);
   --button-bg: rgba(0, 0, 0, 0.2);
   --button-bg-hover: rgba(0, 0, 0, 0.1);
-  --button-bg-disabled: rgba(0, 0, 0, 0);
   --button-bg-click: rgba(0, 0, 0, 0.07);
-  --button-no-bg: rgba(0, 0, 0, 0);
-  --button-border: rgba(0, 0, 0, 0);
   --button-border-hover: rgba(0, 0, 0, 0.2);
   --button-border-disabled: rgba(0, 0, 0, 0.2);
   --button-outline-clicked: rgba(0, 0, 0, 0.5);
@@ -81,6 +79,7 @@
 }
 
 [data-theme=dark] {
+  --transparent: rgba(0, 0, 0, 0);
   --root-bg: rgb(36, 40, 45);
   --header-border-scroll: rgba(255, 255, 255, 0.08);
   --header-backdrop-scroll: rgba(36, 40, 45, 0.7);
@@ -99,10 +98,7 @@
   --input-border: rgba(0, 0, 0, 0);
   --button-bg: rgba(49, 56, 64, 1);
   --button-bg-hover: rgb(49, 56, 64, 0.6);
-  --button-bg-disabled: rgba(0, 0, 0, 0);
   --button-bg-click: rgba(49, 56, 64, 0.3);
-  --button-no-bg: rgba(0, 0, 0, 0);
-  --button-border: rgba(0, 0, 0, 0);
   --button-border-hover: rgba(0, 0, 0, 0);
   --button-border-disabled: rgba(49, 56, 64, 1);
   --button-outline-clicked: rgba(255, 255, 255, 0.2);

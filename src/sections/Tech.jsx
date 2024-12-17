@@ -124,7 +124,8 @@ function Tech() {
         <div className="width-m"></div>
         <div className="tech--heading--line"></div>
       </div>
-      <div className="height-l"></div>
+      <div className="height-m"></div>
+      <div className="height-s"></div>
       <div className="tech--items">
         {tech.slice(0, showAllTech ? tech.length : 7).map((item, index) => (
           <a

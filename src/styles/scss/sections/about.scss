@@ -2,6 +2,15 @@
 @import "../basics/constants";
 @import "../basics/breakpoints";
 
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 .about {
   padding-bottom: 50px;
 
@@ -36,6 +45,66 @@
     &--highlight {
       color: var(--highlight);
       font-weight: 700;
+    }
+  }
+
+  &--logos {
+    margin-top: 50px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 0;
+      width: 250px;
+      height: 100%;
+      content: "";
+      z-index: 2;
+    }
+
+    &::before {
+      left: 0;
+      background: linear-gradient(to left, var(--transparent), var(--root-bg));
+    }
+
+    &::after {
+      right: 0;
+      background: linear-gradient(to right, var(--transparent), var(--root-bg));
+    }
+
+    &:hover &--slide {
+      animation-play-state: paused;
+    }
+
+    &--slide {
+      display: inline-block;
+      animation: 60s slide infinite linear;
+
+      &--item {
+        height: 60px;
+        margin: 0 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-sm) {
+  .about {
+    &--logos {
+      &::before,
+      &::after {
+        width: 100px;
+      }
+
+      &--slide {
+        &--item {
+          height: 50px;
+          margin: 0 20px;
+        }
+      }
     }
   }
 }

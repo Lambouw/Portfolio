@@ -76,8 +76,8 @@ function Contact() {
         <div className="width-m"></div>
         <div className="contact--heading--line"></div>
       </div>
-      <div className="height-l"></div>
-
+      <div className="height-m"></div>
+      <div className="height-s"></div>
       <div className="contact--container">
         <div className="contact--container--form">
           <input

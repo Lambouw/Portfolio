@@ -74,7 +74,7 @@
 
         &--btn {
           background-color: var(--button-bg);
-          border: 1px solid var(--button-border);
+          border: 1px solid var(--transparent);
           border-radius: $button-radius;
           padding-left: 6px;
 
@@ -99,7 +99,7 @@
           }
 
           &:disabled {
-            background-color: var(--button-bg-disabled);
+            background-color: var(--transparent);
             border: 1px solid var(--button-border-disabled);
             color: var(--text-placeholder);
 

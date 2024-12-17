@@ -39,7 +39,8 @@ function Projects() {
         <div className="width-m"></div>
         <div className="projects--heading--line"></div>
       </div>
-      <div className="height-l"></div>
+      <div className="height-m"></div>
+      <div className="height-s"></div>
       <div className="projects--container">
         {projects
           .slice(0, showAllProjects ? projects.length : 3)
