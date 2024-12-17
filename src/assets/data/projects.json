@@ -44,6 +44,6 @@
       { "name": "pgAdmin", "image": "postgresql", "class": "pgadmin" }
     ],
     "git": null,
-    "site": "https://www.twinstore.de"
+    "site": "https://start.twinstore.de/"
   }
 ]
