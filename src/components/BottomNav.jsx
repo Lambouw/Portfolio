@@ -34,13 +34,18 @@ const BottomNav = () => {
   };
 
   const handleNavClick = (section, ref) => {
-    const offset = ref?.current?.classList.contains("is-visible") ? -30 : -97;
-
     if (location.pathname === "/") {
+      const offset = ref?.current?.classList.contains("is-visible") ? -30 : -97;
       scrollToSection(section, offset);
     } else {
       navigate("/");
-      setTimeout(() => scrollToSection(section, offset), 100);
+
+      setTimeout(() => {
+        const offset = ref?.current?.classList.contains("is-visible")
+          ? -30
+          : -97;
+        scrollToSection(section, offset);
+      }, 100);
     }
   };
 
