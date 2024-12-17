@@ -199,7 +199,7 @@ function About() {
         </p>
       </div>
       <div className="about--logos">
-        <div class="about--logos--slide">
+        <div className="about--logos--slide">
           {Object.entries(imageMap).map(([key, src]) => (
             <img
               className="about--logos--slide--item"
@@ -209,7 +209,7 @@ function About() {
             />
           ))}
         </div>
-        <div class="about--logos--slide">
+        <div className="about--logos--slide">
           {Object.entries(imageMap).map(([key, src]) => (
             <img
               className="about--logos--slide--item"

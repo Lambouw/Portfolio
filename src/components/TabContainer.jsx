@@ -91,9 +91,9 @@ function TabContainer() {
         ))}
       </div>
       <div className="tab-container--spacer"></div>
-      <TabPanel tabKey={"ISG"} selectedKey={"PLACEHOLDER"} hidden={true} />
+      <TabPanel key={"ISG-hidden"} tabKey={"ISG"} selectedKey={"PLACEHOLDER"} hidden={true} />
       {Object.keys(experienceData).map((key) => (
-        <TabPanel tabKey={key} selectedKey={selectedKey} hidden={false} />
+        <TabPanel key={key} tabKey={key} selectedKey={selectedKey} hidden={false} />
       ))}
     </div>
   );

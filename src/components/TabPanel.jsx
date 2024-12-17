@@ -6,7 +6,11 @@ import experienceData from "../assets/data/experience.json";
 
 function TabPanel({ tabKey, selectedKey, hidden }) {
   return (
-    <div className={`tab-panel${hidden ? "--hidden" : tabKey !== selectedKey ? '--unselected' : ''}`}>
+    <div
+      className={`tab-panel${
+        hidden ? "--hidden" : tabKey !== selectedKey ? "--unselected" : ""
+      }`}
+    >
       <div className="tab-panel--header">
         <div className="tab-panel--header--title">
           {experienceData[tabKey].title}&nbsp;@&nbsp;
@@ -24,7 +28,9 @@ function TabPanel({ tabKey, selectedKey, hidden }) {
       <div className="height-s"></div>
       <ul className="tab-panel--tasks">
         {experienceData[tabKey].work.map((item, index) => (
-          <li className="tab-panel--tasks--task">{item}</li>
+          <li className="tab-panel--tasks--task" key={item}>
+            {item}
+          </li>
         ))}
       </ul>
     </div>

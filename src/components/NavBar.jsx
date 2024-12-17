@@ -65,16 +65,15 @@ function NavBar() {
   return (
     <div className="navbar">
       {links.map((link, index) => (
-        <>
+        <div className="navbar--links" key={index}>
           <span
-            key={index}
             className="link"
             onClick={() => handleNavClick(link.section, link.ref)}
           >
             {link.label}
           </span>
           <div className="width-m"></div>
-        </>
+        </div>
       ))}
       <div className="navbar--theme-toggler" onClick={handleToggleTheme}>
         {theme === "light" ? <LightThemeIcon /> : <DarkThemeIcon />}
