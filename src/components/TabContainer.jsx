@@ -61,11 +61,6 @@ function TabContainer() {
         }
       }
 
-      console.log("xxx");
-      console.log(`newWidth: ${newWidth}`);
-      console.log(`newLeft: ${newLeft}`);
-      console.log("xxx");
-
       setHighlightStyle({
         width: `${newWidth}px`,
         transform: `translateX(${newLeft}px)`,
