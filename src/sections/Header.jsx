@@ -7,25 +7,29 @@ import { useTheme } from "../contexts/ThemeContext";
 // Import Components
 import NavBar from "../components/NavBar";
 
-// Import Custom Hooks
-import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
-
 // Import Styles
 import "../styles/css/header.css";
+import "../styles/css/animations.css";
 
 function Header() {
   const { theme, toggleTheme } = useTheme("light");
   const location = useLocation(); // Get current location
   const navigate = useNavigate(); // React Router's navigate hook
   const [scroll, setScroll] = useState(false);
-
-  // Animation Refs
-  const [headerIsVisible, headerRef] = useIntersectionObserver();
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    setIsVisible(true);
+
+    const handleScroll = () => {
       setScroll(window.scrollY > 1);
-    });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   const handleLogoClick = () => {
@@ -52,9 +56,8 @@ function Header() {
   return (
     <div
       className={`header ${scroll && "scroll"} fade-in-top ${
-        headerIsVisible ? "is-visible" : ""
+        isVisible ? "is-visible" : ""
       }`}
-      ref={headerRef}
     >
       <div className="header--inner">
         <div
