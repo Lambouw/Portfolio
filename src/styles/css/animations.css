@@ -160,7 +160,6 @@
   opacity: 0;
   transform: translateX(-10vw);
   transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
-  will-change: opacity, transform;
 }
 .fade-in-left.is-visible {
   opacity: 1;
@@ -171,7 +170,6 @@
   opacity: 0;
   transform: translateY(10vh);
   transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
-  will-change: opacity, transform;
 }
 .fade-in-bottom.is-visible {
   opacity: 1;
@@ -182,7 +180,6 @@
   opacity: 0;
   transform: translateY(-10vh);
   transition: opacity 0.75s ease-in-out, transform 0.75s ease-in-out;
-  will-change: opacity, transform;
 }
 .fade-in-top.is-visible {
   opacity: 1;
@@ -193,7 +190,6 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.75s ease-in-out;
-  will-change: opacity, transform;
 }
 .fade-in-opacity.is-visible {
   opacity: 1;
