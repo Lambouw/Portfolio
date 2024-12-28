@@ -130,7 +130,7 @@ const Project = ({ project }) => {
                 <FontAwesomeIcon icon={faGithub} />
               </a>
             )}
-            {project.site !== null && (
+            {project.site !== null && project.git !== null && (
               <div className="project--upper--title--buttons--spacer"></div>
             )}
             {project.site !== null && (
