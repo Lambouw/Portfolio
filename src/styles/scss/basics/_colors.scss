@@ -63,6 +63,10 @@
   // Section Header Line
   --section-header-line: rgba(0, 0, 0, 0.5);
 
+  // Shimmer
+  --shimmer-start: rgba(0, 0, 0, 0.06);
+  --shimmer-end: rgba(0, 0, 0, 0.12);
+
   // Tech
   --color-css: rgba(20, 114, 182, 1);
   --color-css-bg: rgba(20, 114, 182, 0.1);
@@ -171,6 +175,10 @@
 
   // Section Header Line
   --section-header-line: rgba(255, 255, 255, 0.08);
+
+  // Shimmer
+  --shimmer-start: rgba(255, 255, 255, 0.06);
+  --shimmer-end: rgba(255, 255, 255, 0.12);
 
   // Tech
   --color-css: rgba(20, 114, 182, 1);

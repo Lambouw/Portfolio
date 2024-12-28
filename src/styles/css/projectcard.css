@@ -33,6 +33,8 @@
   --dialog-close-btn-bg-hover: rgb(232, 232, 232);
   --dialog-close-btn-border: rgba(0, 0, 0, 0.5);
   --section-header-line: rgba(0, 0, 0, 0.5);
+  --shimmer-start: rgba(0, 0, 0, 0.06);
+  --shimmer-end: rgba(0, 0, 0, 0.12);
   --color-css: rgba(20, 114, 182, 1);
   --color-css-bg: rgba(20, 114, 182, 0.1);
   --color-dart: rgba(0, 196, 179, 1);
@@ -112,6 +114,8 @@
   --dialog-close-btn-bg-hover: rgba(44, 50, 57, 1);
   --dialog-close-btn-border: rgba(255, 255, 255, 0.08);
   --section-header-line: rgba(255, 255, 255, 0.08);
+  --shimmer-start: rgba(255, 255, 255, 0.06);
+  --shimmer-end: rgba(255, 255, 255, 0.12);
   --color-css: rgba(20, 114, 182, 1);
   --color-css-bg: rgba(20, 114, 182, 0.1);
   --color-dart: rgba(0, 196, 179, 1);
@@ -156,6 +160,14 @@
   --color-nestjs-bg: rgb(234, 39, 92, 0.1);
 }
 
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
 .project-card {
   display: flex;
   flex-direction: column;
@@ -180,6 +192,17 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 100%;
+}
+.project-card--upper--shimmer {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  background: linear-gradient(90deg, var(--shimmer-start) 0%, var(--shimmer-end) 50%, var(--shimmer-start) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
 }
 .project-card--upper--image {
   height: 150px;
@@ -187,6 +210,14 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.project-card--upper--image.visible {
+  opacity: 1;
+}
+.project-card--upper--image.hidden {
+  display: none;
 }
 .project-card--description {
   overflow: hidden;
