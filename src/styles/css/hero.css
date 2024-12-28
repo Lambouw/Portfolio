@@ -166,7 +166,7 @@
 }
 
 .hero {
-  height: 100vh;
+  height: 100dvh;
   padding-bottom: 50px;
   display: flex;
   flex-direction: row;

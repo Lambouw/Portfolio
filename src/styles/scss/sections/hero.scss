@@ -13,7 +13,8 @@
 }
 
 .hero {
-  height: 100vh; // depends on bottom margin of header
+  // DVH achtet auf Browser-Adressleiste -> fix mobile devices
+  height: 100dvh; // depends on bottom margin of header
   padding-bottom: 50px;
 
   display: flex;

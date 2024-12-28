@@ -11,7 +11,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   background: var(--dialog-backdrop);
   backdrop-filter: blur(6px); /* Apply blur effect */
   display: flex;
@@ -23,7 +23,7 @@
 .dialog--container {
   position: relative;
   padding: 20px;
-  max-height: 90vh; /* Limit dialog height to 90% of the viewport height */
+  max-height: 90dvh; /* Limit dialog height to 90% of the viewport height */
   max-width: 900px;
   width: 100%; /* Ensure it scales properly on smaller screens */
   display: flex;
