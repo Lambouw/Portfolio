@@ -35,7 +35,9 @@ function Contact() {
     }
   }, [name, email, message]);
 
-  const sendMail = () => {
+  const sendMail = (event) => {
+    event.preventDefault();
+
     emailjs
       .send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID, // Replace with your EmailJS Service ID
@@ -69,9 +71,7 @@ function Contact() {
     >
       <div className="contact--heading">
         <h1 className="contact--heading--icon">&#8811;</h1>
-        {/* <h1 className="contact--heading--icon">&#8827;</h1> */}
         <div className="width-s"></div>
-        {/* <h1 className="contact--heading--text">contact</h1> */}
         <h1 className="contact--heading--text">Contact</h1>
         <div className="width-m"></div>
         <div className="contact--heading--line"></div>
@@ -79,7 +79,7 @@ function Contact() {
       <div className="height-m"></div>
       <div className="height-s"></div>
       <div className="contact--container">
-        <div className="contact--container--form">
+        <form className="contact--container--form" onSubmit={sendMail}>
           <input
             className="contact--container--form--name input"
             placeholder="Enter your name"
@@ -109,17 +109,14 @@ function Contact() {
           />
           <div className="height-s"></div>
           <div className="contact--container--form--row">
-            <button
+            <input
               className="contact--container--form--row--btn"
-              onClick={() => {
-                sendMail();
-              }}
               disabled={!sendEnabled}
-            >
-              Send
-            </button>
+              type="submit"
+              value="Send"
+            />
           </div>
-        </div>
+        </form>
         <div className="height-m"></div>
         <div className="contact--container--addresses">
           <div className="contact--container--addresses--text">
