@@ -2,6 +2,8 @@
 :root {
   --transparent: rgba(0, 0, 0, 0);
   --root-bg: rgba(240, 248, 255, 1);
+  --success: rgb(29, 147, 0);
+  --error: rgb(197, 0, 0);
   --header-border-scroll: rgba(0, 0, 0, 0.5);
   --header-backdrop-scroll: rgba(240, 248, 255, 0.6);
   --bottomnav-border-scroll: rgba(0, 0, 0, 0.5);
@@ -83,6 +85,8 @@
 [data-theme=dark] {
   --transparent: rgba(0, 0, 0, 0);
   --root-bg: rgb(36, 40, 45);
+  --success: rgb(29, 147, 0);
+  --error: rgb(197, 0, 0);
   --header-border-scroll: rgba(255, 255, 255, 0.08);
   --header-backdrop-scroll: rgba(36, 40, 45, 0.7);
   --bottomnav-border-scroll: rgba(255, 255, 255, 0.08);

@@ -1,6 +1,8 @@
 :root {
   --transparent: rgba(0, 0, 0, 0);
   --root-bg: rgba(240, 248, 255, 1);
+  --success: rgb(29, 147, 0);
+  --error: rgb(197, 0, 0);
   --header-border-scroll: rgba(0, 0, 0, 0.5);
   --header-backdrop-scroll: rgba(240, 248, 255, 0.6);
   --bottomnav-border-scroll: rgba(0, 0, 0, 0.5);
@@ -82,6 +84,8 @@
 [data-theme=dark] {
   --transparent: rgba(0, 0, 0, 0);
   --root-bg: rgb(36, 40, 45);
+  --success: rgb(29, 147, 0);
+  --error: rgb(197, 0, 0);
   --header-border-scroll: rgba(255, 255, 255, 0.08);
   --header-backdrop-scroll: rgba(36, 40, 45, 0.7);
   --bottomnav-border-scroll: rgba(255, 255, 255, 0.08);
@@ -224,7 +228,11 @@
   display: flex;
   justify-content: flex-end; /* Aligns the button to the right */
 }
-.contact--container--form--row--btn {
+.contact--container--form--row--wrapper {
+  position: relative;
+}
+.contact--container--form--row--wrapper--btn {
+  position: relative;
   background-color: var(--button-bg);
   border: 1px solid var(--transparent);
   border-radius: 10px;
@@ -234,25 +242,58 @@
   color: var(--text-primary);
   font-weight: 300;
 }
-.contact--container--form--row--btn:hover {
+.contact--container--form--row--wrapper--btn:hover {
   background-color: var(--button-bg-hover);
   border: var(--button-border-hover);
   cursor: pointer;
 }
-.contact--container--form--row--btn:focus {
+.contact--container--form--row--wrapper--btn:focus {
   outline: solid 1px var(--button-outline-clicked);
 }
-.contact--container--form--row--btn:active {
+.contact--container--form--row--wrapper--btn:active {
   background-color: var(--button-bg-click);
   outline: none;
 }
-.contact--container--form--row--btn:disabled {
-  background-color: var(--transparent);
-  border: 1px solid var(--button-border-disabled);
-  color: var(--text-placeholder);
+.contact--container--form--row--wrapper--btn.bg-green {
+  background-color: var(--success);
+  outline: solid 1px var(--success);
 }
-.contact--container--form--row--btn:disabled:hover {
-  cursor: not-allowed;
+.contact--container--form--row--wrapper--btn.bg-red {
+  background-color: var(--error);
+  outline: solid 1px var(--error);
+}
+.contact--container--form--row--wrapper--sending {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Center the spinner perfectly */
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.contact--container--form--row--wrapper--error {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-10px, -12px);
+}
+.contact--container--form--row--wrapper--success {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-10px, -10px);
 }
 .contact--container--addresses {
   padding-left: 40px;

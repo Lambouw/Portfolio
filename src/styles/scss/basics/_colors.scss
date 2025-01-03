@@ -4,6 +4,11 @@
   // Root
   --root-bg: rgba(240, 248, 255, 1);
 
+  // Feedback States
+  --success: rgb(29, 147, 0); 
+  --error: rgb(197, 0, 0);
+
+
   // Header
   --header-border-scroll: rgba(0, 0, 0, 0.5);
   --header-backdrop-scroll: rgba(240, 248, 255, 0.6);
@@ -117,6 +122,10 @@
 
   // Root
   --root-bg: rgb(36, 40, 45);
+
+  // Feedback States
+  --success: rgb(29, 147, 0);
+  --error: rgb(197, 0, 0);
 
   // Header
   --header-border-scroll: rgba(255, 255, 255, 0.08);

@@ -12,6 +12,9 @@ function Contact() {
   const { contactVisible, contactRef } = useLayout();
 
   const [sendEnabled, setSendEnabled] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [sentSuccess, setSentSuccess] = useState(false);
+  const [sentError, setSentError] = useState(false);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -35,11 +38,14 @@ function Contact() {
     }
   }, [name, email, message]);
 
-  const sendMail = (event) => {
+  const sendMail = async (event) => {
+    setSending(true);
+    setSentError(false);
+    setSentSuccess(false);
     event.preventDefault();
 
-    emailjs
-      .send(
+    try {
+      const response = await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID, // Replace with your EmailJS Service ID
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID, // Replace with your EmailJS Template ID
         {
@@ -48,19 +54,22 @@ function Contact() {
           message: message,
         }, // Dynamic data from the form
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY // Replace with your EmailJS Public Key
-      )
-      .then(
-        (response) => {
-          console.log(
-            "Email sent successfully:",
-            response.status,
-            response.text
-          );
-        },
-        (error) => {
-          console.error("Failed to send email:", error);
-        }
       );
+
+      console.log("Email sent successfully:", response.status, response.text);
+      setSending(false);
+      setSentSuccess(true);
+      setTimeout(() => {
+        setSentSuccess(false);
+      }, 2000);
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      setSending(false);
+      setSentError(true);
+      setTimeout(() => {
+        setSentError(false);
+      }, 2000);
+    }
   };
 
   return (
@@ -109,12 +118,47 @@ function Contact() {
           />
           <div className="height-s"></div>
           <div className="contact--container--form--row">
-            <input
-              className="contact--container--form--row--btn"
-              disabled={!sendEnabled}
-              type="submit"
-              value="Send"
-            />
+            <div className="contact--container--form--row--wrapper">
+              <input
+                className={`contact--container--form--row--wrapper--btn
+                   ${sentError && "bg-red"} ${sentSuccess && "bg-green"}`}
+                disabled={!sendEnabled}
+                type="submit"
+                value={!sending && !sentError && !sentSuccess ? "Send" : ""}
+              />
+              {sending && (
+                <svg
+                  className="contact--container--form--row--wrapper--sending"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    className="opacity-75"
+                    fill="#E3E3E4"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                  ></path>
+                </svg>
+              )}
+              {sentSuccess && (
+                <svg
+                  className="contact--container--form--row--wrapper--success"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="#E3E3E4" // You can change the color
+                >
+                  <path d="M9 16.2l-4.2-4.2-1.4 1.4L9 19 20 8l-1.4-1.4L9 16.2z" />
+                </svg>
+              )}
+              {sentError && (
+                <svg
+                  className="contact--container--form--row--wrapper--error"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="#E3E3E4" // You can change the color
+                >
+                  <path d="M18.3 5.71L12 12.01 5.7 5.71 4.29 7.12l6.3 6.3-6.3 6.3 1.41 1.41 6.3-6.3 6.3 6.3 1.41-1.41-6.3-6.3 6.3-6.3-1.41-1.41z" />
+                </svg>
+              )}
+            </div>
           </div>
         </form>
         <div className="height-m"></div>

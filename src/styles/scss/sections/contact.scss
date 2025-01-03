@@ -72,40 +72,100 @@
         display: flex;
         justify-content: flex-end; /* Aligns the button to the right */
 
-        &--btn {
-          background-color: var(--button-bg);
-          border: 1px solid var(--transparent);
-          border-radius: $button-radius;
-          padding-left: 6px;
+        &--wrapper {
+          position: relative;
 
-          width: 100px;
-          height: 30px;
-          color: var(--text-primary);
-          font-weight: 300;
+          &--btn {
+            position: relative;
 
-          &:hover {
-            background-color: var(--button-bg-hover);
-            border: var(--button-border-hover);
-            cursor: pointer;
-          }
+            background-color: var(--button-bg);
+            border: 1px solid var(--transparent);
+            border-radius: $button-radius;
+            padding-left: 6px;
 
-          &:focus {
-            outline: solid 1px var(--button-outline-clicked);
-          }
-
-          &:active {
-            background-color: var(--button-bg-click);
-            outline: none;
-          }
-
-          &:disabled {
-            background-color: var(--transparent);
-            border: 1px solid var(--button-border-disabled);
-            color: var(--text-placeholder);
+            width: 100px;
+            height: 30px;
+            color: var(--text-primary);
+            font-weight: 300;
 
             &:hover {
-              cursor: not-allowed;
+              background-color: var(--button-bg-hover);
+              border: var(--button-border-hover);
+              cursor: pointer;
             }
+
+            &:focus {
+              outline: solid 1px var(--button-outline-clicked);
+            }
+
+            &:active {
+              background-color: var(--button-bg-click);
+              outline: none;
+            }
+
+            &.bg-green {
+              background-color: var(--success);
+              outline: solid 1px var(--success);
+            }
+
+            &.bg-red {
+              background-color: var(--error);
+              outline: solid 1px var(--error);
+            }
+
+            // &:disabled {
+            //   background-color: var(--transparent);
+            //   border: 1px solid var(--button-border-disabled);
+            //   color: var(--text-placeholder);
+
+            //   &:hover {
+            //     cursor: not-allowed;
+            //   }
+            // }
+          }
+
+          &--sending {
+            width: 20px; // Half of the original width
+            height: 20px; // Half of the original height
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%); /* Center the spinner perfectly */
+
+            animation: spin 1s linear infinite;
+
+            @keyframes spin {
+              from {
+                transform: translate(-50%, -50%) rotate(0deg);
+              }
+              to {
+                transform: translate(-50%, -50%) rotate(360deg);
+              }
+            }
+          }
+
+          &--error {
+            width: 20px; // Half of the original width
+            height: 20px; // Half of the original height
+            position: absolute;
+            top: 50%; // Center vertically
+            left: 50%; // Center horizontally
+            transform: translate(
+              -10px,
+              -12px
+            ); // Offset by 50% of width and height for perfect centering
+          }
+
+          &--success {
+            width: 20px; // Half of the original width
+            height: 20px; // Half of the original height
+            position: absolute;
+            top: 50%; // Center vertically
+            left: 50%; // Center horizontally
+            transform: translate(
+              -10px,
+              -10px
+            ); // Offset by 50% of width and height for perfect centering
           }
         }
       }
