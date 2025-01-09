@@ -1,18 +1,18 @@
 {
   "ISG": {
-    "title": "Full Stack Developer",
+    "title": "Software Engineer",
     "company": "Industrielle Steuerungstechnik GmbH",
     "image": "isg",
     "date": "MARCH 23 - PRESENT",
     "work": [
-      "Developed an adaptive human-machine interface using React and Node.js.",
-      "Developed a platform for distribution and exchange of simulation models and digital twins (TwinStore) using Flutter.",
-      "Developed a converter for file formats using Python."
+      "Developed an adaptive human-machine interface using React, Node.js and TypeScript.",
+      "Developed a platform for distribution and exchange of simulation models and digital twins (TwinStore) using Flutter, NestJS and PostgreSQL.",
+      "Developed of an Integration Tool for Simulation Models into the Asset Administration Shell using Python."
     ],
     "src": "https://www.isg-stuttgart.de/"
   },
   "JP": {
-    "title": "Full Stack Developer",
+    "title": "Software Engineer",
     "company": "Jörg Paule Informationssysteme GmbH",
     "image": "jpaule",
     "date": "OCTOBER 22 - FEBRUARY 23",
@@ -28,7 +28,7 @@
     "date": "MARCH 23 - SEPTEMBER 22",
     "work": [
       "Supportive work for the teaching in university.",
-      "Working on a image recognition project in Unity."
+      "Working on an App for an image recognition project with Unity using C#."
     ],
     "src": "https://www.iff.uni-stuttgart.de/"
   }
