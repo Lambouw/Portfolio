@@ -88,6 +88,8 @@
             color: var(--text-primary);
             font-weight: 300;
 
+            cursor: default;
+
             &:hover {
               background-color: var(--button-bg-hover);
               border: var(--button-border-hover);
@@ -104,24 +106,24 @@
             }
 
             &.bg-green {
-              background-color: var(--success);
-              outline: solid 1px var(--success);
+              // background-color: var(--success);
+              // outline: solid 1px var(--success);
             }
 
             &.bg-red {
-              background-color: var(--error);
-              outline: solid 1px var(--error);
+              // background-color: var(--error);
+              // outline: solid 1px var(--error);
             }
 
-            // &:disabled {
-            //   background-color: var(--transparent);
-            //   border: 1px solid var(--button-border-disabled);
-            //   color: var(--text-placeholder);
+            &:disabled {
+              background-color: var(--transparent);
+              border: 1px solid var(--button-border-disabled);
+              color: var(--text-placeholder);
 
-            //   &:hover {
-            //     cursor: not-allowed;
-            //   }
-            // }
+              &:hover {
+                cursor: not-allowed;
+              }
+            }
           }
 
           &--sending {

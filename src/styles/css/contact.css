@@ -241,6 +241,7 @@
   height: 30px;
   color: var(--text-primary);
   font-weight: 300;
+  cursor: default;
 }
 .contact--container--form--row--wrapper--btn:hover {
   background-color: var(--button-bg-hover);
@@ -254,13 +255,13 @@
   background-color: var(--button-bg-click);
   outline: none;
 }
-.contact--container--form--row--wrapper--btn.bg-green {
-  background-color: var(--success);
-  outline: solid 1px var(--success);
+.contact--container--form--row--wrapper--btn:disabled {
+  background-color: var(--transparent);
+  border: 1px solid var(--button-border-disabled);
+  color: var(--text-placeholder);
 }
-.contact--container--form--row--wrapper--btn.bg-red {
-  background-color: var(--error);
-  outline: solid 1px var(--error);
+.contact--container--form--row--wrapper--btn:disabled:hover {
+  cursor: not-allowed;
 }
 .contact--container--form--row--wrapper--sending {
   width: 20px;

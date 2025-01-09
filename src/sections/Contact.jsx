@@ -143,7 +143,8 @@ function Contact() {
                   className="contact--container--form--row--wrapper--success"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
-                  fill="#E3E3E4" // You can change the color
+                  // fill="#E3E3E4" // You can change the color
+                  fill="#1d9300"
                 >
                   <path d="M9 16.2l-4.2-4.2-1.4 1.4L9 19 20 8l-1.4-1.4L9 16.2z" />
                 </svg>
@@ -153,7 +154,7 @@ function Contact() {
                   className="contact--container--form--row--wrapper--error"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
-                  fill="#E3E3E4" // You can change the color
+                  fill="#c50000" // You can change the color
                 >
                   <path d="M18.3 5.71L12 12.01 5.7 5.71 4.29 7.12l6.3 6.3-6.3 6.3 1.41 1.41 6.3-6.3 6.3 6.3 1.41-1.41-6.3-6.3 6.3-6.3-1.41-1.41z" />
                 </svg>
