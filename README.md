@@ -1,1 +1,5 @@
-# Malte Lindemann Portfolio Page v2
+# Portfolio v2
+
+This project shows my second portfolio website. 
+
+It's written in React.js and SCSS.
