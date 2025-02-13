@@ -1,0 +1,55 @@
+@import "../basics/colors";
+@import "../basics/constants";
+@import "../basics/breakpoints";
+
+.specializing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &--heading {
+    margin-left: 10px;
+
+    &--highlight {
+      color: var(--highlight);
+      font-weight: 700;
+    }
+  }
+
+  &--row {
+    margin-left: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    &--tag {
+      padding: 5px 10px 5px 10px;
+      background-color: var(--card-bg);
+      border-radius: $card-radius;
+      border: 1px solid var(--card-border);
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      &--icon {
+        height: 16px;
+        width: 16px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-sm) {
+  .specializing-container {
+    &--heading {
+      margin-left: 0px;
+    }
+
+    &--row {
+      margin-left: 0px;
+    }
+  }
+}

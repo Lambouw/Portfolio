@@ -17,7 +17,7 @@
   &--heading {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     max-width: 580px; // Set the maximum width for the heading
     width: 100%;

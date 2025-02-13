@@ -164,85 +164,44 @@
   --color-nestjs-bg: rgb(234, 39, 92, 0.1);
 }
 
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+.specializing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-.about {
-  padding-bottom: 50px;
+.specializing-container--heading {
+  margin-left: 10px;
 }
-.about--heading {
+.specializing-container--heading--highlight {
+  color: var(--highlight);
+  font-weight: 700;
+}
+.specializing-container--row {
+  margin-left: 10px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  max-width: 580px;
-  width: 100%;
 }
-.about--heading--icon {
-  color: var(--text-primary);
-  flex-shrink: 0;
+.specializing-container--row--tag {
+  padding: 5px 10px 5px 10px;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  border: 1px solid var(--card-border);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.about--heading--text {
-  flex-shrink: 0;
-  font-weight: 600;
-}
-.about--heading--line {
-  margin-top: 15px;
-  flex-grow: 1;
-  border-bottom: 1px solid var(--section-header-line);
-}
-.about--text {
-  text-align: justify;
-}
-.about--text--highlight {
-  color: var(--highlight);
-  font-weight: 700;
-}
-.about--logos {
-  margin-top: 50px;
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-}
-.about--logos::before, .about--logos::after {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  height: 100%;
-  content: "";
-  z-index: 2;
-}
-.about--logos::before {
-  left: 0;
-  background: linear-gradient(to left, var(--transparent), var(--root-bg));
-}
-.about--logos::after {
-  right: 0;
-  background: linear-gradient(to right, var(--transparent), var(--root-bg));
-}
-.about--logos:hover .about--logos--slide {
-  animation-play-state: paused;
-}
-.about--logos--slide {
-  display: inline-block;
-  animation: 60s slide infinite linear;
-}
-.about--logos--slide--item {
-  height: 60px;
-  margin: 0 30px;
+.specializing-container--row--tag--icon {
+  height: 16px;
+  width: 16px;
 }
 
 @media only screen and (max-width: 575px) {
-  .about--logos::before, .about--logos::after {
-    width: 100px;
+  .specializing-container--heading {
+    margin-left: 0px;
   }
-  .about--logos--slide--item {
-    height: 50px;
-    margin: 0 20px;
+  .specializing-container--row {
+    margin-left: 0px;
   }
-}/*# sourceMappingURL=about.css.map */
+}/*# sourceMappingURL=specializingcontainer.css.map */
