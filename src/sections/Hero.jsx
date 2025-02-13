@@ -39,8 +39,10 @@ function Hero() {
           <div className="hero--left--text1--spacer"></div>
           <div className={`hero--left--text1--cursor ${blink}`}>|</div>
         </div>
-        {/* <div className="hero--left--text2">software engineer</div> */}
-        {/* <div className="hero--left--text3">Focusing on Frontend Development</div> */}
+        <div className="hero--left--text2">
+          <div className="hero--left--text2--icon">&#8811;</div>
+          <div className="hero--left--text2--text">Software Engineer</div>
+        </div>
         <div className="hero--left--spacer"></div>
         <div
           className={`hero--left--socials fade-in-bottom ${
