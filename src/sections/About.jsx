@@ -139,16 +139,17 @@ function About() {
         </p>
         <div className="height-s"></div>
         <p>
-          My journey into software development began during the COVID pandemic.
-          After being introduced to programming in university computer science
-          lectures, I decided to dive deeper and{" "}
+          My journey into Software Engineering began during the COVID pandemic.
+          After being introduced to computer science in university lectures, I
+          decided to dive deeper and{" "}
           <span className="about--text--highlight">teach myself coding</span> —
           a decision that has become a passion and an integral part of my career
-          aspirations.
+          aspirations. From then i kept on learning and worked in Software
+          Engineering jobs next to my studies.
         </p>
         <div className="height-s"></div>
         <p>
-          Outside of software development and engineering, I am deeply
+          Outside of Software Engineering, I am deeply
           passionate about{" "}
           <span className="about--text--highlight">football</span>. Whether it’s
           playing with friends at my local club or cheering on my favorite teams
