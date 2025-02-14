@@ -1,13 +1,13 @@
 {
   "ISG": {
     "title": "Software Engineer",
-    "company": "Industrielle Steuerungstechnik GmbH",
+    "company": "ISG Industrielle Steuerungstechnik GmbH",
     "image": "isg",
     "date": "MARCH 23 - PRESENT",
     "work": [
-      "Development of an adaptive human-machine interface using React, Node.js and TypeScript.",
-      "Development of a platform for distribution and exchange of simulation models and digital twins (TwinStore) using Flutter, NestJS and PostgreSQL.",
-      "Development of an integration tool for simulation models into the Asset Administration Shell using Python."
+      "Development of an adaptive human-machine interface (React.js, Node.js, TypeScript)",
+      "Development of a platform for distribution and exchange of simulation models and digital twins - TwinStore (Flutter, NestJS, PostgreSQL)",
+      "Development of an integration tool for simulation models into the Asset Administration Shell (Python)"
     ],
     "src": "https://www.isg-stuttgart.de/"
   },
@@ -17,7 +17,7 @@
     "image": "jpaule",
     "date": "OCTOBER 22 - FEBRUARY 23",
     "work": [
-      "Development of a library to extend Autodesks 3D-viewer with more functionalities using JavaScript."
+      "Development of a 3D-viewer library and Web App (HTML, JavaScript, CSS)"
     ],
     "src": "https://jp-paule.de/"
   },
@@ -27,8 +27,8 @@
     "image": "iff",
     "date": "MARCH 23 - SEPTEMBER 22",
     "work": [
-      "Work in the teaching of University of Stuttgart.",
-      "Visualization of research content with Unity."
+      "Work in the teaching of University of Stuttgart",
+      "Visualization of research content (Unity)"
     ],
     "src": "https://www.iff.uni-stuttgart.de/"
   }

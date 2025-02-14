@@ -11,14 +11,15 @@ const TwinStore = () => {
         <span className="description--paragraph--highlight">TwinStore</span>. I
         was actively involved in all phases of the project, from planning the
         architecture of the new platform and selecting tools and technologies,
-        to developing, hosting, and maintaining the application after it went
+        to developing, hosting and maintaining the application after it went
         live.
       </div>
       <div className="height-s"></div>
       <div className="description--paragraph">
-        My primary focus was on the frontend and UI development, which we built
-        using <span className="description--paragraph--highlight">Flutter</span>
-        . For the backend, we utilized{" "}
+        My primary focus was on the frontend and user interface development,
+        which we built using{" "}
+        <span className="description--paragraph--highlight">Flutter</span>. For
+        the backend, we utilized{" "}
         <span className="description--paragraph--highlight">NestJS</span>, while
         the database was powered by{" "}
         <span className="description--paragraph--highlight">PostgreSQL</span>.

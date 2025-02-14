@@ -29,7 +29,7 @@ const HMI = () => {
         using a{" "}
         <span className="description--paragraph--highlight">Node.js</span>{" "}
         server with{" "}
-        <span className="description--paragraph--highlight">TypeScript</span>,
+        <span className="description--paragraph--highlight">TypeScript</span>
         and the communication between the frontend and backend was implemented
         using{" "}
         <span className="description--paragraph--highlight">WebSocket</span> via
@@ -38,7 +38,7 @@ const HMI = () => {
       </div>
       <div className="height-s"></div>
       <div className="description--paragraph">
-        For UI design, I used{" "}
+        For user interface design, I used{" "}
         <span className="description--paragraph--highlight">Figma</span> once
         again to create mockups and prototypes, ensuring a streamlined and
         cohesive user experience.

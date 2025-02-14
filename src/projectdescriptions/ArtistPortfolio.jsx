@@ -11,9 +11,9 @@ const ArtistPortfolio = () => {
         </span>{" "}
         for an artist and sculptor. The primary goal of the site was to provide
         a visually engaging platform to showcase the artist's diverse body of
-        work, including sculptures, paintings, and mixed media. The design
+        work, including sculptures, paintings and mixed media. The design
         reflects the artist's unique style while ensuring a seamless and
-        intuitive user experience for potential clients, galleries, and art
+        intuitive user experience for potential clients, galleries and art
         enthusiasts.
       </div>
       <div className="height-s"></div>
@@ -21,7 +21,7 @@ const ArtistPortfolio = () => {
         The website was developed using{" "}
         <span className="description--paragraph--highlight">React</span> and{" "}
         <span className="description--paragraph--highlight">SCSS</span>, with
-        the initial UI designed in{" "}
+        the initial user interface designed in{" "}
         <span className="description--paragraph--highlight">Figma</span>. This
         project allowed me to combine technical skills with creative design,
         resulting in a polished and professional portfolio that effectively

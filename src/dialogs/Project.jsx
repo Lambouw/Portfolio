@@ -148,7 +148,7 @@ const Project = ({ project }) => {
       <div className="height-s"></div>
       <div className="project--description">
         {project.name == "Adaptive HMI" && <HMI />}
-        {project.name == "Artist Portfolio Website" && <ArtistPortfolio />}
+        {project.name == "Artist Portfolio" && <ArtistPortfolio />}
         {project.name == "TwinStore" && <TwinStore />}
       </div>
       {/* <div className="height-m"></div>
