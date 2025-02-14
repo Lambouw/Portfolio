@@ -29,7 +29,7 @@ const HMI = () => {
         using a{" "}
         <span className="description--paragraph--highlight">Node.js</span>{" "}
         server with{" "}
-        <span className="description--paragraph--highlight">TypeScript</span>
+        <span className="description--paragraph--highlight">TypeScript</span>{" "}
         and the communication between the frontend and backend was implemented
         using{" "}
         <span className="description--paragraph--highlight">WebSocket</span> via
