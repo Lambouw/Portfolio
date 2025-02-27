@@ -14,6 +14,7 @@ import html from "../assets/logos/tech/html.svg";
 import scss from "../assets/logos/tech/scss.svg";
 import css from "../assets/logos/tech/css.svg";
 import react from "../assets/logos/tech/react.svg";
+import nextjs from "../assets/logos/tech/nextjs.svg";
 import nestjs from "../assets/logos/tech/nestjs.svg";
 import node_d from "../assets/logos/tech/node_d.svg";
 import node_l from "../assets/logos/tech/node_l.svg";
@@ -28,7 +29,7 @@ import insomnia from "../assets/logos/tech/insomnia.svg";
 import git from "../assets/logos/tech/git.svg";
 import pgadmin from "../assets/logos/tech/pgadmin.svg";
 import notion from "../assets/logos/tech/notion.svg";
-// import dart from "../assets/logos/tech/dart.svg";
+import dart from "../assets/logos/tech/dart.svg";
 // import express_d from "../assets/logos/tech/express_d.svg";
 // import express_l from "../assets/logos/tech/express_l.svg";
 // import python from "../assets/logos/tech/python.svg";
@@ -53,6 +54,7 @@ function About() {
     scss: scss,
     css: css,
     react: react,
+    nextjs: nextjs,
     nestjs: nestjs,
     node: theme === "dark" ? node_d : node_l,
     tailwindcss: tailwindcss,
@@ -65,7 +67,7 @@ function About() {
     git: git,
     pgadmin: pgadmin,
     notion: notion,
-    // dart: dart,
+    dart: dart,
     // express: theme === "dark" ? express_d : express_l,
     // python: python,
     // materialui: materialui,
@@ -149,8 +151,7 @@ function About() {
         </p>
         <div className="height-s"></div>
         <p>
-          Outside of Software Engineering, I am deeply
-          passionate about{" "}
+          Outside of Software Engineering, I am deeply passionate about{" "}
           <span className="about--text--highlight">football</span>. Whether it’s
           playing with friends at my local club or cheering on my favorite teams
           from the stadium or in front of the TV, football has always been a
