@@ -75,10 +75,14 @@
   --color-scss-bg: rgba(203, 102, 153, 0.1);
   --color-typescript: rgba(1, 122, 204, 1);
   --color-typescript-bg: rgba(1, 122, 204, 0.1);
-  --color-socketio: rgb(33, 33, 33, 1);
+  --color-socketio: rgba(33, 33, 33, 1);
   --color-socketio-bg: rgba(33, 33, 33, 0.1);
-  --color-nestjs: rgb(234, 39, 92);
-  --color-nestjs-bg: rgb(234, 39, 92, 0.1);
+  --color-nestjs: rgba(234, 39, 92, 1);
+  --color-nestjs-bg: rgba(234, 39, 92, 0.1);
+  --color-nextjs: rgba(0, 0, 0, 1);
+  --color-nextjs-bg: rgba(0, 0, 0, 0.1);
+  --color-tailwindcss: rgba(88, 189, 248, 1);
+  --color-tailwindcss-bg: rgba(88, 189, 248, 0.1);
 }
 
 [data-theme=dark] {
@@ -158,10 +162,14 @@
   --color-scss-bg: rgba(203, 102, 153, 0.1);
   --color-typescript: rgba(1, 122, 204, 1);
   --color-typescript-bg: rgba(1, 122, 204, 0.1);
-  --color-socketio: rgb(255, 255, 255, 1);
+  --color-socketio: rgba(255, 255, 255, 1);
   --color-socketio-bg: rgba(255, 255, 255, 0.1);
-  --color-nestjs: rgb(234, 39, 92);
+  --color-nestjs: rgba(234, 39, 92, 1);
   --color-nestjs-bg: rgb(234, 39, 92, 0.1);
+  --color-nextjs: rgba(0, 0, 0, 1);
+  --color-nextjs-bg: rgba(0, 0, 0, 0.1);
+  --color-tailwindcss: rgba(88, 189, 248, 1);
+  --color-tailwindcss-bg: rgba(88, 189, 248, 0.1);
 }
 
 @keyframes slide {

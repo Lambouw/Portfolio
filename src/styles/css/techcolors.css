@@ -96,4 +96,14 @@
 .nestjs {
   color: var(--color-nestjs);
   background-color: var(--color-nestjs-bg);
+}
+
+.nextjs {
+  color: var(--color-nextjs);
+  background-color: var(--color-nextjs-bg);
+}
+
+.tailwindcss {
+  color: var(--color-tailwindcss);
+  background-color: var(--color-tailwindcss-bg);
 }/*# sourceMappingURL=techcolors.css.map */

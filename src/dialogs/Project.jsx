@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 // Import Descriptions
+import Symptomly from "../projectdescriptions/Symptomly";
 import HMI from "../projectdescriptions/HMI";
 import ArtistPortfolio from "../projectdescriptions/ArtistPortfolio";
 import TwinStore from "../projectdescriptions/TwinStore";
@@ -15,13 +16,15 @@ import "../styles/css/project.css";
 import "../styles/css/techcolors.css";
 
 // Import Project Images
-import ilhomepage from "../assets/images/projects/ilhomepage.png";
+import symptomly from "../assets/images/projects/symptomly.png";
 import hmi from "../assets/images/projects/hmi.png";
+import ilhomepage from "../assets/images/projects/ilhomepage.png";
 import twinstore from "../assets/images/projects/twinstore.png";
 
 const projectImageMap = {
-  ilhomepage: ilhomepage,
+  symptomly: symptomly,
   hmi: hmi,
+  ilhomepage: ilhomepage,
   twinstore: twinstore,
 };
 
@@ -31,6 +34,7 @@ import javascript from "../assets/logos/tech/javascript.svg";
 import typescript from "../assets/logos/tech/typescript.svg";
 import css from "../assets/logos/tech/css.svg";
 import scss from "../assets/logos/tech/scss.svg";
+import tailwindcss from "../assets/logos/tech/tailwindcss.svg";
 import react from "../assets/logos/tech/react-mini.svg";
 import dart from "../assets/logos/tech/dart.svg";
 import flutter from "../assets/logos/tech/flutter.svg";
@@ -47,7 +51,9 @@ import figma from "../assets/logos/tech/figma.svg";
 import materialui from "../assets/logos/tech/materialui.svg";
 import socketio_d from "../assets/logos/tech/socketio_d.svg";
 import socketio_l from "../assets/logos/tech/socketio_l.svg";
+import nextjs from "../assets/logos/tech/nextjs.svg";
 import nestjs from "../assets/logos/tech/nestjs.svg";
+import notion from "../assets/logos/tech/notion.svg";
 
 const Project = ({ project }) => {
   const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -60,25 +66,29 @@ const Project = ({ project }) => {
 
   // Dynamic imageMap based on theme
   const techImageMap = {
-    html: html,
     javascript: javascript,
     typescript: typescript,
-    css: css,
+    html: html,
     scss: scss,
+    css: css,
     react: react,
-    dart: dart,
-    flutter: flutter,
+    nextjs: nextjs,
+    nestjs: nestjs,
     node: theme === "dark" ? node_d : node_l,
-    express: theme === "dark" ? express_d : express_l,
-    git: git,
+    tailwindcss: tailwindcss,
+    flutter: flutter,
+    postgresql: postgresql,
+    socketio: theme === "dark" ? socketio_d : socketio_l,
+    figma: figma,
     postman: postman,
     insomnia: insomnia,
+    git: git,
+    pgadmin: postgresql,
+    notion: notion,
+    dart: dart,
+    express: theme === "dark" ? express_d : express_l,
     python: python,
-    postgresql: postgresql,
-    figma: figma,
     materialui: materialui,
-    socketio: theme === "dark" ? socketio_d : socketio_l,
-    nestjs: nestjs,
   };
 
   useEffect(() => {
@@ -147,11 +157,12 @@ const Project = ({ project }) => {
       </div>
       <div className="height-s"></div>
       <div className="project--description">
+        {project.name == "Symptomly" && <Symptomly />}
         {project.name == "Adaptive HMI" && <HMI />}
         {project.name == "Artist Portfolio" && <ArtistPortfolio />}
         {project.name == "TwinStore" && <TwinStore />}
       </div>
-      {/* <div className="height-m"></div>
+      <div className="height-m"></div>
       <div className="project--stack">
         {project.stack.map((item, index) => (
           <div className={`project--stack--item ${item.class}`}>
@@ -164,7 +175,7 @@ const Project = ({ project }) => {
             <div className="project--stack--item--label">{item.name}</div>
           </div>
         ))}
-      </div> */}
+      </div>
     </div>
   );
 };

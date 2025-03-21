@@ -16,26 +16,11 @@ const TwinStore = () => {
       </div>
       <div className="height-s"></div>
       <div className="description--paragraph">
-        My primary focus was on the frontend and user interface development,
-        which we built using{" "}
-        <span className="description--paragraph--highlight">Flutter</span>. For
-        the backend, we utilized{" "}
-        <span className="description--paragraph--highlight">NestJS</span>, while
-        the database was powered by{" "}
-        <span className="description--paragraph--highlight">PostgreSQL</span>.
-        Throughout the development process, we relied on tools such as{" "}
-        <span className="description--paragraph--highlight">Figma</span> for
-        UI/UX design,{" "}
-        <span className="description--paragraph--highlight">Insomnia</span> for
-        API testing and{" "}
-        <span className="description--paragraph--highlight">pgAdmin</span> for
-        database management.
-      </div>
-      <div className="height-s"></div>
-      <div className="description--paragraph">
-        This project not only strengthened my skills in modern web and app
-        development but also gave me hands-on experience in delivering a robust,
-        production-ready application.
+        My primary focus was on the{" "}
+        <span className="description--paragraph--highlight">Frontend</span> and
+        user interface development. This project not only strengthened my skills
+        in modern web and app development but also gave me hands-on experience
+        in delivering a robust, production-ready application.
       </div>
     </div>
   );

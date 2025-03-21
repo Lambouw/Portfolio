@@ -7,14 +7,16 @@ import Dialog from "./Dialog";
 import "../styles/css/projectcard.css";
 
 // Import Images
-import ilhomepage from "../assets/images/projects/ilhomepage.png";
+import symptomly from "../assets/images/projects/symptomly.png";
 import hmi from "../assets/images/projects/hmi.png";
+import ilhomepage from "../assets/images/projects/ilhomepage.png";
 import twinstore from "../assets/images/projects/twinstore.png";
 
 // Image mapping
 const imageMap = {
-  ilhomepage: ilhomepage,
+  symptomly: symptomly,
   hmi: hmi,
+  ilhomepage: ilhomepage,
   twinstore: twinstore,
 };
 

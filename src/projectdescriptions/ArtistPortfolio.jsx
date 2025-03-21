@@ -18,14 +18,9 @@ const ArtistPortfolio = () => {
       </div>
       <div className="height-s"></div>
       <div className="description--paragraph">
-        The website was developed using{" "}
-        <span className="description--paragraph--highlight">React</span> and{" "}
-        <span className="description--paragraph--highlight">SCSS</span>, with
-        the initial user interface designed in{" "}
-        <span className="description--paragraph--highlight">Figma</span>. This
-        project allowed me to combine technical skills with creative design,
-        resulting in a polished and professional portfolio that effectively
-        represents the artist's vision.
+        This project allowed me to combine technical skills with creative
+        design, resulting in a polished and professional portfolio that
+        effectively represents the artist's vision.
       </div>
     </div>
   );

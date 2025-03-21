@@ -19,32 +19,6 @@ const HMI = () => {
       </div>
       <div className="height-s"></div>
       <div className="description--paragraph">
-        The tech stack for the application included{" "}
-        <span className="description--paragraph--highlight">React</span> with{" "}
-        <span className="description--paragraph--highlight">TypeScript</span>{" "}
-        and <span className="description--paragraph--highlight">SCSS</span> for
-        the frontend, incorporating{" "}
-        <span className="description--paragraph--highlight">Material-UI</span>{" "}
-        components to enhance the design and usability. The backend was built
-        using a{" "}
-        <span className="description--paragraph--highlight">Node.js</span>{" "}
-        server with{" "}
-        <span className="description--paragraph--highlight">TypeScript</span>{" "}
-        and the communication between the frontend and backend was implemented
-        using{" "}
-        <span className="description--paragraph--highlight">WebSocket</span> via
-        the <span className="description--paragraph--highlight">Socket.io</span>{" "}
-        library.
-      </div>
-      <div className="height-s"></div>
-      <div className="description--paragraph">
-        For user interface design, I used{" "}
-        <span className="description--paragraph--highlight">Figma</span> once
-        again to create mockups and prototypes, ensuring a streamlined and
-        cohesive user experience.
-      </div>
-      <div className="height-s"></div>
-      <div className="description--paragraph">
         To connect the application to machines, the system utilized an{" "}
         <span className="description--paragraph--highlight">OPC UA</span>{" "}
         server, which managed the data exchange and control utilities of the
