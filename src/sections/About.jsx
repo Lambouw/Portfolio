@@ -127,17 +127,20 @@ function About() {
       <div className="height-s"></div>
       <div className="about--text">
         <p>
-          I am currently completing my Master's degree in Mechanical Engineering
+          I recently graduated from my Master's degree in Mechanical Engieering
           at the{" "}
           <span className="about--text--highlight">
             University of Stuttgart
           </span>
-          . As part of my studies, I am working on my Master's thesis at{" "}
+          . As part of my studies, I was working on my Master's thesis at{" "}
           <span className="about--text--highlight">
             ISG Industrielle Steuerungstechnik GmbH
           </span>
-          , where I am developing an adaptive Human-Machine Interface (HMI)
-          tailored to different machine configurations.
+          , where I developed an adaptive Human-Machine Interface (HMI) tailored
+          to different machine configurations. This project allowed me to merge
+          my technical skills in automation with user-centered design, creating
+          a flexible HMI solution that improves operational efficiency accross
+          different machine configurations.
         </p>
         <div className="height-s"></div>
         <p>
