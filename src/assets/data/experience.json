@@ -1,9 +1,19 @@
 {
+  "ALPHARTIS": {
+    "title": "Software Engineer",
+    "company": "Alphartis SE",
+    "image": "alphartis",
+    "date": "AUGUST 25 - PRESENT",
+    "work": [
+      "Development of the internal company management platform (React.js, NestJS, TypeScript, PostgreSQL)"
+    ],
+    "src": "https://alphartis.com/"
+  },
   "ISG": {
     "title": "Software Engineer",
     "company": "ISG Industrielle Steuerungstechnik GmbH",
     "image": "isg",
-    "date": "MARCH 23 - PRESENT",
+    "date": "MARCH 23 - MARCH 25",
     "work": [
       "Development of an adaptive human-machine interface (React.js, Node.js, TypeScript)",
       "Development of a platform for distribution and exchange of simulation models and digital twins - TwinStore (Flutter, NestJS, PostgreSQL)",
