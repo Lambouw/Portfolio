@@ -16,7 +16,7 @@ import experienceData from "../assets/data/experience.json";
 function TabContainer() {
   const [firstLoad, setFirstLoad] = useState(true);
   const [selectedTab, setSelectedTab] = useState(0);
-  const [selectedKey, setSelectedKey] = useState("ISG");
+  const [selectedKey, setSelectedKey] = useState("ALPHARTIS");
   const [highlightStyle, setHighlightStyle] = useState({
     width: "0px",
     transform: "translateX(0px)",
@@ -51,7 +51,7 @@ function TabContainer() {
         if (tab.classList.contains(selectedKey)) {
           selectedTabElement = tab;
           if (firstLoad) {
-            newWidth = tab.offsetWidth - 3;
+            newWidth = tab.offsetWidth - 4;
             newLeft = tab.offsetLeft;
             setFirstLoad(false);
           } else {
@@ -91,9 +91,19 @@ function TabContainer() {
         ))}
       </div>
       <div className="tab-container--spacer"></div>
-      <TabPanel key={"ISG-hidden"} tabKey={"ISG"} selectedKey={"PLACEHOLDER"} hidden={true} />
+      <TabPanel
+        key={"ISG-hidden"}
+        tabKey={"ISG"}
+        selectedKey={"PLACEHOLDER"}
+        hidden={true}
+      />
       {Object.keys(experienceData).map((key) => (
-        <TabPanel key={key} tabKey={key} selectedKey={selectedKey} hidden={false} />
+        <TabPanel
+          key={key}
+          tabKey={key}
+          selectedKey={selectedKey}
+          hidden={false}
+        />
       ))}
     </div>
   );
